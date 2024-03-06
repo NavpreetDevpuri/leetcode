@@ -32,6 +32,7 @@ def get_leetcode_questions(category_slug="all", skip=0, limit=100, filters={}):
               difficulty
               freqBar
               frontendQuestionId: questionFrontendId
+              questionId
               isFavor
               paidOnly: isPaidOnly
               status
@@ -63,11 +64,15 @@ def get_leetcode_questions(category_slug="all", skip=0, limit=100, filters={}):
         return {"error": "Failed to fetch data", "status_code": response.status_code}
 
 
-response_json = get_leetcode_questions(category_slug="all-code-essentials", skip=0, limit=4000)
-current_dir = os.path.dirname(os.path.abspath(__file__))
-data_dir = os.path.join(current_dir, "data/leetcode_questions")
-os.makedirs(data_dir, exist_ok=True)
-file_path = os.path.join(data_dir, "questions.json")
-with open(file_path, 'w') as file:
-    json.dump(response_json, file, indent=4)
-print(f"File saved to {file_path}")
+def scrape_questions_and_save(): 
+  response_json = get_leetcode_questions(category_slug="all-code-essentials", skip=0, limit=4000)
+  current_dir = os.path.dirname(os.path.abspath(__file__))
+  data_dir = os.path.join(current_dir, "data/leetcode_questions")
+  os.makedirs(data_dir, exist_ok=True)
+  file_path = os.path.join(data_dir, "questions.json")
+  with open(file_path, 'w') as file:
+      json.dump(response_json, file, indent=4)
+  print(f"File saved to {file_path}")
+
+if __name__ == "__main__": 
+  scrape_questions_and_save()
