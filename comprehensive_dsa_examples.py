@@ -137,7 +137,7 @@ print("Average of data using statistics:", avg)
 
 # Using itertools for advanced iteration patterns
 from itertools import product
-product_example = list(product('AB', repeat=2))
+product_example = list(product('AB', repeat=3))
 print("Cartesian product using itertools:", product_example)
 
 from itertools import cycle
@@ -205,13 +205,13 @@ for i in reversed(range(1, 4)):
 
 # File handling basics: Writing and reading a file
 # Writing to a file
-with open("test.txt", "w") as f:
-    f.write("Hello, Python!\n")
+# with open("test.txt", "w") as f:
+#     f.write("Hello, Python!\n")
 
 # Reading from a file
-with open("test.txt", "r") as f:
-    content = f.read()
-print("File content:", content)
+# with open("test.txt", "r") as f:
+#     content = f.read()
+# print("File content:", content)
 
 # Using 'filterfalse' from itertools to filter out elements returning false
 from itertools import filterfalse
