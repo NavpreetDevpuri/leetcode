@@ -35,6 +35,8 @@ with open(output_file_path, 'w') as output_file:
                 link = text_file.read().strip()
                 # Write the link as a comment in the output file
                 output_file.write(f"# Link: {link}\n")
+                question_text = os.path.split(os.path.dirname(file_path))[1]
+                output_file.write(f"# Question: {question_text}\n")
 
         # Open and read the Python file, then write its content to the output file
         with open(file_path, 'r') as file:

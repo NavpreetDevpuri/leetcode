@@ -1,4 +1,7 @@
+
+
 # Link: https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/description/
+# Question: 2096. Step-By-Step Directions From a Binary Tree Node to Another
 class Solution:
   def getDirections(self, root: Optional[TreeNode], startValue: int, destValue: int) -> str:
     # Buidl the string in reverse order to avoid creating new copy
@@ -25,6 +28,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/description/
+# Question: 2096. Step-By-Step Directions From a Binary Tree Node to Another
 class Solution:
   def getDirections(self, root: Optional[TreeNode], startValue: int, destValue: int) -> str:
     def lca(root: Optional[TreeNode]) -> Optional[TreeNode]:
@@ -55,6 +59,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/stock-price-fluctuation/description/
+# Question: 2034. Stock Price Fluctuation
 from sortedcontainers import SortedDict
 
 
@@ -83,6 +88,7 @@ class StockPrice:
 
 
 # Link: https://leetcode.com/problems/path-sum-ii/description/
+# Question: 113. Path Sum II
 class Solution:
   def pathSum(self, root: TreeNode, summ: int) -> List[List[int]]:
     ans = []
@@ -102,6 +108,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/description/
+# Question: 1130. Minimum Cost Tree From Leaf Values
 class Solution:
   def mctFromLeafValues(self, arr: List[int]) -> int:
     ans = 0
@@ -119,6 +126,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/description/
+# Question: 1130. Minimum Cost Tree From Leaf Values
 class Solution:
   def mctFromLeafValues(self, arr: List[int]) -> int:
     ans = 0
@@ -131,6 +139,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/description/
+# Question: 1130. Minimum Cost Tree From Leaf Values
 class Solution:
   def mctFromLeafValues(self, arr: List[int]) -> int:
     n = len(arr)
@@ -159,6 +168,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/determine-if-two-strings-are-close/description/
+# Question: 1657. Determine if Two Strings Are Close
 class Solution:
   def closeStrings(self, word1: str, word2: str) -> bool:
     if len(word1) != len(word2):
@@ -173,6 +183,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/alice-and-bob-playing-flower-game/description/
+# Question: 3021. Alice and Bob Playing Flower Game
 class Solution:
   def flowerGame(self, n: int, m: int) -> int:
     # Alice wins if x + y is odd, occurring when:
@@ -186,6 +197,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-times-binary-string-is-prefix-aligned/description/
+# Question: 1375. Number of Times Binary String Is Prefix-Aligned
 class Solution:
   def numTimesAllBlue(self, flips: List[int]) -> int:
     ans = 0
@@ -202,6 +214,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/palindrome-partitioning/description/
+# Question: 131. Palindrome Partitioning
 class Solution:
   def partition(self, s: str) -> List[List[str]]:
     ans = []
@@ -223,6 +236,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-coins-to-be-added/description/
+# Question: 2952. Minimum Number of Coins to be Added
 class Solution:
   # Same as 330. Patching Array
   def minimumAddedCoins(self, coins: List[int], target: int) -> int:
@@ -246,6 +260,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/finding-the-users-active-minutes/description/
+# Question: 1817. Finding the Users Active Minutes
 class Solution:
   def findingUsersActiveMinutes(self, logs: List[List[int]], k: int) -> List[int]:
     idToTimes = collections.defaultdict(set)
@@ -258,6 +273,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/next-greater-numerically-balanced-number/description/
+# Question: 2048. Next Greater Numerically Balanced Number
 class Solution:
   def nextBeautifulNumber(self, n: int) -> int:
     def isBalance(num: int) -> bool:
@@ -276,6 +292,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-binary-string-after-change/description/
+# Question: 1702. Maximum Binary String After Change
 class Solution:
   def maximumBinaryString(self, binary: str) -> str:
     #     e.g. binary = '100110'
@@ -295,6 +312,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-divisible-subset/description/
+# Question: 368. Largest Divisible Subset
 class Solution:
   def largestDivisibleSubset(self, nums: List[int]) -> List[int]:
     n = len(nums)
@@ -323,6 +341,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rotate-function/description/
+# Question: 396. Rotate Function
 class Solution:
   def maxRotateFunction(self, nums: List[int]) -> int:
     f = sum(i * num for i, num in enumerate(nums))
@@ -337,6 +356,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-sql/description/
+# Question: 2408. Design SQL
 class SQL:
   def __init__(self, names: List[str], columns: List[int]):
     self.db: Dict[str, List[List[str]]] = collections.defaultdict(list)
@@ -352,6 +372,7 @@ class SQL:
 
 
 # Link: https://leetcode.com/problems/linked-list-components/description/
+# Question: 817. Linked List Components
 class Solution:
   def numComponents(self, head: Optional[ListNode], nums: List[int]) -> int:
     ans = 0
@@ -366,6 +387,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/special-permutations/description/
+# Question: 2741. Special Permutations
 class Solution:
   def specialPerm(self, nums: List[int]) -> int:
     kMod = 1_000_000_007
@@ -396,6 +418,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/description/
+# Question: 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance
 class Solution:
   def findTheCity(self, n: int, edges: List[List[int]], distanceThreshold: int) -> int:
     ans = -1
@@ -429,6 +452,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-word-with-all-prefixes/description/
+# Question: 1858. Longest Word With All Prefixes
 class Solution:
   def __init__(self):
     self.root = {}
@@ -465,6 +489,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/beautiful-towers-i/description/
+# Question: 2865. Beautiful Towers I
 class Solution:
   def maximumSumOfHeights(self, maxHeights: List[int]) -> int:
     n = len(maxHeights)
@@ -496,6 +521,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-original-array-of-prefix-xor/description/
+# Question: 2433. Find The Original Array of Prefix Xor
 class Solution:
   def findArray(self, pref: List[int]) -> List[int]:
     ans = [0] * len(pref)
@@ -508,6 +534,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-additions-to-make-valid-string/description/
+# Question: 2645. Minimum Additions to Make Valid String
 class Solution:
   def addMinimum(self, word: str) -> int:
     letters = ['a', 'b', 'c']
@@ -525,6 +552,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/
+# Question: 1161. Maximum Level Sum of a Binary Tree
 class Solution:
   def maxLevelSum(self, root: Optional[TreeNode]) -> int:
     ans = 1
@@ -550,6 +578,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/
+# Question: 1161. Maximum Level Sum of a Binary Tree
 class Solution:
   def maxLevelSum(self, root: Optional[TreeNode]) -> int:
     # levelSums[i] := the sum of level (i + 1) (1-indexed)
@@ -569,6 +598,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/3sum/description/
+# Question: 15. 3Sum
 class Solution:
   def threeSum(self, nums: List[int]) -> List[List[int]]:
     if len(nums) < 3:
@@ -604,6 +634,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lonely-pixel-i/description/
+# Question: 531. Lonely Pixel I
 class Solution:
   def findLonelyPixel(self, picture: List[List[str]]) -> int:
     m = len(picture)
@@ -631,6 +662,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-size-of-a-set-after-removals/description/
+# Question: 3002. Maximum Size of a Set After Removals
 class Solution:
   def maximumSetSize(self, nums1: List[int], nums2: List[int]) -> int:
     set1 = set(nums1)
@@ -647,6 +679,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shortest-string-that-contains-three-strings/description/
+# Question: 2800. Shortest String That Contains Three Strings
 class Solution:
   def minimumString(self, a: str, b: str, c: str) -> str:
     def merge(a: str, b: str) -> str:
@@ -682,6 +715,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/most-profit-assigning-work/description/
+# Question: 826. Most Profit Assigning Work
 class Solution:
   def maxProfitAssignment(self, difficulty: List[int], profit: List[int], worker: List[int]) -> int:
     ans = 0
@@ -701,6 +735,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/description/
+# Question: 2602. Minimum Operations to Make All Array Elements Equal
 class Solution:
   def minOperations(self, nums: List[int], queries: List[int]) -> List[int]:
     n = len(nums)
@@ -713,6 +748,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/invalid-transactions/description/
+# Question: 1169. Invalid Transactions
 class Solution:
   def invalidTransactions(self, transactions: List[str]) -> List[str]:
     ans = []
@@ -738,6 +774,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-subarrays-in-a-valid-split/description/
+# Question: 2464. Minimum Subarrays in a Valid Split
 class Solution:
   def validSubarraySplit(self, nums: List[int]) -> int:
     # dp[i] := the minimum number of subarrays to validly split nums[0..i]
@@ -752,6 +789,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-positions-on-street-with-required-brightness/description/
+# Question: 2237. Count Positions on Street With Required Brightness
 class Solution:
   def meetRequirement(self, n: int, lights: List[List[int]], requirement: List[int]) -> int:
     ans = 0
@@ -771,6 +809,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-matrix-sum/description/
+# Question: 1975. Maximum Matrix Sum
 class Solution:
   def maxMatrixSum(self, matrix: List[List[int]]) -> int:
     absSum = 0
@@ -790,6 +829,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/grid-game/description/
+# Question: 2017. Grid Game
 class Solution:
   def gridGame(self, grid: List[List[int]]) -> int:
     n = len(grid[0])
@@ -806,6 +846,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/description/
+# Question: 1008. Construct Binary Search Tree from Preorder Traversal
 class Solution:
   def bstFromPreorder(self, preorder: List[int]) -> Optional[TreeNode]:
     root = TreeNode(preorder[0])
@@ -828,6 +869,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-palindrome-with-fixed-length/description/
+# Question: 2217. Find Palindrome With Fixed Length
 class Solution:
   def kthPalindrome(self, queries: List[int], intLength: int) -> List[int]:
     start = pow(10, (intLength + 1) // 2 - 1)
@@ -850,6 +892,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-deletions-to-make-array-beautiful/description/
+# Question: 2216. Minimum Deletions to Make Array Beautiful
 class Solution:
   def minDeletion(self, nums: List[int]) -> int:
     ans = 0
@@ -864,6 +907,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/description/
+# Question: 2874. Maximum Value of an Ordered Triplet II
 class Solution:
   # Same as 2873. Maximum Value of an Ordered Triplet I
   def maximumTripletValue(self, nums: List[int]) -> int:
@@ -880,6 +924,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/description/
+# Question: 2849. Determine if a Cell Is Reachable at a Given Time
 class Solution:
   def isReachableAtTime(self, sx: int, sy: int, fx: int, fy: int, t: int) -> bool:
     minStep = max(abs(sx - fx), abs(sy - fy))
@@ -887,6 +932,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/double-modular-exponentiation/description/
+# Question: 2961. Double Modular Exponentiation
 class Solution:
   def getGoodIndices(self, variables: List[List[int]], target: int) -> List[int]:
     return [i for i, (a, b, c, m) in enumerate(variables)
@@ -894,6 +940,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/target-sum/description/
+# Question: 494. Target Sum
 class Solution:
   def findTargetSumWays(self, nums: List[int], target: int) -> int:
     summ = sum(nums)
@@ -914,6 +961,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/target-sum/description/
+# Question: 494. Target Sum
 class Solution:
   def findTargetSumWays(self, nums: List[int], target: int) -> int:
     summ = sum(nums)
@@ -935,6 +983,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/construct-smallest-number-from-di-string/description/
+# Question: 2375. Construct Smallest Number From DI String
 class Solution:
   def smallestNumber(self, pattern: str) -> str:
     ans = []
@@ -955,6 +1004,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/construct-k-palindrome-strings/description/
+# Question: 1400. Construct K Palindrome Strings
 class Solution:
   def canConstruct(self, s: str, k: int) -> bool:
     # If |s| < k, we cannot construct k strings from the s.
@@ -965,6 +1015,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-grid-of-region-average/description/
+# Question: 3030. Find the Grid of Region Average
 class Solution:
   def resultGrid(self, image: List[List[int]], threshold: int) -> List[List[int]]:
     m = len(image)
@@ -1002,6 +1053,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-root-to-leaf-numbers/description/
+# Question: 129. Sum Root to Leaf Numbers
 class Solution:
   def sumNumbers(self, root: Optional[TreeNode]) -> int:
     ans = 0
@@ -1022,6 +1074,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal/description/
+# Question: 2137. Pour Water Between Buckets to Make Water Levels Equal
 class Solution:
   def equalizeWater(self, buckets: List[int], loss: int) -> float:
     kErr = 1e-5
@@ -1050,6 +1103,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/description/
+# Question: 3025. Find the Number of Ways to Place People I
 class Solution:
   def numberOfPairs(self, points: List[List[int]]) -> int:
     ans = 0
@@ -1071,6 +1125,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/construct-string-with-repeat-limit/description/
+# Question: 2182. Construct String With Repeat Limit
 class Solution:
   def repeatLimitedString(self, s: str, repeatLimit: int) -> str:
     ans = ''
@@ -1101,6 +1156,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/description/
+# Question: 2930. Number of Strings Which Can Be Rearranged to Contain Substring
 class Solution:
   def stringCount(self, n: int) -> int:
     # There're three invalid conditions:
@@ -1123,6 +1179,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-substrings-without-repeating-character/description/
+# Question: 2743. Count Substrings Without Repeating Character
 class Solution:
   def numberOfSpecialSubstrings(self, s: str) -> int:
     ans = 0
@@ -1140,6 +1197,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reach-a-number/description/
+# Question: 754. Reach a Number
 class Solution:
   def reachNumber(self, target: int) -> int:
     ans = 0
@@ -1158,6 +1216,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-an-atm-machine/description/
+# Question: 2241. Design an ATM Machine
 class ATM:
   def __init__(self):
     self.banknotes = [20, 50, 100, 200, 500]
@@ -1183,6 +1242,7 @@ class ATM:
 
 
 # Link: https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/
+# Question: 109. Convert Sorted List to Binary Search Tree
 class Solution:
   def sortedListToBST(self, head: ListNode) -> TreeNode:
     def findMid(head: ListNode) -> ListNode:
@@ -1212,6 +1272,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/
+# Question: 109. Convert Sorted List to Binary Search Tree
 class Solution:
   def sortedListToBST(self, head: Optional[ListNode]) -> Optional[TreeNode]:
     A = []
@@ -1236,6 +1297,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/
+# Question: 109. Convert Sorted List to Binary Search Tree
 class Solution:
   def sortedListToBST(self, head: Optional[ListNode]) -> Optional[TreeNode]:
     def helper(l: int, r: int) -> Optional[TreeNode]:
@@ -1271,6 +1333,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+# Question: 3. Longest Substring Without Repeating Characters
 class Solution:
   def lengthOfLongestSubstring(self, s: str) -> int:
     ans = 0
@@ -1288,6 +1351,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+# Question: 3. Longest Substring Without Repeating Characters
 class Solution:
   def lengthOfLongestSubstring(self, s: str) -> int:
     ans = 0
@@ -1306,6 +1370,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/description/
+# Question: 2387. Median of a Row Wise Sorted Matrix
 class Solution:
   def matrixMedian(self, grid: List[List[int]]) -> int:
     noGreaterThanMedianCount = len(grid) * len(grid[0]) // 2 + 1
@@ -1324,6 +1389,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/description/
+# Question: 2311. Longest Binary Subsequence Less Than or Equal to K
 class Solution:
   def longestSubsequence(self, s: str, k: int) -> int:
     oneCount = 0
@@ -1343,6 +1409,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/escape-the-ghosts/description/
+# Question: 789. Escape The Ghosts
 class Solution:
   def escapeGhosts(self, ghosts: List[List[int]], target: List[int]) -> bool:
     ghostSteps = min(abs(x - target[0]) +
@@ -1352,6 +1419,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/nested-list-weight-sum/description/
+# Question: 339. Nested List Weight Sum
 class Solution:
   def depthSum(self, nestedList: List[NestedInteger]) -> int:
     ans = 0
@@ -1377,6 +1445,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/nested-list-weight-sum/description/
+# Question: 339. Nested List Weight Sum
 class Solution:
   def depthSum(self, nestedList: List[NestedInteger]) -> int:
     ans = 0
@@ -1394,6 +1463,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-number-of-beautiful-subsets/description/
+# Question: 2597. The Number of Beautiful Subsets
 # e.g. nums = [2, 3, 4, 4], k = 2
 #
 # subset[0] = [2, 4, 4']
@@ -1447,6 +1517,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/uncrossed-lines/description/
+# Question: 1035. Uncrossed Lines
 class Solution:
   def maxUncrossedLines(self, nums1: List[int], nums2: List[int]) -> int:
     m = len(nums1)
@@ -1463,6 +1534,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/description/
+# Question: 1186. Maximum Subarray Sum with One Deletion
 class Solution:
   # Very similar to 53. Maximum Subarray
   def maximumSum(self, arr: List[int]) -> int:
@@ -1479,6 +1551,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/description/
+# Question: 1186. Maximum Subarray Sum with One Deletion
 class Solution:
   # Very similar to 53. Maximum Subarray
   def maximumSum(self, arr: List[int]) -> int:
@@ -1496,6 +1569,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/
+# Question: 1358. Number of Substrings Containing All Three Characters
 class Solution:
   # Similar to 3. Longest SubWithout Repeating Characters
   def numberOfSubstrings(self, s: str) -> int:
@@ -1512,6 +1586,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/
+# Question: 1358. Number of Substrings Containing All Three Characters
 class Solution:
   # Similar to 3. Longest SubWithout Repeating Characters
   def numberOfSubstrings(self, s: str) -> int:
@@ -1531,6 +1606,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/description/
+# Question: 1846. Maximum Element After Decreasing and Rearranging
 class Solution:
   def maximumElementAfterDecrementingAndRearranging(self, arr: List[int]) -> int:
     arr.sort()
@@ -1543,6 +1619,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-islands/description/
+# Question: 200. Number of Islands
 class Solution:
   def numIslands(self, grid: List[List[str]]) -> int:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -1576,6 +1653,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-islands/description/
+# Question: 200. Number of Islands
 class Solution:
   def numIslands(self, grid: List[List[str]]) -> int:
     m = len(grid)
@@ -1605,6 +1683,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/car-fleet/description/
+# Question: 853. Car Fleet
 class Solution:
   def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
     ans = 0
@@ -1623,6 +1702,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-palindromic-subsequence-ii/description/
+# Question: 1682. Longest Palindromic Subsequence II
 class Solution:
   def longestPalindromeSubseq(self, s: str) -> int:
     n = len(s)
@@ -1643,6 +1723,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-palindromic-subsequence-ii/description/
+# Question: 1682. Longest Palindromic Subsequence II
 class Solution:
   def longestPalindromeSubseq(self, s: str) -> int:
     n = len(s)
@@ -1663,6 +1744,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/detonate-the-maximum-bombs/description/
+# Question: 2101. Detonate the Maximum Bombs
 class Solution:
   def maximumDetonation(self, bombs: List[List[int]]) -> int:
     n = len(bombs)
@@ -1692,6 +1774,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-subtree-of-the-same-color/description/
+# Question: 3004. Maximum Subtree of the Same Color
 class Solution:
   def maximumSubtreeSize(self, edges: List[List[int]], colors: List[int]) -> int:
     ans = 1
@@ -1725,6 +1808,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/description/
+# Question: 1963. Minimum Number of Swaps to Make the String Balanced
 class Solution:
   def minSwaps(self, s: str) -> int:
     # Cancel out all the matched pairs, then we'll be left with ']]]..[[['.
@@ -1741,6 +1825,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-range-ii/description/
+# Question: 910. Smallest Range II
 class Solution:
   def smallestRangeII(self, nums: List[int], k: int) -> int:
     nums.sort()
@@ -1758,6 +1843,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/description/
+# Question: 1190. Reverse Substrings Between Each Pair of Parentheses
 class Solution:
   def reverseParentheses(self, s: str) -> str:
     ans = []
@@ -1786,6 +1872,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/description/
+# Question: 1190. Reverse Substrings Between Each Pair of Parentheses
 class Solution:
   def reverseParentheses(self, s: str) -> str:
     stack = []
@@ -1805,6 +1892,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-subarray/description/
+# Question: 53. Maximum Subarray
 class Solution:
   def maxSubArray(self, nums: List[int]) -> int:
     ans = -math.inf
@@ -1818,6 +1906,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-subarray/description/
+# Question: 53. Maximum Subarray
 from dataclasses import dataclass
 
 
@@ -1854,6 +1943,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-subarray/description/
+# Question: 53. Maximum Subarray
 class Solution:
   def maxSubArray(self, nums: List[int]) -> int:
     # dp[i] := the maximum sum subarray ending in i
@@ -1867,6 +1957,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-an-expression-tree-with-evaluate-function/description/
+# Question: 1628. Design an Expression Tree With Evaluate Function
 from abc import ABC, abstractmethod
 """
 This is the interface for the expression tree Node.
@@ -1923,6 +2014,7 @@ class TreeBuilder(object):
 
 
 # Link: https://leetcode.com/problems/rotate-image/description/
+# Question: 48. Rotate Image
 class Solution:
   def rotate(self, matrix: List[List[int]]) -> None:
     for min in range(len(matrix) // 2):
@@ -1937,6 +2029,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rotate-image/description/
+# Question: 48. Rotate Image
 class Solution:
   def rotate(self, matrix: List[List[int]]) -> None:
     matrix.reverse()
@@ -1947,6 +2040,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/subarray-sums-divisible-by-k/description/
+# Question: 974. Subarray Sums Divisible by K
 class Solution:
   def subarraysDivByK(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -1963,6 +2057,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/path-with-maximum-gold/description/
+# Question: 1219. Path with Maximum Gold
 class Solution:
   def getMaximumGold(self, grid: List[List[int]]) -> int:
     def dfs(i: int, j: int) -> int:
@@ -1984,6 +2079,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-champion-ii/description/
+# Question: 2924. Find Champion II
 class Solution:
   def findChampion(self, n: int, edges: List[List[int]]) -> int:
     inDegrees = [0] * n
@@ -1996,6 +2092,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/apply-operations-to-make-two-strings-equal/description/
+# Question: 2896. Apply Operations to Make Two Strings Equal
 class Solution:
   def minOperations(self, s1: str, s2: str, x: int) -> int:
     diffIndices = [i for i, (a, b) in enumerate(zip(s1, s2))
@@ -2021,6 +2118,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/apply-operations-to-make-two-strings-equal/description/
+# Question: 2896. Apply Operations to Make Two Strings Equal
 class Solution:
   def minOperations(self, s1: str, s2: str, x: int) -> int:
     diffIndices = [i for i, (a, b) in enumerate(zip(s1, s2))
@@ -2048,6 +2146,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/apply-operations-to-make-two-strings-equal/description/
+# Question: 2896. Apply Operations to Make Two Strings Equal
 class Solution:
   def minOperations(self, s1: str, s2: str, x: int) -> int:
     diffIndices = [i for i, (a, b) in enumerate(zip(s1, s2))
@@ -2071,6 +2170,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/description/
+# Question: 1836. Remove Duplicates From an Unsorted Linked List
 class Solution:
   def deleteDuplicatesUnsorted(self, head: ListNode) -> ListNode:
     dummy = ListNode(0, head)
@@ -2092,6 +2192,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-xor-for-each-query/description/
+# Question: 1829. Maximum XOR for Each Query
 class Solution:
   def getMaximumXor(self, nums: List[int], maximumBit: int) -> List[int]:
     max = (1 << maximumBit) - 1
@@ -2106,6 +2207,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/subrectangle-queries/description/
+# Question: 1476. Subrectangle Queries
 class SubrectangleQueries:
   def __init__(self, rectangle: List[List[int]]):
     self.rectangle = rectangle
@@ -2122,6 +2224,7 @@ class SubrectangleQueries:
 
 
 # Link: https://leetcode.com/problems/subsets/description/
+# Question: 78. Subsets
 class Solution:
   def subsets(self, nums: List[int]) -> List[List[int]]:
     ans = []
@@ -2137,6 +2240,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/apply-discount-to-prices/description/
+# Question: 2288. Apply Discount to Prices
 class Solution:
   def discountPrices(self, sentence: str, discount: int) -> str:
     kPrecision = 2
@@ -2159,6 +2263,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rearrange-array-elements-by-sign/description/
+# Question: 2149. Rearrange Array Elements by Sign
 class Solution:
   def rearrangeArray(self, nums: List[int]) -> List[int]:
     ans = []
@@ -2175,6 +2280,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-good-ways-to-split-a-string/description/
+# Question: 1525. Number of Good Ways to Split a String
 class Solution:
   def numSplits(self, s: str) -> int:
     n = len(s)
@@ -2201,6 +2307,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/description/
+# Question: 1780. Check if Number is a Sum of Powers of Three
 class Solution:
   def checkPowersOfThree(self, n: int) -> bool:
     while n > 1:
@@ -2211,6 +2318,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/decode-ways/description/
+# Question: 91. Decode Ways
 class Solution:
   def numDecodings(self, s: str) -> int:
     n = len(s)
@@ -2235,6 +2343,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/friends-of-appropriate-ages/description/
+# Question: 825. Friends Of Appropriate Ages
 class Solution:
   def numFriendRequests(self, ages: List[int]) -> int:
     ans = 0
@@ -2254,6 +2363,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-common-subsequence/description/
+# Question: 1143. Longest Common Subsequence
 class Solution:
   def longestCommonSubsequence(self, text1: str, text2: str) -> int:
     m = len(text1)
@@ -2271,6 +2381,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/
+# Question: 2130. Maximum Twin Sum of a Linked List
 class Solution:
   def pairSum(self, head: Optional[ListNode]) -> int:
     def reverseList(head: ListNode) -> ListNode:
@@ -2303,6 +2414,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-twitter/description/
+# Question: 355. Design Twitter
 class Twitter:
   def __init__(self):
     self.timer = itertools.count(step=-1)
@@ -2327,6 +2439,7 @@ class Twitter:
 
 
 # Link: https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/description/
+# Question: 1457. Pseudo-Palindromic Paths in a Binary Tree
 class Solution:
   def pseudoPalindromicPaths(self, root: Optional[TreeNode]) -> int:
     ans = 0
@@ -2349,6 +2462,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/description/
+# Question: 2513. Minimize the Maximum of Two Arrays
 class Solution:
   def minimizeSet(self, divisor1: int, divisor2: int, uniqueCnt1: int, uniqueCnt2: int) -> int:
     divisorLcm = math.lcm(divisor1, divisor2)
@@ -2375,6 +2489,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/fraction-to-recurring-decimal/description/
+# Question: 166. Fraction to Recurring Decimal
 class Solution:
   def fractionToDecimal(self, numerator: int, denominator: int) -> str:
     if numerator == 0:
@@ -2409,6 +2524,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/optimal-partition-of-string/description/
+# Question: 2405. Optimal Partition of String
 class Solution:
   def partitionString(self, s: str) -> int:
     ans = 1
@@ -2426,6 +2542,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/distribute-candies-among-children-ii/description/
+# Question: 2929. Distribute Candies Among Children II
 class Solution:
   def distributeCandies(self, n: int, limit: int) -> int:
     def ways(n: int) -> int:
@@ -2449,6 +2566,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/description/
+# Question: 2521. Distinct Prime Factors of Product of Array
 class Solution:
   def distinctPrimeFactors(self, nums: List[int]) -> int:
     primes = set()
@@ -2467,6 +2585,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/single-number-iii/description/
+# Question: 260. Single Number III
 class Solution:
   def singleNumber(self, nums: List[int]) -> List[int]:
     xors = functools.reduce(operator.xor, nums)
@@ -2484,6 +2603,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-pairs-in-two-arrays/description/
+# Question: 1885. Count Pairs in Two Arrays
 class Solution:
   def countPairs(self, nums1: List[int], nums2: List[int]) -> int:
     ans = 0
@@ -2497,6 +2617,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/
+# Question: 2807. Insert Greatest Common Divisors in Linked List
 class Solution:
   def insertGreatestCommonDivisors(self, head: Optional[ListNode]) -> Optional[ListNode]:
     curr = head
@@ -2508,12 +2629,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-the-students-by-their-kth-score/description/
+# Question: 2545. Sort the Students by Their Kth Score
 class Solution:
   def sortTheStudents(self, score: List[List[int]], k: int) -> List[List[int]]:
     return sorted(score, key=lambda a: -a[k])
 
 
 # Link: https://leetcode.com/problems/beautiful-array/description/
+# Question: 932. Beautiful Array
 class Solution:
   def beautifulArray(self, n: int) -> List[int]:
     A = [i for i in range(1, n + 1)]
@@ -2538,6 +2661,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/description/
+# Question: 2482. Difference Between Ones and Zeros in Row and Column
 class Solution:
   def onesMinusZeros(self, grid: List[List[int]]) -> List[List[int]]:
     m = len(grid)
@@ -2555,6 +2679,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/balance-a-binary-search-tree/description/
+# Question: 1382. Balance a Binary Search Tree
 class Solution:
   def balanceBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
     nums = []
@@ -2581,6 +2706,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-servers-that-communicate/description/
+# Question: 1267. Count Servers that Communicate
 class Solution:
   def countServers(self, grid: List[List[int]]) -> int:
     m = len(grid)
@@ -2604,6 +2730,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/basic-calculator-ii/description/
+# Question: 227. Basic Calculator II
 class Solution:
   def calculate(self, s: str) -> int:
     ans = 0
@@ -2632,6 +2759,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/basic-calculator-ii/description/
+# Question: 227. Basic Calculator II
 class Solution:
   def calculate(self, s: str) -> int:
     ans = 0
@@ -2657,6 +2785,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/process-tasks-using-servers/description/
+# Question: 1882. Process Tasks Using Servers
 class Solution:
   def assignTasks(self, servers: List[int], tasks: List[int]) -> List[int]:
     ans = []
@@ -2684,6 +2813,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/mirror-reflection/description/
+# Question: 858. Mirror Reflection
 class Solution:
   def mirrorReflection(self, p: int, q: int) -> int:
     while p % 2 == 0 and q % 2 == 0:
@@ -2698,6 +2828,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-substrings-with-fixed-ratio/description/
+# Question: 2489. Number of Substrings With Fixed Ratio
 class Solution:
   def fixedRatio(self, s: str, num1: int, num2: int) -> int:
     # Let x := the number of 0s and y := the number of 1s in the subarray.
@@ -2722,6 +2853,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/description/
+# Question: 2116. Check if a Parentheses String Can Be Valid
 class Solution:
   def canBeValid(self, s: str, locked: str) -> bool:
     if len(s) & 1:
@@ -2750,6 +2882,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/parallel-courses/description/
+# Question: 1136. Parallel Courses
 from enum import Enum
 
 
@@ -2789,6 +2922,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/parallel-courses/description/
+# Question: 1136. Parallel Courses
 class Solution:
   def minimumSemesters(self, n: int, relations: List[List[int]]) -> int:
     ans = 0
@@ -2817,6 +2951,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/description/
+# Question: 1016. Binary String With Substrings Representing 1 To N
 class Solution:
   def queryString(self, s: str, n: int) -> bool:
     if n > 1511:
@@ -2830,6 +2965,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/integer-replacement/description/
+# Question: 397. Integer Replacement
 class Solution:
   def integerReplacement(self, n: int) -> int:
     ans = 0
@@ -2847,6 +2983,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/description/
+# Question: 2001. Number of Pairs of Interchangeable Rectangles
 class Solution:
   def interchangeableRectangles(self, rectangles: List[List[int]]) -> int:
     ratioCount = collections.Counter()
@@ -2862,6 +2999,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/description/
+# Question: 2001. Number of Pairs of Interchangeable Rectangles
 class Solution:
   def interchangeableRectangles(self, rectangles: List[List[int]]) -> int:
     ratioCount = collections.Counter()
@@ -2873,6 +3011,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/description/
+# Question: 3066. Minimum Operations to Exceed Threshold Value II
 class Solution:
   def minOperations(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -2889,6 +3028,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-list/description/
+# Question: 148. Sort List
 class Solution:
   def sortList(self, head: ListNode) -> ListNode:
     def split(head: ListNode, k: int) -> ListNode:
@@ -2941,6 +3081,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shopping-offers/description/
+# Question: 638. Shopping Offers
 class Solution:
   def shoppingOffers(self, price: List[int], special: List[List[int]], needs: List[int]) -> int:
     def dfs(s: int) -> int:
@@ -2965,6 +3106,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-coins-heroes-can-collect/description/
+# Question: 2838. Maximum Coins Heroes Can Collect
 class Solution:
   def maximumCoins(self, heroes: List[int], monsters: List[int], coins: List[int]) -> List[int]:
     monsterAndCoins = sorted(list(zip(monsters, coins)))
@@ -2984,6 +3126,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rectangle-area/description/
+# Question: 223. Rectangle Area
 class Solution:
   def computeArea(self, A: int, B: int, C: int, D: int, E: int, F: int, G: int, H: int) -> int:
     x = min(C, G) - max(A, E) if max(A, E) < min(C, G) else 0
@@ -2992,6 +3135,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/powerful-integers/description/
+# Question: 970. Powerful Integers
 class Solution:
   def powerfulIntegers(self, x: int, y: int, bound: int) -> List[int]:
     xs = {x**i for i in range(20) if x**i < bound}
@@ -3000,6 +3144,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/course-schedule-iv/description/
+# Question: 1462. Course Schedule IV
 class Solution:
   def checkIfPrerequisite(self, numCourses: int, prerequisites: List[List[int]], queries: List[List[int]]) -> List[bool]:
     ans = []
@@ -3019,6 +3164,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/course-schedule-iv/description/
+# Question: 1462. Course Schedule IV
 class Solution:
   def checkIfPrerequisite(self, numCourses: int, prerequisites: List[List[int]], queries: List[List[int]]) -> List[bool]:
     graph = [[] for _ in range(numCourses)]
@@ -3043,6 +3189,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/statistics-from-a-large-sample/description/
+# Question: 1093. Statistics from a Large Sample
 class Solution:
   def sampleStats(self, count: List[int]) -> List[float]:
     minimum = next((i for i, num in enumerate(count) if num), None)
@@ -3072,6 +3219,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minesweeper/description/
+# Question: 529. Minesweeper
 class Solution:
   def updateBoard(self, board: List[List[str]], click: List[int]) -> List[List[str]]:
     i, j = click
@@ -3111,6 +3259,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/description/
+# Question: 2279. Maximum Bags With Full Capacity of Rocks
 class Solution:
   def maximumBags(self, capacity: List[int], rocks: List[int], additionalRocks: int) -> int:
     for i, d in enumerate(sorted([c - r for c, r in zip(capacity, rocks)])):
@@ -3121,6 +3270,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/description/
+# Question: 2083. Substrings That Begin and End With the Same Letter
 class Solution:
   def numberOfSubstrings(self, s: str) -> int:
     ans = 0
@@ -3134,6 +3284,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-if-array-can-be-sorted/description/
+# Question: 3011. Find if Array Can Be Sorted
 class Solution:
   def canSortArray(self, nums: List[int]) -> int:
     # Divide the array into distinct segments where each segment is comprised
@@ -3162,6 +3313,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/description/
+# Question: 1567. Maximum Length of Subarray With Positive Product
 class Solution:
   def getMaxLen(self, nums: List[int]) -> int:
     ans = 0
@@ -3181,6 +3333,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
+# Question: 167. Two Sum II - Input Array Is Sorted
 class Solution:
   def twoSum(self, numbers: List[int], target: int) -> List[int]:
     l = 0
@@ -3197,6 +3350,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximal-score-after-applying-k-operations/description/
+# Question: 2530. Maximal Score After Applying K Operations
 class Solution:
   def maxKelements(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -3212,6 +3366,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-subsequence-score/description/
+# Question: 2542. Maximum Subsequence Score
 class Solution:
   # Same as 1383. Maximum Performance of a Team
   def maxScore(self, nums1: List[int], nums2: List[int], k: int) -> int:
@@ -3234,6 +3389,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/can-make-palindrome-from-substring/description/
+# Question: 1177. Can Make Palindrome from Substring
 class Solution:
   def canMakePaliQueries(self, s: str, queries: List[List[int]]) -> List[bool]:
     def ones(x):
@@ -3251,6 +3407,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reorganize-string/description/
+# Question: 767. Reorganize String
 class Solution:
   def reorganizeString(self, s: str) -> str:
     count = collections.Counter(s)
@@ -3278,6 +3435,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reorganize-string/description/
+# Question: 767. Reorganize String
 class Solution:
   def reorganizeString(self, s: str) -> str:
     n = len(s)
@@ -3307,6 +3465,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/recover-binary-search-tree/description/
+# Question: 99. Recover Binary Search Tree
 class Solution:
   def recoverTree(self, root: Optional[TreeNode]) -> None:
     def swap(x: Optional[TreeNode], y: Optional[TreeNode]) -> None:
@@ -3339,6 +3498,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/recover-binary-search-tree/description/
+# Question: 99. Recover Binary Search Tree
 class Solution:
   def recoverTree(self, root: Optional[TreeNode]) -> None:
     pred = None
@@ -3387,6 +3547,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/recover-binary-search-tree/description/
+# Question: 99. Recover Binary Search Tree
 class Solution:
   def recoverTree(self, root: Optional[TreeNode]) -> None:
     pred = None
@@ -3415,6 +3576,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-comments/description/
+# Question: 722. Remove Comments
 class Solution:
   def removeComments(self, source: List[str]) -> List[str]:
     ans = []
@@ -3453,6 +3615,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reverse-linked-list-ii/description/
+# Question: 92. Reverse Linked List II
 class Solution:
   def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
     if left == 1:
@@ -3473,6 +3636,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reverse-linked-list-ii/description/
+# Question: 92. Reverse Linked List II
 class Solution:
   def reverseBetween(self, head: ListNode, m: int, n: int) -> ListNode:
     if not head and m == n:
@@ -3497,6 +3661,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/replace-words/description/
+# Question: 648. Replace Words
 class Solution:
   def __init__(self):
     self.root = {}
@@ -3528,6 +3693,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/broken-calculator/description/
+# Question: 991. Broken Calculator
 class Solution:
   def brokenCalc(self, X: int, Y: int) -> int:
     ops = 0
@@ -3543,6 +3709,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/description/
+# Question: 2576. Find the Maximum Number of Marked Indices
 class Solution:
   def maxNumOfMarkedIndices(self, nums: List[int]) -> int:
     nums.sort()
@@ -3559,6 +3726,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/description/
+# Question: 2576. Find the Maximum Number of Marked Indices
 class Solution:
   def maxNumOfMarkedIndices(self, nums: List[int]) -> int:
     nums.sort()
@@ -3574,6 +3742,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-subarrays-with-sum/description/
+# Question: 930. Binary Subarrays With Sum
 class Solution:
   def numSubarraysWithSum(self, nums: List[int], goal: int) -> int:
     def numSubarraysWithSumAtMost(goal: int) -> int:
@@ -3597,6 +3766,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-subarrays-with-sum/description/
+# Question: 930. Binary Subarrays With Sum
 class Solution:
   def numSubarraysWithSum(self, nums: List[int], goal: int) -> int:
     ans = 0
@@ -3613,6 +3783,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-divisible-triplet-sums/description/
+# Question: 2964. Number of Divisible Triplet Sums
 class Solution:
   # Similar to 1995. Count Special Quadruplets
   def divisibleTripletCount(self, nums: List[int], d: int) -> int:
@@ -3628,6 +3799,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/delete-node-in-a-bst/description/
+# Question: 450. Delete Node in a BST
 class Solution:
   def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
     if not root:
@@ -3655,6 +3827,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-number-with-given-digit-product/description/
+# Question: 2847. Smallest Number With Given Digit Product
 class Solution:
   def smallestNumber(self, n: int) -> str:
     if n <= 9:
@@ -3671,12 +3844,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/neighboring-bitwise-xor/description/
+# Question: 2683. Neighboring Bitwise XOR
 class Solution:
   def doesValidArrayExist(self, derived: List[int]) -> bool:
     return functools.reduce(operator.xor, derived) == 0
 
 
 # Link: https://leetcode.com/problems/filling-bookcase-shelves/description/
+# Question: 1105. Filling Bookcase Shelves
 class Solution:
   def minHeightShelves(self, books: List[List[int]], shelfWidth: int) -> int:
     # dp[i] := the minimum height to place the first i books
@@ -3698,6 +3873,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-product-subarray/description/
+# Question: 152. Maximum Product Subarray
 class Solution:
   def maxProduct(self, nums: List[int]) -> int:
     ans = nums[0]
@@ -3721,6 +3897,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-all-good-indices/description/
+# Question: 2420. Find All Good Indices
 class Solution:
   # Same as 2100. Find Good Days to Rob the Bank
   def goodIndices(self, nums: List[int], k: int) -> List[int]:
@@ -3741,6 +3918,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-number-after-mutating-substring/description/
+# Question: 1946. Largest Number After Mutating Substring
 class Solution:
   def maximumNumber(self, num: str, change: List[int]) -> str:
     numList = list(num)
@@ -3758,6 +3936,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/description/
+# Question: 1415. The k-th Lexicographical String of All Happy Strings of Length n
 class Solution:
   def getHappyString(self, n: int, k: int) -> str:
     nextLetters = {'a': 'bc', 'b': 'ac', 'c': 'ab'}
@@ -3772,6 +3951,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-path-sum/description/
+# Question: 64. Minimum Path Sum
 class Solution:
   def minPathSum(self, grid: List[List[int]]) -> int:
     m = len(grid)
@@ -3790,6 +3970,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-alternating-subarray-sum/description/
+# Question: 2036. Maximum Alternating Subarray Sum
 class Solution:
   def maximumAlternatingSubarraySum(self, nums: List[int]) -> int:
     ans = -math.inf
@@ -3814,6 +3995,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/description/
+# Question: 2422. Merge Operations to Turn Array Into a Palindrome
 class Solution:
   def minimumOperations(self, nums: List[int]) -> int:
     ans = 0
@@ -3841,6 +4023,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/description/
+# Question: 2787. Ways to Express an Integer as Sum of Powers
 class Solution:
   def numberOfWays(self, n: int, x: int) -> int:
     kMod = 1_000_000_007
@@ -3859,6 +4042,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/description/
+# Question: 1171. Remove Zero Sum Consecutive Nodes from Linked List
 class Solution:
   def removeZeroSumSublists(self, head: ListNode) -> ListNode:
     dummy = ListNode(0, head)
@@ -3882,6 +4066,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-tree-pruning/description/
+# Question: 814. Binary Tree Pruning
 class Solution:
   def pruneTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
     if not root:
@@ -3894,6 +4079,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/camelcase-matching/description/
+# Question: 1023. Camelcase Matching
 class Solution:
   def camelMatch(self, queries: List[str], pattern: str) -> List[bool]:
     def isMatch(query: str) -> bool:
@@ -3909,6 +4095,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/clumsy-factorial/description/
+# Question: 1006. Clumsy Factorial
 class Solution:
   def clumsy(self, n: int) -> int:
     if n == 1:
@@ -3929,6 +4116,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/
+# Question: 3048. Earliest Second to Mark Indices I
 class Solution:
   def earliestSecondToMarkIndices(self, nums: List[int], changeIndices: List[int]) -> int:
     def canMark(second: int) -> bool:
@@ -3963,6 +4151,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-jumps-to-reach-home/description/
+# Question: 1654. Minimum Jumps to Reach Home
 from enum import Enum
 
 
@@ -4001,6 +4190,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/previous-permutation-with-one-swap/description/
+# Question: 1053. Previous Permutation With One Swap
 class Solution:
   def prevPermOpt1(self, arr: List[int]) -> List[int]:
     n = len(arr)
@@ -4019,6 +4209,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/gas-station/description/
+# Question: 134. Gas Station
 class Solution:
   def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
     ans = 0
@@ -4037,6 +4228,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/description/
+# Question: 1942. The Number of the Smallest Unoccupied Chair
 class Solution:
   def smallestChair(self, times: List[List[int]], targetFriend: int) -> int:
     nextUnsatChair = 0
@@ -4063,6 +4255,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/ip-to-cidr/description/
+# Question: 751. IP to CIDR
 class Solution:
   def ipToCIDR(self, ip: str, n: int) -> List[str]:
     ans = []
@@ -4115,6 +4308,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/flower-planting-with-no-adjacent/description/
+# Question: 1042. Flower Planting With No Adjacent
 class Solution:
   def gardenNoAdj(self, n: int, paths: List[List[int]]) -> List[int]:
     ans = [0] * n  # ans[i] := 1, 2, 3, or 4
@@ -4139,6 +4333,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/task-scheduler-ii/description/
+# Question: 2365. Task Scheduler II
 class Solution:
   def taskSchedulerII(self, tasks: List[int], space: int) -> int:
     taskToNextAvailable = collections.defaultdict(int)
@@ -4152,6 +4347,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-peak-element/description/
+# Question: 162. Find Peak Element
 class Solution:
   def findPeakElement(self, nums: List[int]) -> int:
     l = 0
@@ -4168,6 +4364,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/generate-random-point-in-a-circle/description/
+# Question: 478. Generate Random Point in a Circle
 class Solution:
   def __init__(self, radius: float, x_center: float, y_center: float):
     self.radius = radius
@@ -4183,6 +4380,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/description/
+# Question: 1111. Maximum Nesting Depth of Two Valid Parentheses Strings
 class Solution:
   def maxDepthAfterSplit(self, seq: str) -> List[int]:
     ans = []
@@ -4201,6 +4399,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-binary-tree/description/
+# Question: 654. Maximum Binary Tree
 class Solution:
   def constructMaximumBinaryTree(self, nums: List[int]) -> Optional[TreeNode]:
     def build(i: int, j: int) -> Optional[TreeNode]:
@@ -4219,6 +4418,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sender-with-largest-word-count/description/
+# Question: 2284. Sender With Largest Word Count
 class Solution:
   def largestWordCount(self, messages: List[str], senders: List[str]) -> str:
     n = len(messages)
@@ -4240,6 +4440,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/description/
+# Question: 2358. Maximum Number of Groups Entering a Competition
 class Solution:
   def maximumGroups(self, grades: List[int]) -> int:
     # Sort grades, then we can seperate the students into groups of sizes 1, 2,
@@ -4257,6 +4458,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-to-convert-string-i/description/
+# Question: 2976. Minimum Cost to Convert String I
 class Solution:
   def minimumCost(self, source: str, target: str, original: List[str], changed: List[str], cost: List[int]) -> int:
     ans = 0
@@ -4288,6 +4490,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-bitset/description/
+# Question: 2166. Design Bitset
 class Bitset:
   def __init__(self, size: int):
     self.s = ['0'] * size  # the original
@@ -4324,6 +4527,7 @@ class Bitset:
 
 
 # Link: https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/description/
+# Question: 3047. Find the Largest Area of Square Inside Two Rectangles
 class Solution:
   def largestSquareArea(self, bottomLeft: List[List[int]], topRight: List[List[int]]) -> int:
     minSide = 0
@@ -4337,6 +4541,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/masking-personal-information/description/
+# Question: 831. Masking Personal Information
 class Solution:
   def maskPII(self, s: str) -> str:
     atIndex = s.find('@')
@@ -4352,6 +4557,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/k-diff-pairs-in-an-array/description/
+# Question: 532. K-diff Pairs in an Array
 class Solution:
   def findPairs(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -4367,6 +4573,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/cutting-ribbons/description/
+# Question: 1891. Cutting Ribbons
 class Solution:
   def maxLength(self, ribbons: List[int], k: int) -> int:
     def isCutPossible(length: int) -> bool:
@@ -4389,6 +4596,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/watering-plants-ii/description/
+# Question: 2105. Watering Plants II
 class Solution:
   def minimumRefill(self, plants: List[int], capacityA: int, capacityB: int) -> int:
     ans = 0
@@ -4412,6 +4620,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description/
+# Question: 2125. Number of Laser Beams in a Bank
 class Solution:
   def numberOfBeams(self, bank: List[str]) -> int:
     ans = 0
@@ -4427,6 +4636,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/brick-wall/description/
+# Question: 554. Brick Wall
 class Solution:
   def leastBricks(self, wall: List[List[int]]) -> int:
     maxFreq = 0
@@ -4443,6 +4653,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/arithmetic-slices/description/
+# Question: 413. Arithmetic Slices
 class Solution:
   def numberOfArithmeticSlices(self, nums: List[int]) -> int:
     ans = 0
@@ -4459,6 +4670,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/arithmetic-slices/description/
+# Question: 413. Arithmetic Slices
 class Solution:
   def numberOfArithmeticSlices(self, nums: List[int]) -> int:
     n = len(nums)
@@ -4475,6 +4687,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimize-rounding-error-to-meet-target/description/
+# Question: 1058. Minimize Rounding Error to Meet Target
 class Solution:
   def minimizeError(self, prices: List[str], target: int) -> str:
     # A[i] := (costCeil - costFloor, costCeil, costFloor)
@@ -4502,6 +4715,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/description/
+# Question: 1855. Maximum Distance Between a Pair of Values
 class Solution:
   def maxDistance(self, nums1: List[int], nums2: List[int]) -> int:
     ans = 0
@@ -4519,6 +4733,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/description/
+# Question: 1855. Maximum Distance Between a Pair of Values
 class Solution:
   def maxDistance(self, nums1: List[int], nums2: List[int]) -> int:
     i = 0
@@ -4533,6 +4748,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-vowel-strings-in-ranges/description/
+# Question: 2559. Count Vowel Strings in Ranges
 class Solution:
   def vowelStrings(self, words: List[str], queries: List[List[int]]) -> List[int]:
     kVowels = 'aeiou'
@@ -4547,6 +4763,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves/description/
+# Question: 2202. Maximize the Topmost Element After K Moves
 class Solution:
   def maximumTop(self, nums: List[int], k: int) -> int:
     n = len(nums)
@@ -4565,6 +4782,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/odd-even-linked-list/description/
+# Question: 328. Odd Even Linked List
 class Solution:
   def oddEvenList(self, head: ListNode) -> ListNode:
     oddHead = ListNode(0)
@@ -4589,6 +4807,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/description/
+# Question: 1864. Minimum Number of Swaps to Make the Binary String Alternating
 class Solution:
   def minSwaps(self, s: str) -> int:
     ones = s.count('1')
@@ -4612,6 +4831,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/non-overlapping-intervals/description/
+# Question: 435. Non-overlapping Intervals
 class Solution:
   def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
     ans = 0
@@ -4627,6 +4847,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/description/
+# Question: 1333. Filter Restaurants by Vegan-Friendly, Price and Distance
 class Solution:
   def filterRestaurants(self, restaurants: List[List[int]], veganFriendly: int, maxPrice: int, maxDistance: int) -> List[int]:
     restaurants.sort(key=lambda r: (-r[1], -r[0]))
@@ -4634,6 +4855,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/print-words-vertically/description/
+# Question: 1324. Print Words Vertically
 class Solution:
   def printVertically(self, s: str) -> List[str]:
     ans = []
@@ -4650,6 +4872,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/description/
+# Question: 1647. Minimum Deletions to Make Character Frequencies Unique
 class Solution:
   def minDeletions(self, s: str) -> int:
     ans = 0
@@ -4666,6 +4889,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-all-occurrences-of-a-substring/description/
+# Question: 1910. Remove All Occurrences of a Substring
 class Solution:
   def removeOccurrences(self, s: str, part: str) -> str:
     n = len(s)
@@ -4684,6 +4908,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/spiral-matrix-iv/description/
+# Question: 2326. Spiral Matrix IV
 class Solution:
   def spiralMatrix(self, m: int, n: int, head: Optional[ListNode]) -> List[List[int]]:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -4706,6 +4931,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/description/
+# Question: 1218. Longest Arithmetic Subsequence of Given Difference
 class Solution:
   def longestSubsequence(self, arr: List[int], difference: int) -> int:
     ans = 0
@@ -4719,6 +4945,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/permutations/description/
+# Question: 46. Permutations
 class Solution:
   def permute(self, nums: List[int]) -> List[List[int]]:
     ans = []
@@ -4743,6 +4970,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sell-diminishing-valued-colored-balls/description/
+# Question: 1648. Sell Diminishing-Valued Colored Balls
 class Solution:
   def maxProfit(self, inventory: List[int], orders: int) -> int:
     kMod = 1_000_000_007
@@ -4771,12 +4999,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-value-of-the-partition/description/
+# Question: 2740. Find the Value of the Partition
 class Solution:
   def findValueOfPartition(self, nums: List[int]) -> int:
     return min(b - a for a, b in itertools.pairwise(sorted(nums)))
 
 
 # Link: https://leetcode.com/problems/cheapest-flights-within-k-stops/description/
+# Question: 787. Cheapest Flights Within K Stops
 class Solution:
   def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
     graph = [[] for _ in range(n)]
@@ -4807,6 +5037,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-string-with-swaps/description/
+# Question: 1202. Smallest String With Swaps
 class UnionFind:
   def __init__(self, n: int):
     self.id = list(range(n))
@@ -4853,6 +5084,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-missing-observations/description/
+# Question: 2028. Find Missing Observations
 class Solution:
   def missingRolls(self, rolls: List[int], mean: int, n: int) -> List[int]:
     targetSum = (len(rolls) + n) * mean
@@ -4868,6 +5100,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/can-convert-string-in-k-moves/description/
+# Question: 1540. Can Convert String in K Moves
 class Solution:
   def canConvertString(self, s: str, t: str, k: int) -> bool:
     if len(s) != len(t):
@@ -4890,6 +5123,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/can-convert-string-in-k-moves/description/
+# Question: 1540. Can Convert String in K Moves
 class Solution:
   def canConvertString(self, s: str, t: str, k: int) -> bool:
     if len(s) != len(t):
@@ -4913,6 +5147,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/visit-array-positions-to-maximize-score/description/
+# Question: 2786. Visit Array Positions to Maximize Score
 class Solution:
   def maxScore(self, nums: List[int], x: int) -> int:
     # Note that we always need to take nums[0], so the initial definition might
@@ -4933,6 +5168,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/closest-divisors/description/
+# Question: 1362. Closest Divisors
 class Solution:
   def closestDivisors(self, num: int) -> List[int]:
     for root in reversed(range(int(sqrt(num + 2)) + 1)):
@@ -4942,6 +5178,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-size-subarray-sum/description/
+# Question: 209. Minimum Size Subarray Sum
 class Solution:
   def minSubArrayLen(self, s: int, nums: List[int]) -> int:
     ans = math.inf
@@ -4959,6 +5196,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/description/
+# Question: 1986. Minimum Number of Work Sessions to Finish the Tasks
 class Solution:
   def minSessions(self, tasks: List[int], sessionTime: int) -> int:
     # Returns True if we can assign tasks[s..n) to `sessions`. Note that `sessions`
@@ -4990,6 +5228,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/finding-the-number-of-visible-mountains/description/
+# Question: 2345. Finding the Number of Visible Mountains
 class Solution:
   def visibleMountains(self, peaks: List[List[int]]) -> int:
     count = collections.Counter((x, y) for x, y in peaks)
@@ -5013,6 +5252,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-subarray-minimums/description/
+# Question: 907. Sum of Subarray Minimums
 class Solution:
   def sumSubarrayMins(self, arr: List[int]) -> int:
     kMod = 1_000_000_007
@@ -5040,6 +5280,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-phone-directory/description/
+# Question: 379. Design Phone Directory
 class PhoneDirectory:
   def __init__(self, maxNumbers: int):
     # the next available numbers
@@ -5066,6 +5307,7 @@ class PhoneDirectory:
 
 
 # Link: https://leetcode.com/problems/word-subsets/description/
+# Question: 916. Word Subsets
 class Solution:
   def wordSubsets(self, A: List[str], B: List[str]) -> List[str]:
     count = collections.Counter()
@@ -5077,6 +5319,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/cousins-in-binary-tree-ii/description/
+# Question: 2641. Cousins in Binary Tree II
 class Solution:
   def replaceValueInTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
     levelSums = []
@@ -5108,6 +5351,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/
+# Question: 430. Flatten a Multilevel Doubly Linked List
 class Solution:
   def flatten(self, head: 'Node') -> 'Node':
     def flatten(head: 'Node', rest: 'Node') -> 'Node':
@@ -5124,6 +5368,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/
+# Question: 430. Flatten a Multilevel Doubly Linked List
 class Solution:
   def flatten(self, head: 'Node') -> 'Node':
     curr = head
@@ -5146,6 +5391,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/destroying-asteroids/description/
+# Question: 2126. Destroying Asteroids
 class Solution:
   def asteroidsDestroyed(self, mass: int, asteroids: List[int]) -> bool:
     for asteroid in sorted(asteroids):
@@ -5157,6 +5403,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/synonymous-sentences/description/
+# Question: 1258. Synonymous Sentences
 from sortedcontainers import SortedSet
 
 
@@ -5186,6 +5433,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-palindromic-subsequence/description/
+# Question: 516. Longest Palindromic Subsequence
 class Solution:
   def longestPalindromeSubseq(self, s: str) -> int:
     n = len(s)
@@ -5207,6 +5455,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-palindromic-subsequence/description/
+# Question: 516. Longest Palindromic Subsequence
 class Solution:
   def longestPalindromeSubseq(self, s: str) -> int:
     @functools.lru_cache(None)
@@ -5224,6 +5473,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-equal-numbers-blocks/description/
+# Question: 2936. Number of Equal Numbers Blocks
 # Definition for BigArray.
 # class BigArray:
 #   def at(self, index: long) -> int:
@@ -5249,6 +5499,7 @@ class Solution(object):
 
 
 # Link: https://leetcode.com/problems/bulls-and-cows/description/
+# Question: 299. Bulls and Cows
 class Solution:
   def getHint(self, secret: str, guess: str) -> str:
     bulls = sum(map(operator.eq, secret, guess))
@@ -5257,6 +5508,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/description/
+# Question: 1877. Minimize Maximum Pair Sum in Array
 class Solution:
   def minPairSum(self, nums: List[int]) -> int:
     nums.sort()
@@ -5264,6 +5516,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/flatten-2d-vector/description/
+# Question: 251. Flatten 2D Vector
 class Vector2D:
   def __init__(self, vec: List[List[int]]):
     self.vec = []
@@ -5282,6 +5535,7 @@ class Vector2D:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-maximize-last-elements-in-arrays/description/
+# Question: 2934. Minimum Operations to Maximize Last Elements in Arrays
 class Solution:
   def minOperations(self, nums1: List[int], nums2: List[int]) -> int:
     n = len(nums1)
@@ -5308,6 +5562,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-distance-in-a-binary-tree/description/
+# Question: 1740. Find Distance in a Binary Tree
 class Solution:
   def findDistance(self, root: TreeNode, p: int, q: int) -> int:
     def getLCA(root, p, q):
@@ -5333,6 +5588,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/description/
+# Question: 2134. Minimum Swaps to Group All 1's Together II
 class Solution:
   def minSwaps(self, nums: List[int]) -> int:
     n = len(nums)
@@ -5351,6 +5607,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/max-chunks-to-make-sorted/description/
+# Question: 769. Max Chunks To Make Sorted
 class Solution:
   def maxChunksToSorted(self, arr: List[int]) -> int:
     ans = 0
@@ -5365,6 +5622,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/top-k-frequent-words/description/
+# Question: 692. Top K Frequent Words
 class T:
   def __init__(self, word: str, freq: int):
     self.word = word
@@ -5396,6 +5654,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/top-k-frequent-words/description/
+# Question: 692. Top K Frequent Words
 class Solution:
   def topKFrequent(self, words: List[str], k: int) -> List[str]:
     ans = []
@@ -5412,6 +5671,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/pancake-sorting/description/
+# Question: 969. Pancake Sorting
 class Solution:
   def pancakeSort(self, arr: List[int]) -> List[int]:
     ans = []
@@ -5427,6 +5687,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/
+# Question: 1456. Maximum Number of Vowels in a Substring of Given Length
 class Solution:
   def maxVowels(self, s: str, k: int) -> int:
     ans = 0
@@ -5444,6 +5705,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/description/
+# Question: 3016. Minimum Number of Pushes to Type Word II
 class Solution:
   # Same as 3014. Minimum Number of Pushes to Type Word I
   def minimumPushes(self, word: str) -> int:
@@ -5452,6 +5714,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/description/
+# Question: 2294. Partition Array Such That Maximum Difference Is K
 class Solution:
   def partitionArray(self, nums: List[int], k: int) -> int:
     nums.sort()
@@ -5468,6 +5731,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-good-numbers/description/
+# Question: 1922. Count Good Numbers
 class Solution:
   def countGoodNumbers(self, n: int) -> int:
     kMod = 1_000_000_007
@@ -5483,6 +5747,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/arithmetic-subarrays/description/
+# Question: 1630. Arithmetic Subarrays
 class Solution:
   def checkArithmeticSubarrays(self, nums: List[int], l: List[int], r: List[int]) -> List[bool]:
     return [self._isArithmetic(nums, a, b) for a, b in zip(l, r)]
@@ -5509,6 +5774,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-tree-level-order-traversal/description/
+# Question: 102. Binary Tree Level Order Traversal
 class Solution:
   def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
     if not root:
@@ -5532,6 +5798,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/description/
+# Question: 2316. Count Unreachable Pairs of Nodes in an Undirected Graph
 class Solution:
   def countPairs(self, n: int, edges: List[List[int]]) -> int:
     ans = 0
@@ -5562,6 +5829,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/description/
+# Question: 1296. Divide Array in Sets of K Consecutive Numbers
 class Solution:
   def isPossibleDivide(self, nums: List[int], k: int) -> bool:
     count = collections.Counter(nums)
@@ -5578,6 +5846,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/card-flipping-game/description/
+# Question: 822. Card Flipping Game
 class Solution:
   def flipgame(self, fronts: List[int], backs: List[int]) -> int:
     same = {front
@@ -5588,6 +5857,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/description/
+# Question: 2770. Maximum Number of Jumps to Reach the Last Index
 class Solution:
   def maximumJumps(self, nums: List[int], target: int) -> int:
     n = len(nums)
@@ -5604,6 +5874,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-log-storage-system/description/
+# Question: 635. Design Log Storage System
 class LogSystem:
   def __init__(self):
     self.granularityToIndices = {'Year': 4, 'Month': 7, 'Day': 10,
@@ -5622,6 +5893,7 @@ class LogSystem:
 
 
 # Link: https://leetcode.com/problems/number-of-self-divisible-permutations/description/
+# Question: 2992. Number of Self-Divisible Permutations
 class Solution:
   def selfDivisiblePermutationCount(self, n: int) -> int:
     def dfs(num: int, used: int) -> int:
@@ -5639,6 +5911,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/description/
+# Question: 3020. Find the Maximum Number of Elements in Subset
 class Solution:
   def maximumLength(self, nums: List[int]) -> int:
     maxNum = max(nums)
@@ -5663,6 +5936,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/brightest-position-on-street/description/
+# Question: 2021. Brightest Position on Street
 from sortedcontainers import SortedDict
 
 
@@ -5689,6 +5963,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-of-interesting-subarrays/description/
+# Question: 2845. Count of Interesting Subarrays
 class Solution:
   def countInterestingSubarrays(self, nums: List[int], modulo: int, k: int) -> int:
     ans = 0
@@ -5705,6 +5980,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/group-anagrams/description/
+# Question: 49. Group Anagrams
 class Solution:
   def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
     dict = collections.defaultdict(list)
@@ -5717,6 +5993,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/description/
+# Question: 1634. Add Two Polynomials Represented as Linked Lists
 # Definition for polynomial singly-linked list.
 # class PolyNode:
 #   def __init__(self, x=0, y=0, next=None):
@@ -5762,6 +6039,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/random-pick-with-weight/description/
+# Question: 528. Random Pick with Weight
 class Solution:
   def __init__(self, w: List[int]):
     self.prefix = list(itertools.accumulate(w))
@@ -5773,6 +6051,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/random-pick-with-weight/description/
+# Question: 528. Random Pick with Weight
 class Solution:
   def __init__(self, w: List[int]):
     self.prefix = list(itertools.accumulate(w))
@@ -5782,6 +6061,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/permutation-in-string/description/
+# Question: 567. Permutation in String
 class Solution:
   def checkInclusion(self, s1: str, s2: str) -> bool:
     count = collections.Counter(s1)
@@ -5802,6 +6082,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/description/
+# Question: 2948. Make Lexicographically Smallest Array by Swapping Elements
 class Solution:
   def lexicographicallySmallestArray(self, nums: List[int], limit: int) -> List[int]:
     ans = [0] * len(nums)
@@ -5828,6 +6109,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/description/
+# Question: 2186. Minimum Number of Steps to Make Two Strings Anagram II
 class Solution:
   def minSteps(self, s: str, t: str) -> int:
     count = collections.Counter(s)
@@ -5836,6 +6118,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/wiggle-sort-ii/description/
+# Question: 324. Wiggle Sort II
 class Solution:
   def wiggleSort(self, nums: List[int]) -> None:
     n = len(nums)
@@ -5883,6 +6166,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-points-with-cost/description/
+# Question: 1937. Maximum Number of Points with Cost
 class Solution:
   def maxPoints(self, points: List[List[int]]) -> int:
     n = len(points[0])
@@ -5910,6 +6194,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/cyclically-rotating-a-grid/description/
+# Question: 1914. Cyclically Rotating a Grid
 class Solution:
   def rotateGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
     m = len(grid)
@@ -5942,6 +6227,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-increment-operations-to-make-array-beautiful/description/
+# Question: 2919. Minimum Increment Operations to Make Array Beautiful
 class Solution:
   def minIncrementOperations(self, nums: List[int], k: int) -> int:
     # the minimum operations to increase nums[i - 3] and nums[0..i - 3)
@@ -5961,6 +6247,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/description/
+# Question: 1031. Maximum Sum of Two Non-Overlapping Subarrays
 class Solution:
   def maxSumTwoNoOverlap(self, nums: List[int], firstLen: int, secondLen: int) -> int:
     def helper(l: int, r: int) -> int:
@@ -5991,6 +6278,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rearrange-words-in-a-sentence/description/
+# Question: 1451. Rearrange Words in a Sentence
 class Solution:
   def arrangeWords(self, text: str) -> str:
     words = text.split()
@@ -6013,6 +6301,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description/
+# Question: 2958. Length of Longest Subarray With at Most K Frequency
 class Solution:
   def maxSubarrayLength(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -6030,6 +6319,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-impossible-or/description/
+# Question: 2568. Minimum Impossible OR
 class Solution:
   def minImpossibleOR(self, nums: List[int]) -> int:
     ans = 1
@@ -6042,6 +6332,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximize-distance-to-closest-person/description/
+# Question: 849. Maximize Distance to Closest Person
 class Solution:
   def maxDistToClosest(self, seats: List[int]) -> int:
     n = len(seats)
@@ -6057,6 +6348,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/description/
+# Question: 2087. Minimum Cost Homecoming of a Robot in a Grid
 class Solution:
   def minCost(self, startPos: List[int], homePos: List[int], rowCosts: List[int], colCosts: List[int]) -> int:
     ans = 0
@@ -6075,6 +6367,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/corporate-flight-bookings/description/
+# Question: 1109. Corporate Flight Bookings
 class Solution:
   def corpFlightBookings(self, bookings: List[List[int]], n: int) -> List[int]:
     ans = [0] * n
@@ -6091,6 +6384,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rearrange-array-to-maximize-prefix-score/description/
+# Question: 2587. Rearrange Array to Maximize Prefix Score
 class Solution:
   def maxScore(self, nums: List[int]) -> int:
     return sum(num > 0
@@ -6098,6 +6392,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/description/
+# Question: 1894. Find the Student that Will Replace the Chalk
 class Solution:
   def chalkReplacer(self, chalk: List[int], k: int) -> int:
     k %= sum(chalk)
@@ -6111,6 +6406,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-array-length-after-pair-removals/description/
+# Question: 2856. Minimum Array Length After Pair Removals
 class Solution:
   def minLengthAfterRemovals(self, nums: List[int]) -> int:
     n = len(nums)
@@ -6125,6 +6421,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partition-to-k-equal-sum-subsets/description/
+# Question: 698. Partition to K Equal Sum Subsets
 class Solution:
   def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:
     summ = sum(nums)
@@ -6156,6 +6453,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-seconds-to-equalize-a-circular-array/description/
+# Question: 2808. Minimum Seconds to Equalize a Circular Array
 class Solution:
   def minimumSeconds(self, nums: List[int]) -> int:
     n = len(nums)
@@ -6179,6 +6477,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/powx-n/description/
+# Question: 50. Pow(x, n)
 class Solution:
   def myPow(self, x: float, n: int) -> float:
     if n == 0:
@@ -6191,6 +6490,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/split-concatenated-strings/description/
+# Question: 555. Split Concatenated Strings
 class Solution:
   def splitLoopedString(self, strs: List[str]) -> str:
     ans = ''
@@ -6206,6 +6506,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/swap-for-longest-repeated-character-substring/description/
+# Question: 1156. Swap For Longest Repeated Character Substring
 class Solution:
   def maxRepOpt1(self, text: str) -> int:
     count = collections.Counter(text)
@@ -6222,12 +6523,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimize-product-sum-of-two-arrays/description/
+# Question: 1874. Minimize Product Sum of Two Arrays
 class Solution:
   def minProductSum(self, nums1: List[int], nums2: List[int]) -> int:
     return sum([a * b for a, b in zip(sorted(nums1), sorted(nums2, reverse=True))])
 
 
 # Link: https://leetcode.com/problems/two-sum-bsts/description/
+# Question: 1214. Two Sum BSTs
 class BSTIterator:
   def __init__(self, root: Optional[TreeNode], leftToRight: bool):
     self.stack = []
@@ -6273,6 +6576,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/encode-and-decode-tinyurl/description/
+# Question: 535. Encode and Decode TinyURL
 class Codec:
   alphabets = string.ascii_letters + '0123456789'
   urlToCode = {}
@@ -6291,6 +6595,7 @@ class Codec:
 
 
 # Link: https://leetcode.com/problems/minimum-height-trees/description/
+# Question: 310. Minimum Height Trees
 class Solution:
   def findMinHeightTrees(self, n: int, edges: List[List[int]]) -> List[int]:
     if n == 1 or not edges:
@@ -6321,6 +6626,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/hand-of-straights/description/
+# Question: 846. Hand of Straights
 class Solution:
   def isNStraightHand(self, hand: List[int], groupSize: int) -> bool:
     count = collections.Counter(hand)
@@ -6337,6 +6643,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-absolute-sum-difference/description/
+# Question: 1818. Minimum Absolute Sum Difference
 class Solution:
   def minAbsoluteSumDiff(self, nums1: List[int], nums2: List[int]) -> int:
     ans = math.inf
@@ -6356,6 +6663,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-good-binary-strings/description/
+# Question: 2533. Number of Good Binary Strings
 class Solution:
   def goodBinaryStrings(self, minLength: int, maxLength: int, oneGroup: int, zeroGroup: int) -> int:
     kMod = 1_000_000_007
@@ -6379,6 +6687,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-and-say/description/
+# Question: 38. Count and Say
 class Solution:
   def countAndSay(self, n: int) -> str:
     ans = '1'
@@ -6399,6 +6708,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/as-far-from-land-as-possible/description/
+# Question: 1162. As Far from Land as Possible
 class Solution:
   def maxDistance(self, grid: List[List[int]]) -> int:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -6439,6 +6749,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/domino-and-tromino-tiling/description/
+# Question: 790. Domino and Tromino Tiling
 class Solution:
   def numTilings(self, n: int) -> int:
     kMod = 1_000_000_007
@@ -6451,6 +6762,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/description/
+# Question: 2640. Find the Score of All Prefixes of an Array
 class Solution:
   def findPrefixScore(self, nums: List[int]) -> List[int]:
     conver = []
@@ -6464,6 +6776,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-univalue-path/description/
+# Question: 687. Longest Univalue Path
 class Solution:
   def longestUnivaluePath(self, root: Optional[TreeNode]) -> int:
     ans = 0
@@ -6485,6 +6798,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/unique-word-abbreviation/description/
+# Question: 288. Unique Word Abbreviation
 class ValidWordAbbr:
   def __init__(self, dictionary: List[str]):
     self.dict = set(dictionary)
@@ -6507,12 +6821,14 @@ class ValidWordAbbr:
 
 
 # Link: https://leetcode.com/problems/strictly-palindromic-number/description/
+# Question: 2396. Strictly Palindromic Number
 class Solution:
   def isStrictlyPalindromic(self, n: int) -> bool:
     return False
 
 
 # Link: https://leetcode.com/problems/construct-the-longest-new-string/description/
+# Question: 2745. Construct the Longest New String
 class Solution:
   def longestString(self, x: int, y: int, z: int) -> int:
     # 'AB' can always be easily appended within the string.
@@ -6526,6 +6842,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/description/
+# Question: 1798. Maximum Number of Consecutive Values You Can Make
 class Solution:
   def getMaximumConsecutive(self, coins: List[int]) -> int:
     ans = 1  # the next value we want to make
@@ -6539,6 +6856,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-latest-group-of-size-m/description/
+# Question: 1562. Find Latest Group of Size M
 class Solution:
   def findLatestStep(self, arr: List[int], m: int) -> int:
     if len(arr) == m:
@@ -6564,6 +6882,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/two-city-scheduling/description/
+# Question: 1029. Two City Scheduling
 class Solution:
   def twoCitySchedCost(self, costs: List[List[int]]) -> int:
     n = len(costs) // 2
@@ -6580,6 +6899,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/add-two-numbers-ii/description/
+# Question: 445. Add Two Numbers II
 class Solution:
   def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
     stack1 = []
@@ -6610,6 +6930,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rotate-array/description/
+# Question: 189. Rotate Array
 class Solution:
   def rotate(self, nums: List[int], k: int) -> None:
     k %= len(nums)
@@ -6625,6 +6946,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/description/
+# Question: 2342. Max Sum of a Pair With Equal Sum of Digits
 class Solution:
   def maximumSum(self, nums: List[int]) -> int:
     kMax = 9 * 9  # 999,999,999
@@ -6647,6 +6969,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/most-frequent-subtree-sum/description/
+# Question: 508. Most Frequent Subtree Sum
 class Solution:
   def findFrequentTreeSum(self, root: Optional[TreeNode]) -> List[int]:
     if not root:
@@ -6668,6 +6991,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-number-of-texts/description/
+# Question: 2266. Count Number of Texts
 class Solution:
   def countTexts(self, pressedKeys: str) -> int:
     kMod = 1_000_000_007
@@ -6699,6 +7023,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/description/
+# Question: 2471. Minimum Number of Operations to Sort a Binary Tree by Level
 class Solution:
   def minimumOperations(self, root: Optional[TreeNode]) -> int:
     ans = 0
@@ -6730,6 +7055,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-a-leaderboard/description/
+# Question: 1244. Design A Leaderboard
 class Leaderboard:
   def __init__(self):
     self.idToScore = collections.Counter()
@@ -6745,6 +7071,7 @@ class Leaderboard:
 
 
 # Link: https://leetcode.com/problems/count-number-of-bad-pairs/description/
+# Question: 2364. Count Number of Bad Pairs
 class Solution:
   def countBadPairs(self, nums: List[int]) -> int:
     ans = 0
@@ -6760,6 +7087,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/description/
+# Question: 2155. All Divisions With the Highest Score of a Binary Array
 class Solution:
   def maxScoreIndices(self, nums: List[int]) -> List[int]:
     zeros = nums.count(0)
@@ -6784,6 +7112,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/prime-pairs-with-target-sum/description/
+# Question: 2761. Prime Pairs With Target Sum
 class Solution:
   def findPrimePairs(self, n: int) -> List[List[int]]:
     isPrime = self._sieveEratosthenes(n + 1)
@@ -6803,6 +7132,7 @@ j
 
 
 # Link: https://leetcode.com/problems/connecting-cities-with-minimum-cost/description/
+# Question: 1135. Connecting Cities With Minimum Cost
 class UnionFind:
   def __init__(self, n: int):
     self.id = list(range(n))
@@ -6849,6 +7179,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/extra-characters-in-a-string/description/
+# Question: 2707. Extra Characters in a String
 class Solution:
   # Similar to 139. Word Break
   def minExtraChar(self, s: str, dictionary: List[str]) -> int:
@@ -6868,6 +7199,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/eliminate-maximum-number-of-monsters/description/
+# Question: 1921. Eliminate Maximum Number of Monsters
 class Solution:
   def eliminateMaximum(self, dist: List[int], speed: List[int]) -> int:
     for i, arrivalTime in enumerate(sorted([(d - 1) // s for d, s in zip(dist, speed)])):
@@ -6877,6 +7209,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-interval/description/
+# Question: 1272. Remove Interval
 class Solution:
   def removeInterval(self, intervals: List[List[int]], toBeRemoved: List[int]) -> List[List[int]]:
     ans = []
@@ -6894,6 +7227,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/description/
+# Question: 2260. Minimum Consecutive Cards to Pick Up
 class Solution:
   def minimumCardPickup(self, cards: List[int]) -> int:
     ans = math.inf
@@ -6908,6 +7242,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/description/
+# Question: 1878. Get Biggest Three Rhombus Sums in a Grid
 from sortedcontainers import SortedSet
 
 
@@ -6966,6 +7301,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/split-array-into-maximum-number-of-subarrays/description/
+# Question: 2871. Split Array Into Maximum Number of Subarrays
 class Solution:
   def maxSubarrays(self, nums: List[int]) -> int:
     ans = 0
@@ -6980,6 +7316,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-a-peak-element-ii/description/
+# Question: 1901. Find a Peak Element II
 class Solution:
   def findPeakGrid(self, mat: List[List[int]]) -> List[int]:
     l = 0
@@ -6996,6 +7333,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/description/
+# Question: 1509. Minimum Difference Between Largest and Smallest Value in Three Moves
 class Solution:
   def minDifference(self, nums: List[int]) -> int:
     n = len(nums)
@@ -7015,6 +7353,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-alternating-subsequence-sum/description/
+# Question: 1911. Maximum Alternating Subsequence Sum
 class Solution:
   def maxAlternatingSum(self, nums: List[int]) -> int:
     even = 0  # the maximum alternating sum ending in an even index
@@ -7028,12 +7367,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-health-to-beat-game/description/
+# Question: 2214. Minimum Health to Beat Game
 class Solution:
   def minimumHealth(self, damage: List[int], armor: int) -> int:
     return 1 + sum(damage) - min(max(damage), armor)
 
 
 # Link: https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/description/
+# Question: 702. Search in a Sorted Array of Unknown Size
 # """
 # This is ArrayReader's API interface.
 # You should not implement it, or speculate about its implementation
@@ -7049,6 +7390,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/jump-game-ii/description/
+# Question: 45. Jump Game II
 class Solution:
   def jump(self, nums: List[int]) -> int:
     ans = 0
@@ -7069,6 +7411,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-time-to-make-rope-colorful/description/
+# Question: 1578. Minimum Time to Make Rope Colorful
 class Solution:
   def minCost(self, colors: str, neededTime: List[int]) -> int:
     ans = 0
@@ -7090,6 +7433,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-underground-system/description/
+# Question: 1396. Design Underground System
 class UndergroundSystem:
   def __init__(self):
     # {id: (stationName, time)}
@@ -7112,6 +7456,7 @@ class UndergroundSystem:
 
 
 # Link: https://leetcode.com/problems/custom-sort-string/description/
+# Question: 791. Custom Sort String
 class Solution:
   def customSortString(self, order: str, s: str) -> str:
     ans = ""
@@ -7133,6 +7478,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/description/
+# Question: 2018. Check if Word Can Be Placed In Crossword
 class Solution:
   def placeWordInCrossword(self, board: List[List[str]], word: str) -> bool:
     for x in board, zip(*board):
@@ -7146,6 +7492,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/high-access-employees/description/
+# Question: 2933. High-Access Employees
 class Solution:
   def findHighAccessEmployees(self, access_times: List[List[str]]) -> List[str]:
     ans = set()
@@ -7165,6 +7512,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximize-total-tastiness-of-purchased-fruits/description/
+# Question: 2431. Maximize Total Tastiness of Purchased Fruits
 class Solution:
   def maxTastiness(self, price: List[int], tastiness: List[int], maxAmount: int, maxCoupons: int) -> int:
     # dp[j][k] := the maximum tastiness of price so far with j amount of money and k coupons
@@ -7181,6 +7529,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximize-total-tastiness-of-purchased-fruits/description/
+# Question: 2431. Maximize Total Tastiness of Purchased Fruits
 class Solution:
   def maxTastiness(self, price: List[int], tastiness: List[int], maxAmount: int, maxCoupons: int) -> int:
     n = len(price)
@@ -7214,6 +7563,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-moves-to-capture-the-queen/description/
+# Question: 3001. Minimum Moves to Capture The Queen
 class Solution:
   def minMovesToCaptureTheQueen(self, a: int, b: int, c: int, d: int, e: int, f: int) -> int:
     # The rook is in the same row as the queen.
@@ -7237,6 +7587,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-polygon-with-the-largest-perimeter/description/
+# Question: 2971. Find Polygon With the Largest Perimeter
 class Solution:
   def largestPerimeter(self, nums: List[int]) -> int:
     prefix = sum(nums)
@@ -7252,6 +7603,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/plus-one-linked-list/description/
+# Question: 369. Plus One Linked List
 class Solution:
   def plusOne(self, head: ListNode) -> ListNode:
     dummy = ListNode(0)
@@ -7273,6 +7625,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/plus-one-linked-list/description/
+# Question: 369. Plus One Linked List
 class Solution:
   def plusOne(self, head: ListNode) -> ListNode:
     if not head:
@@ -7289,6 +7642,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/intervals-between-identical-elements/description/
+# Question: 2121. Intervals Between Identical Elements
 class Solution:
   def getDistances(self, arr: List[int]) -> List[int]:
     prefix = [0] * len(arr)
@@ -7313,6 +7667,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/description/
+# Question: 2064. Minimized Maximum of Products Distributed to Any Store
 class Solution:
   def minimizedMaximum(self, n: int, quantities: List[int]) -> int:
     l = 1
@@ -7332,6 +7687,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/min-cost-to-connect-all-points/description/
+# Question: 1584. Min Cost to Connect All Points
 class Solution:
   def minCostConnectPoints(self, points: List[int]) -> int:
     # dist[i] := the minimum distance to connect the points[i]
@@ -7354,6 +7710,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/insertion-sort-list/description/
+# Question: 147. Insertion Sort List
 class Solution:
   def insertionSortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
     dummy = ListNode(0)
@@ -7373,6 +7730,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/description/
+# Question: 2486. Append Characters to String to Make Subsequence
 class Solution:
   def appendCharacters(self, s: str, t: str) -> int:
     i = 0  # t's index
@@ -7387,6 +7745,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/my-calendar-i/description/
+# Question: 729. My Calendar I
 class MyCalendar:
   def __init__(self):
     self.timeline = []
@@ -7400,6 +7759,7 @@ class MyCalendar:
 
 
 # Link: https://leetcode.com/problems/my-calendar-i/description/
+# Question: 729. My Calendar I
 class Node:
   def __init__(self, start: int, end: int):
     self.start = start
@@ -7443,6 +7803,7 @@ class MyCalendar:
 
 
 # Link: https://leetcode.com/problems/maximum-earnings-from-taxi/description/
+# Question: 2008. Maximum Earnings From Taxi
 class Solution:
   def maxTaxiEarnings(self, n: int, rides: List[List[int]]) -> int:
     startToEndAndEarns = [[] for _ in range(n)]
@@ -7462,6 +7823,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-earnings-from-taxi/description/
+# Question: 2008. Maximum Earnings From Taxi
 class Solution:
   def maxTaxiEarnings(self, n: int, rides: List[List[int]]) -> int:
     endToStartAndEarns = [[] for _ in range(n + 1)]
@@ -7481,6 +7843,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/image-overlap/description/
+# Question: 835. Image Overlap
 class Solution:
   def largestOverlap(self, A: List[List[int]], B: List[List[int]]) -> int:
     n = len(A)
@@ -7504,6 +7867,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/print-binary-tree/description/
+# Question: 655. Print Binary Tree
 class Solution:
   def printTree(self, root: Optional[TreeNode]) -> List[List[str]]:
     def maxHeight(root: Optional[TreeNode]) -> int:
@@ -7528,6 +7892,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rotating-the-box/description/
+# Question: 1861. Rotating the Box
 class Solution:
   def rotateTheBox(self, box: List[List[str]]) -> List[List[str]]:
     m = len(box)
@@ -7547,6 +7912,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/tuple-with-same-product/description/
+# Question: 1726. Tuple with Same Product
 class Solution:
   def tupleSameProduct(self, nums: List[int]) -> int:
     # nums of ways to arrange (a, b) = 2
@@ -7565,6 +7931,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reordered-power-of-2/description/
+# Question: 869. Reordered Power of 2
 class Solution:
   def reorderedPowerOf2(self, n: int) -> bool:
     count = collections.Counter(str(n))
@@ -7572,6 +7939,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-matching-of-players-with-trainers/description/
+# Question: 2410. Maximum Matching of Players With Trainers
 class Solution:
   def matchPlayersAndTrainers(self, players: List[int], trainers: List[int]) -> int:
     ans = 0
@@ -7591,6 +7959,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/description/
+# Question: 2510. Check if There is a Path With Equal Number of 0's And 1's
 class Solution:
   def isThereAPath(self, grid: List[List[int]]) -> bool:
     m = len(grid)
@@ -7615,6 +7984,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/house-robber-ii/description/
+# Question: 213. House Robber II
 class Solution:
   def rob(self, nums: List[int]) -> int:
     if not nums:
@@ -7638,6 +8008,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shifting-letters-ii/description/
+# Question: 2381. Shifting Letters II
 class Solution:
   def shiftingLetters(self, s: str, shifts: List[List[int]]) -> str:
     ans = []
@@ -7658,6 +8029,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/description/
+# Question: 2411. Smallest Subarrays With Maximum Bitwise OR
 class Solution:
   def smallestSubarrays(self, nums: List[int]) -> List[int]:
     kMaxBit = 30
@@ -7675,6 +8047,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/
+# Question: 673. Number of Longest Increasing Subsequence
 class Solution:
   def findNumberOfLIS(self, nums: List[int]) -> int:
     ans = 0
@@ -7706,6 +8079,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/perfect-squares/description/
+# Question: 279. Perfect Squares
 class Solution:
   def numSquares(self, n: int) -> int:
     dp = [n] * (n + 1)  # 1^2 x n
@@ -7722,6 +8096,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/frequency-tracker/description/
+# Question: 2671. Frequency Tracker
 class FrequencyTracker:
   def __init__(self):
     self.count = collections.Counter()
@@ -7745,6 +8120,7 @@ class FrequencyTracker:
 
 
 # Link: https://leetcode.com/problems/ugly-number-iii/description/
+# Question: 1201. Ugly Number III
 class Solution:
   def nthUglyNumber(self, n: int, a: int, b: int, c: int) -> int:
     ab = a * b // math.gcd(a, b)
@@ -7757,6 +8133,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/description/
+# Question: 1605. Find Valid Matrix Given Row and Column Sums
 class Solution:
   def restoreMatrix(self, rowSum: List[int], colSum: List[int]) -> List[List[int]]:
     m = len(rowSum)
@@ -7773,6 +8150,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/
+# Question: 107. Binary Tree Level Order Traversal II
 class Solution:
   def levelOrderBottom(self, root: Optional[TreeNode]) -> List[List[int]]:
     if not root:
@@ -7796,6 +8174,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/queens-that-can-attack-the-king/description/
+# Question: 1222. Queens That Can Attack the King
 class Solution:
   def queensAttacktheKing(self, queens: List[List[int]], king: List[int]) -> List[List[int]]:
     ans = []
@@ -7815,6 +8194,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/most-popular-video-creator/description/
+# Question: 2456. Most Popular Video Creator
 class Creator:
   def __init__(self, popularity: int, videoId: str, maxView: int):
     self.popularity = popularity  # the popularity sum
@@ -7849,6 +8229,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/
+# Question: 309. Best Time to Buy and Sell Stock with Cooldown
 class Solution:
   def maxProfit(self, prices: List[int]) -> int:
     sell = 0
@@ -7865,6 +8246,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/description/
+# Question: 2280. Minimum Lines to Represent a Line Chart
 class Solution:
   def minimumLines(self, stockPrices: List[List[int]]) -> int:
     ans = 0
@@ -7891,6 +8273,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/non-decreasing-subsequences/description/
+# Question: 491. Increasing Subsequences
 class Solution:
   def findSubsequences(self, nums: List[int]) -> List[List[int]]:
     ans = []
@@ -7913,6 +8296,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/prime-palindrome/description/
+# Question: 866. Prime Palindrome
 class Solution:
   def primePalindrome(self, n: int) -> int:
     def getPalindromes(n: int) -> int:
@@ -7946,6 +8330,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/description/
+# Question: 2110. Number of Smooth Descent Periods of a Stock
 class Solution:
   def getDescentPeriods(self, prices: List[int]) -> int:
     ans = 1  # prices[0]
@@ -7962,6 +8347,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/description/
+# Question: 1442. Count Triplets That Can Form Two Arrays of Equal XOR
 class Solution:
   def countTriplets(self, arr: List[int]) -> int:
     ans = 0
@@ -7984,6 +8370,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/description/
+# Question: 1996. The Number of Weak Characters in the Game
 class Solution:
   def numberOfWeakCharacters(self, properties: List[List[int]]) -> int:
     ans = 0
@@ -8000,6 +8387,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/description/
+# Question: 1996. The Number of Weak Characters in the Game
 class Solution:
   def numberOfWeakCharacters(self, properties: List[List[int]]) -> int:
     ans = 0
@@ -8021,6 +8409,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/delete-nodes-and-return-forest/description/
+# Question: 1110. Delete Nodes And Return Forest
 class Solution:
   def delNodes(self, root: TreeNode, to_delete: List[int]) -> List[TreeNode]:
     ans = []
@@ -8044,6 +8433,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-make-a-special-number/description/
+# Question: 2844. Minimum Operations to Make a Special Number
 class Solution:
   def minimumOperations(self, num: str) -> int:
     n = len(num)
@@ -8066,6 +8456,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/description/
+# Question: 2492. Minimum Score of a Path Between Two Cities
 class Solution:
   def minScore(self, n: int, roads: List[List[int]]) -> int:
     ans = math.inf
@@ -8090,6 +8481,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/making-file-names-unique/description/
+# Question: 1487. Making File Names Unique
 class Solution:
   def getFolderNames(self, names: List[str]) -> List[str]:
     ans = []
@@ -8116,6 +8508,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/make-sum-divisible-by-p/description/
+# Question: 1590. Make Sum Divisible by P
 class Solution:
   def minSubarray(self, nums: List[int], p: int) -> int:
     summ = sum(nums)
@@ -8139,6 +8532,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/contiguous-array/description/
+# Question: 525. Contiguous Array
 class Solution:
   def findMaxLength(self, nums: List[int]) -> int:
     ans = 0
@@ -8153,6 +8547,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reverse-nodes-in-even-length-groups/description/
+# Question: 2074. Reverse Nodes in Even Length Groups
 class Solution:
   def reverseEvenLengthGroups(self, head: Optional[ListNode]) -> Optional[ListNode]:
     # prev -> (head -> ... -> tail) -> next -> ...
@@ -8200,6 +8595,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-search-tree-iterator-ii/description/
+# Question: 1586. Binary Search Tree Iterator II
 class BSTIterator:
   def __init__(self, root: Optional[TreeNode]):
     self.prevsAndCurr = []
@@ -8230,6 +8626,7 @@ class BSTIterator:
 
 
 # Link: https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
+# Question: 17. Letter Combinations of a Phone Number
 class Solution:
   def letterCombinations(self, digits: str) -> List[str]:
     if not digits:
@@ -8254,6 +8651,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
+# Question: 17. Letter Combinations of a Phone Number
 class Solution:
   def letterCombinations(self, digits: str) -> List[str]:
     if not digits:
@@ -8274,6 +8672,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-eventual-safe-states/description/
+# Question: 802. Find Eventual Safe States
 from enum import Enum
 
 
@@ -8302,6 +8701,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-palindromes-after-operations/description/
+# Question: 3035. Maximum Palindromes After Operations
 class Solution:
   def maxPalindromesAfterOperations(self, words: List[str]) -> int:
     ans = 0
@@ -8319,6 +8719,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-permutation/description/
+# Question: 484. Find Permutation
 class Solution:
   def findPermutation(self, s: str) -> List[int]:
     ans = [i for i in range(1, len(s) + 2)]
@@ -8344,6 +8745,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-permutation/description/
+# Question: 484. Find Permutation
 class Solution:
   def findPermutation(self, s: str) -> List[int]:
     ans = []
@@ -8363,6 +8765,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimize-maximum-of-array/description/
+# Question: 2439. Minimize Maximum of Array
 class Solution:
   def minimizeArrayValue(self, nums: List[int]) -> int:
     ans = 0
@@ -8377,6 +8780,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/convex-polygon/description/
+# Question: 469. Convex Polygon
 class Solution:
   def isConvex(self, points: List[List[int]]) -> bool:
     # Pq x qr
@@ -8397,6 +8801,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
+# Question: 438. Find All Anagrams in a String
 class Solution:
   def findAnagrams(self, s: str, p: str) -> List[int]:
     ans = []
@@ -8418,6 +8823,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/
+# Question: 323. Number of Connected Components in an Undirected Graph
 class Solution:
   def countComponents(self, n: int, edges: List[List[int]]) -> int:
     ans = 0
@@ -8448,6 +8854,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/
+# Question: 323. Number of Connected Components in an Undirected Graph
 class UnionFind:
   def __init__(self, n: int):
     self.count = n
@@ -8485,6 +8892,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/
+# Question: 323. Number of Connected Components in an Undirected Graph
 class Solution:
   def countComponents(self, n: int, edges: List[List[int]]) -> int:
     ans = 0
@@ -8511,6 +8919,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/get-equal-substrings-within-budget/description/
+# Question: 1208. Get Equal Substrings Within Budget
 class Solution:
   def equalSubstring(self, s: str, t: str, maxCost: int) -> int:
     j = 0
@@ -8524,6 +8933,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-for-tickets/description/
+# Question: 983. Minimum Cost For Tickets
 class Solution:
   def mincostTickets(self, days: List[int], costs: List[int]) -> int:
     ans = 0
@@ -8543,6 +8953,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/description/
+# Question: 2749. Minimum Operations to Make the Integer Zero
 class Solution:
   def makeTheIntegerZero(self, num1: int, num2: int) -> int:
     # If k operations are used, num1 - [(num2 + 2^{i_1}) + (num2 + 2^{i_2}) +
@@ -8561,6 +8972,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/description/
+# Question: 2832. Maximal Range That Each Element Is Maximum in It
 class Solution:
   def maximumLengthOfRanges(self, nums: List[int]) -> List[int]:
     ans = [0] * len(nums)
@@ -8577,6 +8989,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-winner-of-an-array-game/description/
+# Question: 1535. Find the Winner of an Array Game
 class Solution:
   def getWinner(self, arr: List[int], k: int) -> int:
     ans = arr[0]
@@ -8595,6 +9008,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/fizz-buzz-multithreaded/description/
+# Question: 1195. Fizz Buzz Multithreaded
 from threading import Semaphore
 
 
@@ -8646,6 +9060,7 @@ class FizzBuzz:
 
 
 # Link: https://leetcode.com/problems/find-smallest-common-element-in-all-rows/description/
+# Question: 1198. Find Smallest Common Element in All Rows
 class Solution:
   def smallestCommonElement(self, mat: List[List[int]]) -> int:
     kMax = 10000
@@ -8661,6 +9076,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/complete-binary-tree-inserter/description/
+# Question: 919. Complete Binary Tree Inserter
 class CBTInserter:
   def __init__(self, root: Optional[TreeNode]):
     self.tree = [root]
@@ -8685,6 +9101,7 @@ class CBTInserter:
 
 
 # Link: https://leetcode.com/problems/furthest-building-you-can-reach/description/
+# Question: 1642. Furthest Building You Can Reach
 class Solution:
   def furthestBuilding(self, heights: List[int], bricks: int, ladders: int) -> int:
     minHeap = []
@@ -8704,6 +9121,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/additive-number/description/
+# Question: 306. Additive Number
 class Solution:
   def isAdditiveNumber(self, num: str) -> bool:
     n = len(num)
@@ -8737,6 +9155,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/description/
+# Question: 1452. People Whose List of Favorite Companies Is Not a Subset of Another List
 class Solution:
   def peopleIndexes(self, favoriteCompanies: List[List[str]]) -> List[int]:
     ans = []
@@ -8758,6 +9177,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-time-when-the-network-becomes-idle/description/
+# Question: 2039. The Time When the Network Becomes Idle
 class Solution:
   def networkBecomesIdle(self, edges: List[List[int]], patience: List[int]) -> int:
     n = len(patience)
@@ -8789,6 +9209,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/description/
+# Question: 1764. Form Array by Concatenating Subarrays of Another Array
 class Solution:
   def canChoose(self, groups: List[List[int]], nums: List[int]) -> bool:
     i = 0  # groups' index
@@ -8814,6 +9235,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/letter-tile-possibilities/description/
+# Question: 1079. Letter Tile Possibilities
 class Solution:
   def numTilePossibilities(self, tiles: str) -> int:
     count = collections.Counter(tiles)
@@ -8836,6 +9258,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/
+# Question: 159. Longest Substring with At Most Two Distinct Characters
 class Solution:
   def lengthOfLongestSubstringTwoDistinct(self, s: str) -> int:
     ans = 0
@@ -8858,6 +9281,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/word-pattern-ii/description/
+# Question: 291. Word Pattern II
 class Solution:
   def wordPatternMatch(self, pattern: str, s: str) -> bool:
     def isMatch(i: int, j: int, charToString: Dict[chr, str], seen: Set[str]) -> bool:
@@ -8900,6 +9324,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/add-bold-tag-in-string/description/
+# Question: 616. Add Bold Tag in String
 class Solution:
   def addBoldTag(self, s: str, words: List[str]) -> str:
     n = len(s)
@@ -8932,6 +9357,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/add-bold-tag-in-string/description/
+# Question: 616. Add Bold Tag in String
 class TrieNode:
   def __init__(self):
     self.children: Dict[str, TrieNode] = {}
@@ -8989,6 +9415,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/container-with-most-water/description/
+# Question: 11. Container With Most Water
 class Solution:
   def maxArea(self, height: List[int]) -> int:
     ans = 0
@@ -9007,6 +9434,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/linked-list-frequency/description/
+# Question: 3063. Linked List Frequency
 class Solution:
   def frequenciesOfElements(self, head: Optional[ListNode]) -> Optional[ListNode]:
     count = collections.Counter()
@@ -9027,6 +9455,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/where-will-the-ball-fall/description/
+# Question: 1706. Where Will the Ball Fall
 class Solution:
   def findBall(self, grid: List[List[int]]) -> List[int]:
     m = len(grid)
@@ -9057,6 +9486,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/description/
+# Question: 1786. Number of Restricted Paths From First to Last Node
 class Solution:
   def countRestrictedPaths(self, n: int, edges: List[List[int]]) -> int:
     graph = [[] for _ in range(n)]
@@ -9094,6 +9524,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-moves-to-equal-array-elements/description/
+# Question: 453. Minimum Moves to Equal Array Elements
 class Solution:
   def minMoves(self, nums: List[int]) -> int:
     mini = min(nums)
@@ -9101,6 +9532,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/description/
+# Question: 3071. Minimum Operations to Write the Letter Y on a Grid
 class Solution:
   def minimumOperationsToWriteY(self, grid: List[List[int]]) -> int:
     n = len(grid)
@@ -9126,6 +9558,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimize-length-of-array-using-operations/description/
+# Question: 3012. Minimize Length of Array Using Operations
 class Solution:
   def minimumArrayLength(self, nums: List[int]) -> int:
     # Let the minimum number in the array `nums` be x.
@@ -9141,6 +9574,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-accepted-invitations/description/
+# Question: 1820. Maximum Number of Accepted Invitations
 class Solution:
   def maximumInvitations(self, grid: List[List[int]]) -> int:
     m = len(grid)
@@ -9169,6 +9603,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/robot-bounded-in-circle/description/
+# Question: 1041. Robot Bounded In Circle
 class Solution:
   def isRobotBounded(self, instructions: str) -> bool:
     x = 0
@@ -9189,6 +9624,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/set-matrix-zeroes/description/
+# Question: 73. Set Matrix Zeroes
 class Solution:
   def setZeroes(self, matrix: List[List[int]]) -> None:
     m = len(matrix)
@@ -9220,6 +9656,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/description/
+# Question: 2391. Minimum Amount of Time to Collect Garbage
 class Solution:
   def garbageCollection(self, garbage: List[str], travel: List[int]) -> int:
     prefix = list(itertools.accumulate(travel))
@@ -9237,6 +9674,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sentence-screen-fitting/description/
+# Question: 418. Sentence Screen Fitting
 class Solution:
   def wordsTyping(self, sentence: List[str], rows: int, cols: int) -> int:
     combined = ' '.join(sentence) + ' '
@@ -9255,6 +9693,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/description/
+# Question: 2750. Ways to Split Array Into Good Subarrays
 class Solution:
   def numberOfGoodSubarraySplits(self, nums: List[int]) -> int:
     if 1 not in nums:
@@ -9275,6 +9714,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/insert-interval/description/
+# Question: 57. Insert Interval
 class Solution:
   def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
     n = len(intervals)
@@ -9301,6 +9741,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-primes/description/
+# Question: 204. Count Primes
 class Solution:
   def countPrimes(self, n: int) -> int:
     if n <= 2:
@@ -9319,6 +9760,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/diameter-of-n-ary-tree/description/
+# Question: 1522. Diameter of N-Ary Tree
 class Solution:
   def diameter(self, root: 'Node') -> int:
     ans = 0
@@ -9344,6 +9786,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-sum-of-an-hourglass/description/
+# Question: 2428. Maximum Sum of an Hourglass
 class Solution:
   def maxSum(self, grid: List[List[int]]) -> int:
     return max(grid[i - 1][j - 1] + grid[i - 1][j] + grid[i - 1][j + 1] + grid[i][j] +
@@ -9353,6 +9796,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/
+# Question: 1823. Find the Winner of the Circular Game
 class Solution:
   def findTheWinner(self, n: int, k: int) -> int:
     # e.g. n = 4, k = 2.
@@ -9376,6 +9820,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/
+# Question: 1823. Find the Winner of the Circular Game
 class Solution:
   def findTheWinner(self, n: int, k: int) -> int:
     # e.g. n = 4, k = 2.
@@ -9401,6 +9846,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/
+# Question: 1823. Find the Winner of the Circular Game
 class Solution:
   def findTheWinner(self, n: int, k: int) -> int:
     # True if i-th friend is left
@@ -9425,6 +9871,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/description/
+# Question: 2817. Minimum Absolute Difference Between Elements With Constraint
 from sortedcontainers import SortedSet
 
 
@@ -9445,6 +9892,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/
+# Question: 2192. All Ancestors of a Node in a Directed Acyclic Graph
 class Solution:
   def getAncestors(self, n: int, edges: List[List[int]]) -> List[List[int]]:
     ans = [set() for _ in range(n)]
@@ -9473,6 +9921,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/
+# Question: 2192. All Ancestors of a Node in a Directed Acyclic Graph
 class Solution:
   def getAncestors(self, n: int, edges: List[List[int]]) -> List[List[int]]:
     ans = [[] for _ in range(n)]
@@ -9496,6 +9945,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/
+# Question: 122. Best Time to Buy and Sell Stock II
 class Solution:
   def maxProfit(self, prices: List[int]) -> int:
     sell = 0
@@ -9509,6 +9959,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-mountain-in-array/description/
+# Question: 845. Longest Mountain in Array
 class Solution:
   def longestMountain(self, arr: List[int]) -> int:
     ans = 0
@@ -9536,6 +9987,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/path-sum-iv/description/
+# Question: 666. Path Sum IV
 class Solution:
   def pathSum(self, nums: List[int]) -> int:
     ans = 0
@@ -9563,6 +10015,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/valid-palindrome-iv/description/
+# Question: 2330. Valid Palindrome IV
 class Solution:
   def makePalindrome(self, s: str) -> bool:
     change = 0
@@ -9581,6 +10034,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-matching-subsequences/description/
+# Question: 792. Number of Matching Subsequences
 class Solution:
   def numMatchingSubseq(self, s: str, words: List[str]) -> int:
     ans = 0
@@ -9607,6 +10061,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-matching-subsequences/description/
+# Question: 792. Number of Matching Subsequences
 class Solution:
   def numMatchingSubseq(self, s: str, words: List[str]) -> int:
     root = {}
@@ -9642,6 +10097,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/description/
+# Question: 1658. Minimum Operations to Reduce X to Zero
 class Solution:
   def minOperations(self, nums: List[int], x: int) -> int:
     targetSum = sum(nums) - x
@@ -9668,6 +10124,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-tic-tac-toe/description/
+# Question: 348. Design Tic-Tac-Toe
 class TicTacToe:
   def __init__(self, n: int):
     self.n = n
@@ -9714,6 +10171,7 @@ class TicTacToe:
 
 
 # Link: https://leetcode.com/problems/apply-discount-every-n-orders/description/
+# Question: 1357. Apply Discount Every n Orders
 class Cashier:
   def __init__(self, n: int, discount: int, products: List[int], prices: List[int]):
     self.n = n
@@ -9731,6 +10189,7 @@ class Cashier:
 
 
 # Link: https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/description/
+# Question: 3006. Find Beautiful Indices in the Given Array I
 class Solution:
   def beautifulIndices(self, s: str, a: str, b: str, k: int) -> List[int]:
     ans = []
@@ -9787,6 +10246,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/majority-element-ii/description/
+# Question: 229. Majority Element II
 class Solution:
   def majorityElement(self, nums: List[int]) -> List[int]:
     ans1 = 0
@@ -9813,6 +10273,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-bst-subtree/description/
+# Question: 333. Largest BST Subtree
 from dataclasses import dataclass
 
 
@@ -9843,6 +10304,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/description/
+# Question: 2734. Lexicographically Smallest String After Substring Operation
 class Solution:
   def smallestString(self, s: str) -> str:
     chars = list(s)
@@ -9863,6 +10325,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-split-of-positive-even-integers/description/
+# Question: 2178. Maximum Split of Positive Even Integers
 class Solution:
   def maximumEvenSplit(self, finalSum: int) -> List[int]:
     if finalSum & 1:
@@ -9881,6 +10344,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/array-nesting/description/
+# Question: 565. Array Nesting
 class Solution:
   def arrayNesting(self, nums: List[int]) -> int:
     ans = 0
@@ -9901,6 +10365,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/single-threaded-cpu/description/
+# Question: 1834. Single-Threaded CPU
 class Solution:
   def getOrder(self, tasks: List[List[int]]) -> List[int]:
     n = len(tasks)
@@ -9926,6 +10391,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/fair-distribution-of-cookies/description/
+# Question: 2305. Fair Distribution of Cookies
 class Solution:
   def distributeCookies(self, cookies: List[int], k: int) -> int:
     ans = math.inf
@@ -9946,6 +10412,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/description/
+# Question: 1003. Check If Word Is Valid After Substitutions
 class Solution:
   def isValid(self, s: str) -> bool:
     stack = []
@@ -9963,6 +10430,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reward-top-k-students/description/
+# Question: 2512. Reward Top K Students
 class Solution:
   def topStudents(self, positive_feedback: List[str], negative_feedback: List[str], report: List[str], student_id: List[int], k: int) -> List[int]:
     scoreAndIds = []
@@ -9982,6 +10450,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-the-number-of-complete-components/description/
+# Question: 2685. Count the Number of Complete Components
 class UnionFind:
   def __init__(self, n: int):
     self.id = list(range(n))
@@ -10037,6 +10506,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/map-sum-pairs/description/
+# Question: 677. Map Sum Pairs
 class TrieNode:
   def __init__(self):
     self.children: Dict[str, TrieNode] = {}
@@ -10066,6 +10536,7 @@ class MapSum:
 
 
 # Link: https://leetcode.com/problems/break-a-palindrome/description/
+# Question: 1328. Break a Palindrome
 class Solution:
   def breakPalindrome(self, palindrome: str) -> str:
     if len(palindrome) == 1:
@@ -10083,6 +10554,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/description/
+# Question: 2829. Determine the Minimum Sum of a k-avoiding Array
 class Solution:
   def minimumSum(self, n: int, k: int) -> int:
     # These are the unique pairs that sum up to k:
@@ -10102,6 +10574,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-transformed-array/description/
+# Question: 360. Sort Transformed Array
 class Solution:
   def sortTransformedArray(self, nums: List[int], a: int, b: int, c: int) -> List[int]:
     n = len(nums)
@@ -10139,6 +10612,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/matrix-block-sum/description/
+# Question: 1314. Matrix Block Sum
 class Solution:
   def matrixBlockSum(self, mat: List[List[int]], k: int) -> List[List[int]]:
     m = len(mat)
@@ -10164,6 +10638,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/description/
+# Question: 2662. Minimum Cost of a Path With Special Roads
 class Solution:
   def minimumCost(self, start: List[int], target: List[int], specialRoads: List[List[int]]) -> int:
     return self.dijkstra(specialRoads, *start, *target)
@@ -10203,6 +10678,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partition-list/description/
+# Question: 86. Partition List
 class Solution:
   def partition(self, head: ListNode, x: int) -> ListNode:
     beforeHead = ListNode(0)
@@ -10226,6 +10702,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/vowel-spellchecker/description/
+# Question: 966. Vowel Spellchecker
 class Solution:
   def spellchecker(self, wordlist: List[str], queries: List[str]) -> List[str]:
     def lowerKey(word: str) -> str:
@@ -10256,6 +10733,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/four-divisors/description/
+# Question: 1390. Four Divisors
 class Solution:
   def sumFourDivisors(self, nums: List[int]) -> int:
     ans = 0
@@ -10276,6 +10754,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/boats-to-save-people/description/
+# Question: 881. Boats to Save People
 class Solution:
   def numRescueBoats(self, people: List[int], limit: int) -> int:
     ans = 0
@@ -10295,6 +10774,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-two-integers/description/
+# Question: 371. Sum of Two Integers
 class Solution:
   def getSum(self, a: int, b: int) -> int:
     mask = 0xFFFFFFFF
@@ -10307,6 +10787,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/array-of-doubled-pairs/description/
+# Question: 954. Array of Doubled Pairs
 class Solution:
   def canReorderDoubled(self, arr: List[int]) -> bool:
     count = collections.Counter(arr)
@@ -10320,6 +10801,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/range-addition/description/
+# Question: 370. Range Addition
 class Solution:
   def getModifiedArray(self, length: int, updates: list[list[int]]) -> list[int]:
     line = [0] * length
@@ -10333,6 +10815,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/
+# Question: 375. Guess Number Higher or Lower II
 class Solution:
   def getMoneyAmount(self, n: int) -> int:
     @functools.lru_cache(None)
@@ -10348,6 +10831,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/
+# Question: 375. Guess Number Higher or Lower II
 class Solution:
   def getMoneyAmount(self, n: int) -> int:
     # dp[i][j] := the minimum money you need to guarantee a win of picking i..j
@@ -10364,6 +10848,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/multiply-strings/description/
+# Question: 43. Multiply Strings
 class Solution:
   def multiply(self, num1: str, num2: str) -> str:
     s = [0] * (len(num1) + len(num2))
@@ -10383,6 +10868,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimizing-array-after-replacing-pairs-with-their-product/description/
+# Question: 2892. Minimizing Array After Replacing Pairs With Their Product
 class Solution:
   def minArrayLength(self, nums: List[int], k: int) -> int:
     count = 0
@@ -10401,6 +10887,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-triangular-sum-of-an-array/description/
+# Question: 2221. Find Triangular Sum of an Array
 class Solution:
   def triangularSum(self, nums: List[int]) -> int:
     for sz in range(len(nums), 0, -1):
@@ -10410,6 +10897,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/description/
+# Question: 1209. Remove All Adjacent Duplicates in String II
 class Solution:
   def removeDuplicates(self, s: str, k: int) -> str:
     stack = []
@@ -10426,6 +10914,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/detect-squares/description/
+# Question: 2013. Detect Squares
 class DetectSquares:
   def __init__(self):
     self.pointCount = collections.Counter()
@@ -10443,6 +10932,7 @@ class DetectSquares:
 
 
 # Link: https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/description/
+# Question: 497. Random Point in Non-overlapping Rectangles
 class Solution:
   def __init__(self, rects: List[List[int]]):
     self.rects = rects
@@ -10456,6 +10946,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/description/
+# Question: 2588. Count the Number of Beautiful Subarrays
 class Solution:
   def beautifulSubarrays(self, nums: List[int]) -> int:
     # A subarray is beautiful if xor(subarray) = 0.
@@ -10472,6 +10963,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/description/
+# Question: 2044. Count Number of Maximum Bitwise-OR Subsets
 class Solution:
   def countMaxOrSubsets(self, nums: List[int]) -> int:
     ors = functools.reduce(operator.or_, nums)
@@ -10492,6 +10984,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-number-of-ways-to-place-houses/description/
+# Question: 2320. Count Number of Ways to Place Houses
 class Solution:
   def countHousePlacements(self, n: int) -> int:
     kMod = 1_000_000_007
@@ -10508,6 +11001,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-front-middle-back-queue/description/
+# Question: 1670. Design Front Middle Back Queue
 class FrontMiddleBackQueue:
   def __init__(self):
     self.frontQueue = collections.deque()
@@ -10560,6 +11054,7 @@ class FrontMiddleBackQueue:
 
 
 # Link: https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/description/
+# Question: 1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K
 class Solution:
   def findMinFibonacciNumbers(self, k: int) -> int:
     if k < 2:  # k == 0 or k == 1
@@ -10577,6 +11072,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/description/
+# Question: 1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K
 class Solution:
   def findMinFibonacciNumbers(self, k: int) -> int:
     ans = 0
@@ -10600,6 +11096,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-file-system/description/
+# Question: 1166. Design File System
 class TrieNode:
   def __init__(self, value: int = 0):
     self.children: Dict[str, TrieNode] = {}
@@ -10636,6 +11133,7 @@ class FileSystem:
 
 
 # Link: https://leetcode.com/problems/restore-ip-addresses/description/
+# Question: 93. Restore IP Addresses
 class Solution:
   def restoreIpAddresses(self, s: str) -> List[str]:
     ans = []
@@ -10662,6 +11160,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/strings-differ-by-one-character/description/
+# Question: 1554. Strings Differ by One Character
 class Solution:
   def differByOne(self, dict: List[str]) -> bool:
     kMod = 1_000_000_007
@@ -10700,6 +11199,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/adding-two-negabinary-numbers/description/
+# Question: 1073. Adding Two Negabinary Numbers
 class Solution:
   def addNegabinary(self, arr1: List[int], arr2: List[int]) -> List[int]:
     ans = []
@@ -10720,6 +11220,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/decode-string/description/
+# Question: 394. Decode String
 class Solution:
   def decodeString(self, s: str) -> str:
     ans = ''
@@ -10744,6 +11245,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/decode-string/description/
+# Question: 394. Decode String
 class Solution:
   def decodeString(self, s: str) -> str:
     stack = []  # (prevStr, repeatCount)
@@ -10768,6 +11270,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/online-stock-span/description/
+# Question: 901. Online Stock Span
 class StockSpanner:
   def __init__(self):
     self.stack = []  # (price, span)
@@ -10781,6 +11284,7 @@ class StockSpanner:
 
 
 # Link: https://leetcode.com/problems/find-all-groups-of-farmland/description/
+# Question: 1992. Find All Groups of Farmland
 class Solution:
   def findFarmland(self, land: List[List[int]]) -> List[List[int]]:
     ans = []
@@ -10807,6 +11311,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/combinations/description/
+# Question: 77. Combinations
 class Solution:
   def combine(self, n: int, k: int) -> List[List[int]]:
     ans = []
@@ -10826,6 +11331,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/tweet-counts-per-frequency/description/
+# Question: 1348. Tweet Counts Per Frequency
 from sortedcontainers import SortedList
 
 
@@ -10850,12 +11356,14 @@ class TweetCounts:
 
 
 # Link: https://leetcode.com/problems/airplane-seat-assignment-probability/description/
+# Question: 1227. Airplane Seat Assignment Probability
 class Solution:
   def nthPersonGetsNthSeat(self, n: int) -> float:
     return 1 if n == 1 else 0.5
 
 
 # Link: https://leetcode.com/problems/count-pairs-of-points-with-distance-k/description/
+# Question: 2857. Count Pairs of Points With Distance k
 class Solution:
   def countPairs(self, coordinates: List[List[int]], k: int) -> int:
     ans = 0
@@ -10871,6 +11379,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/description/
+# Question: 1940. Longest Common Subsequence Between Sorted Arrays
 class Solution:
   def longestCommonSubsequence(self, arrays: List[List[int]]) -> List[int]:
     kMax = 100
@@ -10887,12 +11396,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/description/
+# Question: 1940. Longest Common Subsequence Between Sorted Arrays
 class Solution:
   def longestCommonSubsequence(self, arrays: List[List[int]]) -> List[int]:
     return sorted(functools.reduce(lambda a, b: set(a) & set(b), arrays))
 
 
 # Link: https://leetcode.com/problems/binary-tree-upside-down/description/
+# Question: 156. Binary Tree Upside Down
 class Solution:
   def upsideDownBinaryTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
     prevRoot = None
@@ -10910,6 +11421,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-tree-upside-down/description/
+# Question: 156. Binary Tree Upside Down
 class Solution:
   def upsideDownBinaryTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
     if not root or not root.left:
@@ -10924,6 +11436,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/combination-sum-iii/description/
+# Question: 216. Combination Sum III
 class Solution:
   def combinationSum3(self, k: int, n: int) -> List[List[int]]:
     ans = []
@@ -10943,6 +11456,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-trees-with-factors/description/
+# Question: 823. Binary Trees With Factors
 class Solution:
   def numFactoredBinaryTrees(self, arr: List[int]) -> int:
     kMod = 1_000_000_007
@@ -10964,6 +11478,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/add-minimum-number-of-rungs/description/
+# Question: 1936. Add Minimum Number of Rungs
 class Solution:
   def addRungs(self, rungs: List[int], dist: int) -> int:
     ans = 0
@@ -10977,6 +11492,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-closest-node-to-given-two-nodes/description/
+# Question: 2359. Find Closest Node to Given Two Nodes
 class Solution:
   def closestMeetingNode(self, edges: List[int], node1: int, node2: int) -> int:
     kMax = 10000
@@ -11005,6 +11521,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/coordinate-with-maximum-network-quality/description/
+# Question: 1620. Coordinate With Maximum Network Quality
 class Solution:
   def bestCoordinate(self, towers: List[List[int]], radius: int) -> List[int]:
     kMax = 50
@@ -11032,6 +11549,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shortest-word-distance-iii/description/
+# Question: 245. Shortest Word Distance III
 class Solution:
   def shortestWordDistance(self, wordsDict: List[str], word1: str, word2: str) -> int:
     isSame = word1 == word2
@@ -11054,6 +11572,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-linear-stock-score/description/
+# Question: 2898. Maximum Linear Stock Score
 class Solution:
   def maxScore(self, prices: List[int]) -> int:
     groupIdToSum = collections.defaultdict(int)
@@ -11065,12 +11584,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/description/
+# Question: 1558. Minimum Numbers of Function Calls to Make Target Array
 class Solution:
   def minOperations(self, nums: List[int]) -> int:
     return sum(bin(num).count('1') for num in nums) + len(bin(max(nums))) - 3
 
 
 # Link: https://leetcode.com/problems/super-ugly-number/description/
+# Question: 313. Super Ugly Number
 class Solution:
   def nthSuperUglyNumber(self, n: int, primes: List[int]) -> int:
     k = len(primes)
@@ -11091,6 +11612,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/super-ugly-number/description/
+# Question: 313. Super Ugly Number
 class UglyNum:
   def __init__(self, prime: int, index: int, value: int):
     self.prime = prime
@@ -11116,6 +11638,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/choose-edges-to-maximize-score-in-a-tree/description/
+# Question: 2378. Choose Edges to Maximize Score in a Tree
 class Solution:
   def maxScore(self, edges: List[List[int]]) -> int:
     n = len(edges)
@@ -11145,6 +11668,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/description/
+# Question: 1999. Smallest Greater Multiple Made of Two Digits
 class Solution:
   def findInteger(self, k: int, digit1: int, digit2: int) -> int:
     minDigit = min(digit1, digit2)
@@ -11171,6 +11695,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-greater-multiple-made-of-two-digits/description/
+# Question: 1999. Smallest Greater Multiple Made of Two Digits
 class Solution:
   def findInteger(self, k: int, digit1: int, digit2: int) -> int:
     def dfs(x: int) -> int:
@@ -11191,6 +11716,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/magic-squares-in-grid/description/
+# Question: 840. Magic Squares In Grid
 class Solution:
   def numMagicSquaresInside(self, grid: List[List[int]]) -> int:
     def isMagic(i: int, j: int) -> int:
@@ -11209,6 +11735,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/description/
+# Question: 1430. Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree
 class Solution:
   def isValidSequence(self, root: Optional[TreeNode], arr: List[int]) -> bool:
     def isValidSequence(root: Optional[TreeNode], i: int) -> bool:
@@ -11222,6 +11749,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/all-possible-full-binary-trees/description/
+# Question: 894. All Possible Full Binary Trees
 class Solution:
   @functools.lru_cache(None)
   def allPossibleFBT(self, n: int) -> List[Optional[TreeNode]]:
@@ -11244,6 +11772,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/4sum/description/
+# Question: 18. 4Sum
 class Solution:
   def fourSum(self, nums: List[int], target: int):
     ans = []
@@ -11278,6 +11807,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/bomb-enemy/description/
+# Question: 361. Bomb Enemy
 class Solution:
   def maxKilledEnemies(self, grid: List[List[chr]]) -> int:
     m = len(grid)
@@ -11317,6 +11847,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/spiral-matrix-ii/description/
+# Question: 59. Spiral Matrix II
 class Solution:
   def generateMatrix(self, n: int) -> List[List[int]]:
     ans = [[0] * n for _ in range(n)]
@@ -11344,6 +11875,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-safest-path-in-a-grid/description/
+# Question: 2812. Find the Safest Path in a Grid
 class Solution:
   def maximumSafenessFactor(self, grid: List[List[int]]) -> int:
     self.dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -11410,6 +11942,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/description/
+# Question: 2310. Sum of Numbers With Units Digit K
 class Solution:
   def minimumNumbers(self, num: int, k: int) -> int:
     if num == 0:
@@ -11429,6 +11962,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/triangle/description/
+# Question: 120. Triangle
 class Solution:
   def minimumTotal(self, triangle: List[List[int]]) -> int:
     for i in reversed(range(len(triangle) - 1)):
@@ -11440,6 +11974,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/simplified-fractions/description/
+# Question: 1447. Simplified Fractions
 class Solution:
   def simplifiedFractions(self, n: int) -> List[str]:
     ans = []
@@ -11451,6 +11986,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/move-pieces-to-obtain-a-string/description/
+# Question: 2337. Move Pieces to Obtain a String
 class Solution:
   def canChange(self, start: str, target: str) -> bool:
     n = len(start)
@@ -11477,6 +12013,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/linked-list-in-binary-tree/description/
+# Question: 1367. Linked List in Binary Tree
 class Solution:
   def isSubPath(self, head: Optional[ListNode], root: Optional[TreeNode]) -> bool:
     if not root:
@@ -11496,6 +12033,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/product-of-the-last-k-numbers/description/
+# Question: 1352. Product of the Last K Numbers
 class ProductOfNumbers:
   def __init__(self):
     self.prefix = [1]
@@ -11511,6 +12049,7 @@ class ProductOfNumbers:
 
 
 # Link: https://leetcode.com/problems/equal-tree-partition/description/
+# Question: 663. Equal Tree Partition
 class Solution:
   def checkEqualTree(self, root: Optional[TreeNode]) -> bool:
     if not root:
@@ -11531,6 +12070,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/path-with-maximum-probability/description/
+# Question: 1514. Path with Maximum Probability
 class Solution:
   def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], start: int, end: int) -> float:
     graph = [[] for _ in range(n)]  # {a: [(b, probability_ab)]}
@@ -11558,6 +12098,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-people-aware-of-a-secret/description/
+# Question: 2327. Number of People Aware of a Secret
 class Solution:
   def peopleAwareOfSecret(self, n: int, delay: int, forget: int) -> int:
     kMod = 1_000_000_007
@@ -11580,6 +12121,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-punishment-number-of-an-integer/description/
+# Question: 2698. Find the Punishment Number of an Integer
 class Solution:
   def punishmentNumber(self, n: int) -> int:
     def isPossible(accumulate: int, running: int, numChars: List[str], s: int, target: int) -> bool:
@@ -11602,6 +12144,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/flip-string-to-monotone-increasing/description/
+# Question: 926. Flip String to Monotone Increasing
 class Solution:
   def minFlipsMonoIncr(self, s: str) -> int:
     # the number of characters to be flilpped to make the substring so far
@@ -11621,6 +12164,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/description/
+# Question: 1574. Shortest Subarray to be Removed to Make Array Sorted
 class Solution:
   def findLengthOfShortestSubarray(self, arr: List[int]) -> int:
     n = len(arr)
@@ -11653,6 +12197,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-or/description/
+# Question: 2680. Maximum OR
 class Solution:
   def maximumOr(self, nums: List[int], k: int) -> int:
     n = len(nums)
@@ -11672,6 +12217,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/
+# Question: 2657. Find the Prefix Common Array of Two Arrays
 class Solution:
   def findThePrefixCommonArray(self, A: List[int], B: List[int]) -> List[int]:
     n = len(A)
@@ -11692,6 +12238,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/
+# Question: 82. Remove Duplicates from Sorted List II
 class Solution:
   def deleteDuplicates(self, head: ListNode) -> ListNode:
     dummy = ListNode(0, head)
@@ -11710,6 +12257,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/description/
+# Question: 2610. Convert an Array Into a 2D Array With Conditions
 class Solution:
   def findMatrix(self, nums: List[int]) -> List[List[int]]:
     # The number of rows we need equals the maximum frequency.
@@ -11727,6 +12275,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/append-k-integers-with-minimal-sum/description/
+# Question: 2195. Append K Integers With Minimal Sum
 class Solution:
   def minimalKSum(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -11752,6 +12301,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/description/
+# Question: 1144. Decrease Elements To Make Array Zigzag
 class Solution:
   def movesToMakeZigzag(self, nums: List[int]) -> int:
     decreasing = [0] * 2
@@ -11765,6 +12315,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-points-in-an-archery-competition/description/
+# Question: 2212. Maximum Points in an Archery Competition
 class Solution:
   def maximumBobPoints(self, numArrows: int, aliceArrows: List[int]) -> List[int]:
     allMask = (1 << 12) - 1
@@ -11798,6 +12349,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/
+# Question: 718. Maximum Length of Repeated Subarray
 class Solution:
   def findLength(self, nums1: List[int], nums2: List[int]) -> int:
     m = len(nums1)
@@ -11817,6 +12369,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/
+# Question: 718. Maximum Length of Repeated Subarray
 class Solution:
   def findLength(self, nums1: List[int], nums2: List[int]) -> int:
     ans = 0
@@ -11831,6 +12384,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/description/
+# Question: 2593. Find Score of an Array After Marking All Elements
 class Solution:
   def findScore(self, nums: List[int]) -> int:
     ans = 0
@@ -11848,6 +12402,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-to-set-cooking-time/description/
+# Question: 2162. Minimum Cost to Set Cooking Time
 class Solution:
   def minCostSetTime(self, startAt: int, moveCost: int, pushCost: int, targetSeconds: int) -> int:
     ans = math.inf
@@ -11874,6 +12429,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/description/
+# Question: 2380. Time Needed to Rearrange a Binary String
 class Solution:
   def secondsToRemoveOccurrences(self, s: str) -> int:
     ans = 0
@@ -11889,6 +12445,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
+# Question: 34. Find First and Last Position of Element in Sorted Array
 class Solution:
   def searchRange(self, nums: List[int], target: int) -> List[int]:
     l = bisect_left(nums, target)
@@ -11899,6 +12456,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/next-permutation/description/
+# Question: 31. Next Permutation
 class Solution:
   def nextPermutation(self, nums: List[int]) -> None:
     n = len(nums)
@@ -11928,6 +12486,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-k-strongest-values-in-an-array/description/
+# Question: 1471. The k Strongest Values in an Array
 class Solution:
   def getStrongest(self, arr: List[int], k: int) -> List[int]:
     arr.sort()
@@ -11949,6 +12508,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-browser-history/description/
+# Question: 1472. Design Browser History
 class BrowserHistory:
   def __init__(self, homepage: str):
     self.history = []
@@ -11972,6 +12532,7 @@ class BrowserHistory:
 
 
 # Link: https://leetcode.com/problems/design-browser-history/description/
+# Question: 1472. Design Browser History
 class Node:
   def __init__(self, url: str):
     self.prev = None
@@ -12002,6 +12563,7 @@ class BrowserHistory:
 
 
 # Link: https://leetcode.com/problems/design-browser-history/description/
+# Question: 1472. Design Browser History
 class BrowserHistory:
   def __init__(self, homepage: str):
     self.urls = []
@@ -12027,6 +12589,7 @@ class BrowserHistory:
 
 
 # Link: https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/description/
+# Question: 340. Longest Substring with At Most K Distinct Characters
 class Solution:
   def lengthOfLongestSubstringKDistinct(self, s: str, k: int) -> int:
     ans = 0
@@ -12049,6 +12612,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/
+# Question: 1249. Minimum Remove to Make Valid Parentheses
 class Solution:
   def minRemoveToMakeValid(self, s: str) -> str:
     stack = []  # unpaired '(' indices
@@ -12071,6 +12635,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms/description/
+# Question: 1997. First Day Where You Have Been in All the Rooms
 class Solution:
   def firstDayBeenInAllRooms(self, nextVisit: List[int]) -> int:
     kMod = 1_000_000_007
@@ -12093,12 +12658,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/description/
+# Question: 2914. Minimum Number of Changes to Make Binary String Beautiful
 class Solution:
   def minChanges(self, s: str) -> int:
     return sum(a != b for a, b in zip(s[::2], s[1::2]))
 
 
 # Link: https://leetcode.com/problems/magnetic-force-between-two-balls/description/
+# Question: 1552. Magnetic Force Between Two Balls
 class Solution:
   def maxDistance(self, position: List[int], m: int) -> int:
     position.sort()
@@ -12126,6 +12693,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/fraction-addition-and-subtraction/description/
+# Question: 592. Fraction Addition and Subtraction
 class Solution:
   def fractionAddition(self, expression: str) -> str:
     ints = list(map(int, re.findall('[+-]?[0-9]+', expression)))
@@ -12143,6 +12711,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/finding-pairs-with-a-certain-sum/description/
+# Question: 1865. Finding Pairs With a Certain Sum
 class FindSumPairs:
   def __init__(self, nums1: List[int], nums2: List[int]):
     self.nums1 = nums1
@@ -12162,6 +12731,7 @@ class FindSumPairs:
 
 
 # Link: https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/description/
+# Question: 1007. Minimum Domino Rotations For Equal Row
 class Solution:
   def minDominoRotations(self, tops: List[int], bottoms: List[int]) -> int:
     for num in range(1, 7):
@@ -12171,6 +12741,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/single-element-in-a-sorted-array/description/
+# Question: 540. Single Element in a Sorted Array
 class Solution:
   def singleNonDuplicate(self, nums: List[int]) -> int:
     l = 0
@@ -12189,6 +12760,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-increment-to-make-array-unique/description/
+# Question: 945. Minimum Increment to Make Array Unique
 class Solution:
   def minIncrementForUnique(self, nums: List[int]) -> int:
     ans = 0
@@ -12202,6 +12774,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/water-and-jug-problem/description/
+# Question: 365. Water and Jug Problem
 class Solution:
   def canMeasureWater(self, jug1Capacity: int, jug2Capacity: int, targetCapacity: int) -> bool:
     return targetCapacity == 0 or \
@@ -12210,6 +12783,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-absolute-difference-queries/description/
+# Question: 1906. Minimum Absolute Difference Queries
 class Solution:
   def minDifference(self, nums: List[int], queries: List[List[int]]) -> List[int]:
     numToIndices = [[] for _ in range(101)]
@@ -12239,6 +12813,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-total-importance-of-roads/description/
+# Question: 2285. Maximum Total Importance of Roads
 class Solution:
   def maximumImportance(self, n: int, roads: List[List[int]]) -> int:
     count = [0] * n
@@ -12252,6 +12827,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/score-of-parentheses/description/
+# Question: 856. Score of Parentheses
 class Solution:
   def scoreOfParentheses(self, s: str) -> int:
     ans = 0
@@ -12266,6 +12842,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/linked-list-cycle-ii/description/
+# Question: 142. Linked List Cycle II
 class Solution:
   def detectCycle(self, head: ListNode) -> ListNode:
     slow = head
@@ -12285,6 +12862,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/out-of-boundary-paths/description/
+# Question: 576. Out of Boundary Paths
 class Solution:
   def findPaths(self, m: int, n: int, maxMove: int, startRow: int, startColumn: int) -> int:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -12312,6 +12890,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/out-of-boundary-paths/description/
+# Question: 576. Out of Boundary Paths
 class Solution:
   def findPaths(self, m, n, maxMove, startRow, startColumn):
     kMod = 1000000007
@@ -12333,6 +12912,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/description/
+# Question: 1650. Lowest Common Ancestor of a Binary Tree III
 class Solution:
   # Same as 160. Intersection of Two Linked Lists
   def lowestCommonAncestor(self, p: 'Node', q: 'Node') -> 'Node':
@@ -12347,6 +12927,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-artifacts-that-can-be-extracted/description/
+# Question: 2201. Count Artifacts That Can Be Extracted
 class Solution:
   def digArtifacts(self, n: int, artifacts: List[List[int]], dig: List[List[int]]) -> int:
     digged = set((r, c) for r, c in dig)
@@ -12362,6 +12943,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-moves-to-reach-target-score/description/
+# Question: 2139. Minimum Moves to Reach Target Score
 class Solution:
   def minMoves(self, target: int, maxDoubles: int) -> int:
     steps = 0
@@ -12378,6 +12960,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-unique-categories/description/
+# Question: 2782. Number of Unique Categories
 # Definition for a category handler.
 # class CategoryHandler:
 #   def haveSameCategory(self, a: int, b: int) -> bool:
@@ -12395,6 +12978,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-erasure-value/description/
+# Question: 1695. Maximum Erasure Value
 class Solution:
   def maximumUniqueSubarray(self, nums: List[int]) -> int:
     ans = 0
@@ -12415,6 +12999,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description/
+# Question: 2583. Kth Largest Sum in a Binary Tree
 class Solution:
   def kthLargestLevelSum(self, root: Optional[TreeNode], k: int) -> int:
     levelSums = []
@@ -12436,6 +13021,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/evaluate-reverse-polish-notation/description/
+# Question: 150. Evaluate Reverse Polish Notation
 class Solution:
   def evalRPN(self, tokens: List[str]) -> int:
     stack = []
@@ -12458,6 +13044,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximize-win-from-two-segments/description/
+# Question: 2555. Maximize Win From Two Segments
 class Solution:
   def maximizeWin(self, prizePositions: List[int], k: int) -> int:
     ans = 0
@@ -12477,6 +13064,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/max-increase-to-keep-city-skyline/description/
+# Question: 807. Max Increase to Keep City Skyline
 class Solution:
   def maxIncreaseKeepingSkyline(self, grid: List[List[int]]) -> int:
     rowMax = list(map(max, grid))
@@ -12485,6 +13073,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sentence-similarity-iii/description/
+# Question: 1813. Sentence Similarity III
 class Solution:
   def areSentencesSimilar(self, sentence1: str, sentence2: str) -> bool:
     if len(sentence1) == len(sentence2):
@@ -12506,6 +13095,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rabbits-in-forest/description/
+# Question: 781. Rabbits in Forest
 class Solution:
   def numRabbits(self, answers: List[int]) -> int:
     ans = 0
@@ -12520,6 +13110,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i/description/
+# Question: 3034. Number of Subarrays That Match a Pattern I
 class Solution:
   def countMatchingSubarrays(self, nums: List[int], pattern: List[int]) -> int:
     def getNum(a: int, b: int) -> int:
@@ -12571,6 +13162,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-good-days-to-rob-the-bank/description/
+# Question: 2100. Find Good Days to Rob the Bank
 class Solution:
   def goodDaysToRobBank(self, security: List[int], time: int) -> List[int]:
     n = len(security)
@@ -12590,6 +13182,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-number-of-homogenous-substrings/description/
+# Question: 1759. Count Number of Homogenous Substrings
 class Solution:
   def countHomogenous(self, s: str) -> int:
     kMod = 1_000_000_007
@@ -12607,6 +13200,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/bulb-switcher-ii/description/
+# Question: 672. Bulb Switcher II
 class Solution:
   def flipLights(self, n: int, m: int) -> int:
     n = min(n, 3)
@@ -12622,6 +13216,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-latest-time-to-catch-a-bus/description/
+# Question: 2332. The Latest Time to Catch a Bus
 class Solution:
   def latestTimeCatchTheBus(self, buses: List[int], passengers: List[int], capacity: int) -> int:
     buses.sort()
@@ -12652,6 +13247,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sequence-reconstruction/description/
+# Question: 444. Sequence Reconstruction
 class Solution:
   def sequenceReconstruction(self, org: List[int], seqs: List[List[int]]) -> bool:
     if not seqs:
@@ -12691,6 +13287,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reduce-array-size-to-the-half/description/
+# Question: 1338. Reduce Array Size to The Half
 class Solution:
   def minSetSize(self, arr: List[int]) -> int:
     n = len(arr)
@@ -12706,6 +13303,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/description/
+# Question: 795. Number of Subarrays with Bounded Maximum
 class Solution:
   def numSubarrayBoundedMax(self, nums: List[int], left: int, right: int) -> int:
     ans = 0
@@ -12723,6 +13321,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-remoteness-of-all-cells/description/
+# Question: 2852. Sum of Remoteness of All Cells
 class Solution:
   def sumRemoteness(self, grid: List[List[int]]) -> int:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -12763,6 +13362,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-bounded-blocking-queue/description/
+# Question: 1188. Design Bounded Blocking Queue
 from threading import Semaphore
 
 
@@ -12788,6 +13388,7 @@ class BoundedBlockingQueue:
 
 
 # Link: https://leetcode.com/problems/find-the-duplicate-number/description/
+# Question: 287. Find the Duplicate Number
 class Solution:
   def findDuplicate(self, nums: List[int]) -> int:
     slow = nums[nums[0]]
@@ -12807,6 +13408,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/description/
+# Question: 2120. Execution of All Suffix Instructions Staying in a Grid
 class Solution:
   def executeInstructions(self, n: int, startPos: List[int], s: str) -> List[int]:
     moves = {'L': (0, -1), 'R': (0, 1), 'U': (-1, 0), 'D': (1, 0)}
@@ -12837,6 +13439,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/description/
+# Question: 2711. Difference of Number of Distinct Values on Diagonals
 class Solution:
   def differenceOfDistinctValues(self, grid: List[List[int]]) -> List[List[int]]:
     m = len(grid)
@@ -12876,6 +13479,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/graph-valid-tree/description/
+# Question: 261. Graph Valid Tree
 class Solution:
   def validTree(self, n: int, edges: List[List[int]]) -> bool:
     if n == 0 or len(edges) != n - 1:
@@ -12900,6 +13504,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/graph-valid-tree/description/
+# Question: 261. Graph Valid Tree
 class UnionFind:
   def __init__(self, n: int):
     self.count = n
@@ -12940,6 +13545,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-product-of-word-lengths/description/
+# Question: 318. Maximum Product of Word Lengths
 class Solution:
   def maxProduct(self, words: List[str]) -> int:
     ans = 0
@@ -12961,6 +13567,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-zero-filled-subarrays/description/
+# Question: 2348. Number of Zero-Filled Subarrays
 class Solution:
   def zeroFilledSubarray(self, nums: List[int]) -> int:
     ans = 0
@@ -12976,6 +13583,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/print-zero-even-odd/description/
+# Question: 1116. Print Zero Even Odd
 from threading import Semaphore
 
 
@@ -13007,6 +13615,7 @@ class ZeroEvenOdd:
 
 
 # Link: https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/description/
+# Question: 2477. Minimum Fuel Cost to Report to the Capital
 class Solution:
   def minimumFuelCost(self, roads: List[List[int]], seats: int) -> int:
     ans = 0
@@ -13033,6 +13642,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/h-index/description/
+# Question: 274. H-Index
 class Solution:
   def hIndex(self, citations: List[int]) -> int:
     n = len(citations)
@@ -13047,6 +13657,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/h-index/description/
+# Question: 274. H-Index
 class Solution:
   def hIndex(self, citations: List[int]) -> int:
     n = len(citations)
@@ -13065,6 +13676,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/description/
+# Question: 2107. Number of Unique Flavors After Sharing K Candies
 class Solution:
   def shareCandies(self, candies: List[int], k: int) -> int:
     ans = 0
@@ -13087,6 +13699,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/unique-substrings-with-equal-digit-frequency/description/
+# Question: 2168. Unique Substrings With Equal Digit Frequency
 class Solution:
   def equalDigitFrequency(self, s: str) -> int:
     power = 11
@@ -13121,6 +13734,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-duplicate-letters/description/
+# Question: 316. Remove Duplicate Letters
 class Solution:
   def removeDuplicateLetters(self, s: str) -> str:
     ans = []
@@ -13141,6 +13755,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/word-search/description/
+# Question: 79. Word Search
 class Solution:
   def exist(self, board: List[List[str]], word: str) -> bool:
     m = len(board)
@@ -13169,6 +13784,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/description/
+# Question: 2436. Minimum Split Into Subarrays With GCD Greater Than One
 class Solution:
   def minimumSplits(self, nums: List[int]) -> int:
     ans = 1
@@ -13186,6 +13802,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/coin-change/description/
+# Question: 322. Coin Change
 class Solution:
   def coinChange(self, coins: List[int], amount: int) -> int:
     # dp[i] := the minimum number Of coins to make up i
@@ -13199,6 +13816,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/description/
+# Question: 1888. Minimum Number of Flips to Make the Binary String Alternating
 class Solution:
   def minFlips(self, s: str) -> int:
     n = len(s)
@@ -13224,6 +13842,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partition-array-according-to-given-pivot/description/
+# Question: 2161. Partition Array According to Given Pivot
 class Solution:
   def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
     return [num for num in nums if num < pivot] + \
@@ -13232,6 +13851,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reveal-cards-in-increasing-order/description/
+# Question: 950. Reveal Cards In Increasing Order
 class Solution:
   def deckRevealedIncreasing(self, deck: List[int]) -> List[int]:
     dq = collections.deque()
@@ -13244,6 +13864,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/relocate-marbles/description/
+# Question: 2766. Relocate Marbles
 class Solution:
   def relocateMarbles(self, nums: List[int], moveFrom: List[int], moveTo: List[int]) -> List[int]:
     numsSet = set(nums)
@@ -13256,6 +13877,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-search-tree-iterator/description/
+# Question: 173. Binary Search Tree Iterator
 class BSTIterator:
   def __init__(self, root: Optional[TreeNode]):
     self.i = 0
@@ -13278,6 +13900,7 @@ class BSTIterator:
 
 
 # Link: https://leetcode.com/problems/binary-search-tree-iterator/description/
+# Question: 173. Binary Search Tree Iterator
 class BSTIterator:
   def __init__(self, root: Optional[TreeNode]):
     self.stack = []
@@ -13298,6 +13921,7 @@ class BSTIterator:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-alloys/description/
+# Question: 2861. Maximum Number of Alloys
 class Solution:
   def maxNumberOfAlloys(self, n: int, k: int, budget: int,
                         composition: List[List[int]], stock: List[int],
@@ -13328,6 +13952,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-compatibility-score-sum/description/
+# Question: 1947. Maximum Compatibility Score Sum
 class Solution:
   def maxCompatibilitySum(self, students: List[List[int]], mentors: List[List[int]]) -> int:
     ans = 0
@@ -13351,6 +13976,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/web-crawler/description/
+# Question: 1236. Web Crawler
 # """
 # This is HtmlParser's API interface.
 # You should not implement it, or speculate about its implementation
@@ -13377,6 +14003,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/solving-questions-with-brainpower/description/
+# Question: 2140. Solving Questions With Brainpower
 class Solution:
   def mostPoints(self, questions: List[List[int]]) -> int:
     n = len(questions)
@@ -13393,6 +14020,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/delete-operation-for-two-strings/description/
+# Question: 583. Delete Operation for Two Strings
 class Solution:
   def minDistance(self, word1: str, word2: str) -> int:
     m = len(word1)
@@ -13415,6 +14043,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-the-hidden-sequences/description/
+# Question: 2145. Count the Hidden Sequences
 class Solution:
   def numberOfArrays(self, differences: List[int], lower: int, upper: int) -> int:
     prefix = 0
@@ -13430,6 +14059,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-the-hidden-sequences/description/
+# Question: 2145. Count the Hidden Sequences
 class Solution:
   def numberOfArrays(self, differences: List[int], lower: int, upper: int) -> int:
     prefix = [0] + list(itertools.accumulate(differences))
@@ -13437,6 +14067,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/cinema-seat-allocation/description/
+# Question: 1386. Cinema Seat Allocation
 class Solution:
   def maxNumberOfFamilies(self, n: int, reservedSeats: List[List[int]]) -> int:
     ans = 0
@@ -13460,6 +14091,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-players-with-zero-or-one-losses/description/
+# Question: 2225. Find Players With Zero or One Losses
 class Solution:
   def findWinners(self, matches: List[List[int]]) -> List[List[int]]:
     ans = [[] for _ in range(2)]
@@ -13478,6 +14110,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/description/
+# Question: 2526. Find Consecutive Integers from a Data Stream
 class DataStream:
   def __init__(self, value: int, k: int):
     self.value = value
@@ -13495,6 +14128,7 @@ class DataStream:
 
 
 # Link: https://leetcode.com/problems/encode-and-decode-strings/description/
+# Question: 271. Encode and Decode Strings
 class Codec:
   def encode(self, strs: List[str]) -> str:
     """Encodes a list of strings to a single string."""
@@ -13515,6 +14149,7 @@ class Codec:
 
 
 # Link: https://leetcode.com/problems/queries-on-a-permutation-with-key/description/
+# Question: 1409. Queries on a Permutation With Key
 class FenwickTree:
   def __init__(self, n: int):
     self.sums = [0] * (n + 1)
@@ -13561,6 +14196,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/paint-house/description/
+# Question: 256. Paint House
 class Solution:
   def minCost(self, costs: List[List[int]]) -> List[List[int]]:
     for i in range(1, len(costs)):
@@ -13572,6 +14208,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/4sum-ii/description/
+# Question: 454. 4Sum II
 class Solution:
   def fourSumCount(self, nums1: List[int], nums2: List[int],
                    nums3: List[int], nums4: List[int]) -> int:
@@ -13580,6 +14217,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/description/
+# Question: 2841. Maximum Sum of Almost Unique Subarray
 class Solution:
   def maxSum(self, nums: List[int], m: int, k: int) -> int:
     ans = 0
@@ -13602,6 +14240,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/description/
+# Question: 1546. Maximum Number of Non-Overlapping Subarrays With Sum Equals Target
 class Solution:
   def maxNonOverlapping(self, nums: List[int], target: int) -> int:
     # Ending the subarray ASAP always has a better result.
@@ -13625,6 +14264,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/beautiful-arrangement-ii/description/
+# Question: 667. Beautiful Arrangement II
 class Solution:
   def constructArray(self, n: int, k: int) -> List[int]:
     ans = list(range(1, n - k + 1))
@@ -13639,6 +14279,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/description/
+# Question: 2982. Find Longest Special Substring That Occurs Thrice II
 class Solution:
   def maximumLength(self, s: str) -> int:
     n = len(s)
@@ -13669,6 +14310,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shortest-path-with-alternating-colors/description/
+# Question: 1129. Shortest Path with Alternating Colors
 from enum import Enum
 
 
@@ -13707,6 +14349,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/average-height-of-buildings-in-each-segment/description/
+# Question: 2015. Average Height of Buildings in Each Segment
 class Solution:
   def averageHeightOfBuildings(self, buildings: List[List[int]]) -> List[List[int]]:
     ans = []
@@ -13736,6 +14379,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/describe-the-painting/description/
+# Question: 1943. Describe the Painting
 from sortedcontainers import SortedDict
 
 
@@ -13760,6 +14404,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-keypresses/description/
+# Question: 2268. Minimum Number of Keypresses
 class Solution:
   def minimumKeypresses(self, s: str) -> int:
     return sum(c * (i // 9 + 1)
@@ -13767,6 +14412,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/surrounded-regions/description/
+# Question: 130. Surrounded Regions
 class Solution:
   def solve(self, board: List[List[str]]) -> None:
     if not board:
@@ -13798,6 +14444,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/surrounded-regions/description/
+# Question: 130. Surrounded Regions
 class Solution:
   def solve(self, board: List[List[str]]) -> None:
     if not board:
@@ -13834,6 +14481,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-element-in-an-array-after-merge-operations/description/
+# Question: 2789. Largest Element in an Array after Merge Operations
 class Solution:
   def maxArrayValue(self, nums: List[int]) -> int:
     ans = nums[-1]
@@ -13848,6 +14496,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/walking-robot-simulation/description/
+# Question: 874. Walking Robot Simulation
 class Solution:
   def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -13875,6 +14524,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/description/
+# Question: 1536. Minimum Swaps to Arrange a Binary Grid
 class Solution:
   def minSwaps(self, grid: List[List[int]]) -> int:
     n = len(grid)
@@ -13897,6 +14547,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-root-of-n-ary-tree/description/
+# Question: 1506. Find Root of N-Ary Tree
 class Solution:
   def findRoot(self, tree: List['Node']) -> 'Node':
     sum = 0
@@ -13912,6 +14563,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/description/
+# Question: 2981. Find Longest Special Substring That Occurs Thrice I
 class Solution:
   def maximumLength(self, s: str) -> int:
     n = len(s)
@@ -13942,6 +14594,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/description/
+# Question: 1718. Construct the Lexicographically Largest Valid Sequence
 class Solution:
   def constructDistancedSequence(self, n: int) -> List[int]:
     ans = [0] * (2 * n - 1)
@@ -13978,6 +14631,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-area-rectangle/description/
+# Question: 939. Minimum Area Rectangle
 class Solution:
   def minAreaRect(self, points: List[List[int]]) -> int:
     ans = math.inf
@@ -13999,6 +14653,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/delete-leaves-with-a-given-value/description/
+# Question: 1325. Delete Leaves With a Given Value
 class Solution:
   def removeLeafNodes(self, root: Optional[TreeNode], target: int) -> Optional[TreeNode]:
     if not root:
@@ -14012,6 +14667,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/description/
+# Question: 2654. Minimum Number of Operations to Make All Array Elements Equal to 1
 class Solution:
   def minOperations(self, nums: List[int]) -> int:
     n = len(nums)
@@ -14035,6 +14691,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/watering-plants/description/
+# Question: 2079. Watering Plants
 class Solution:
   def wateringPlants(self, plants: List[int], capacity: int) -> int:
     ans = 0
@@ -14051,6 +14708,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-make-array-equal/description/
+# Question: 1551. Minimum Operations to Make Array Equal
 class Solution:
   def minOperations(self, n: int) -> int:
     def arr(self, i: int) -> int:
@@ -14073,12 +14731,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/bitwise-and-of-numbers-range/description/
+# Question: 201. Bitwise AND of Numbers Range
 class Solution:
   def rangeBitwiseAnd(self, m: int, n: int) -> int:
     return self.rangeBitwiseAnd(m >> 1, n >> 1) << 1 if m < n else m
 
 
 # Link: https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/description/
+# Question: 2905. Find Indices With Index and Value Difference II
 class Solution:
   def findIndices(self, nums: List[int], indexDifference: int, valueDifference: int) -> List[int]:
     # nums[minIndex] := the minimum number with enough index different from the current number
@@ -14100,6 +14760,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/advantage-shuffle/description/
+# Question: 870. Advantage Shuffle
 from sortedcontainers import SortedList
 
 
@@ -14116,6 +14777,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-divisible-substrings/description/
+# Question: 2950. Number of Divisible Substrings
 class Solution:
   def countDivisibleSubstrings(self, word: str) -> int:
     # Let f(c) = d, where d = 1, 2, ..., 9.
@@ -14139,6 +14801,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-duplicate-file-in-system/description/
+# Question: 609. Find Duplicate File in System
 class Solution:
   def findDuplicate(self, paths: List[str]) -> List[List[str]]:
     contentToPathFiles = collections.defaultdict(list)
@@ -14161,6 +14824,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-sideway-jumps/description/
+# Question: 1824. Minimum Sideway Jumps
 class Solution:
   def minSideJumps(self, obstacles: List[int]) -> int:
     kInf = 1e6
@@ -14180,6 +14844,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-unhappy-friends/description/
+# Question: 1583. Count Unhappy Friends
 class Solution:
   def unhappyFriends(self, n: int, preferences: List[List[int]], pairs: List[List[int]]) -> int:
     ans = 0
@@ -14206,6 +14871,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/description/
+# Question: 2058. Find the Minimum and Maximum Number of Nodes Between Critical Points
 class Solution:
   def nodesBetweenCriticalPoints(self, head: Optional[ListNode]) -> List[int]:
     minDistance = math.inf
@@ -14233,6 +14899,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-convert-number/description/
+# Question: 2059. Minimum Operations to Convert Number
 class Solution:
   def minimumOperations(self, nums: List[int], start: int, goal: int) -> int:
     ans = 0
@@ -14256,6 +14923,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/description/
+# Question: 2840. Check if Strings Can be Made Equal With Operations II
 class Solution:
   def checkStrings(self, s1: str, s2: str) -> bool:
     count = [collections.Counter() for _ in range(2)]
@@ -14269,6 +14937,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/implement-magic-dictionary/description/
+# Question: 676. Implement Magic Dictionary
 class MagicDictionary:
   def __init__(self):
     self.dict = {}
@@ -14291,6 +14960,7 @@ class MagicDictionary:
 
 
 # Link: https://leetcode.com/problems/implement-magic-dictionary/description/
+# Question: 676. Implement Magic Dictionary
 class TrieNode:
   def __init__(self):
     self.children: Dict[str, TrieNode] = collections.defaultdict(TrieNode)
@@ -14338,6 +15008,7 @@ class MagicDictionary:
 
 
 # Link: https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/description/
+# Question: 2131. Longest Palindrome by Concatenating Two Letter Words
 class Solution:
   def longestPalindrome(self, words: List[str]) -> int:
     ans = 0
@@ -14360,6 +15031,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/description/
+# Question: 2419. Longest Subarray With Maximum Bitwise AND
 class Solution:
   def longestSubarray(self, nums: List[int]) -> int:
     ans = 0
@@ -14381,6 +15053,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-sum-score-of-array/description/
+# Question: 2219. Maximum Sum Score of Array
 class Solution:
   def maximumSumScore(self, nums: List[int]) -> int:
     ans = -math.inf
@@ -14395,6 +15068,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-stones-to-minimize-the-total/description/
+# Question: 1962. Remove Stones to Minimize the Total
 class Solution:
   def minStoneSum(self, piles: List[int], k: int) -> int:
     maxHeap = [-pile for pile in piles]
@@ -14407,6 +15081,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/two-best-non-overlapping-events/description/
+# Question: 2054. Two Best Non-Overlapping Events
 class Solution:
   def maxTwoEvents(self, events: List[List[int]]) -> int:
     ans = 0
@@ -14430,6 +15105,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/
+# Question: 1011. Capacity To Ship Packages Within D Days
 class Solution:
   def shipWithinDays(self, weights: List[int], days: int) -> int:
     def canShip(shipCapacity: int) -> bool:
@@ -14450,6 +15126,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rotated-digits/description/
+# Question: 788. Rotated Digits
 class Solution:
   def rotatedDigits(self, n: int) -> int:
     def isGoodNumber(i: int) -> bool:
@@ -14469,6 +15146,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/description/
+# Question: 2146. K Highest Ranked Items Within a Price Range
 class Solution:
   def highestRankedKItems(self, grid: List[List[int]], pricing: List[int], start: List[int], k: int) -> List[List[int]]:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -14512,6 +15190,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/redundant-connection/description/
+# Question: 684. Redundant Connection
 class UnionFind:
   def __init__(self, n: int):
     self.id = list(range(n))
@@ -14548,6 +15227,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/group-shifted-strings/description/
+# Question: 249. Group Shifted Strings
 class Solution:
   def groupStrings(self, strings: List[str]) -> List[List[str]]:
     keyToStrings = collections.defaultdict(list)
@@ -14572,6 +15252,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/
+# Question: 1930. Unique Length-3 Palindromic Subsequences
 class Solution:
   def countPalindromicSubsequence(self, s: str) -> int:
     ans = 0
@@ -14591,6 +15272,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-time-to-repair-cars/description/
+# Question: 2594. Minimum Time to Repair Cars
 class Solution:
   def repairCars(self, ranks: List[int], cars: int) -> int:
     def numCarsFixed(minutes: int) -> int:
@@ -14604,6 +15286,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/correct-a-binary-tree/description/
+# Question: 1660. Correct a Binary Tree
 class Solution:
   def __init__(self):
     self.seen = set()
@@ -14620,6 +15303,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-score-by-changing-two-elements/description/
+# Question: 2567. Minimum Score by Changing Two Elements
 class Solution:
   def minimizeSum(self, nums: List[int]) -> int:
     nums.sort()
@@ -14633,6 +15317,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/height-of-special-binary-tree/description/
+# Question: 2773. Height of Special Binary Tree
 class Solution:
   def heightOfTree(self, root: Optional[TreeNode]) -> int:
     if not root:
@@ -14644,6 +15329,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/description/
+# Question: 1170. Compare Strings by Frequency of the Smallest Character
 class Solution:
   def numSmallerByFrequency(self, queries: List[str], words: List[str]) -> List[int]:
     ans = []
@@ -14658,6 +15344,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/description/
+# Question: 1104. Path In Zigzag Labelled Binary Tree
 class Solution:
   def pathInZigZagTree(self, label: int) -> List[int]:
     def boundarySum(level: int):
@@ -14681,6 +15368,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/
+# Question: 378. Kth Smallest Element in a Sorted Matrix
 class Solution:
   def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
     minHeap = []  # (matrix[i][j], i, j)
@@ -14700,6 +15388,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/
+# Question: 378. Kth Smallest Element in a Sorted Matrix
 class Solution:
   def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
     def numsNoGreaterThan(m: int) -> int:
@@ -14718,6 +15407,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reorder-data-in-log-files/description/
+# Question: 937. Reorder Data in Log Files
 class Solution:
   def reorderLogFiles(self, logs: List[str]) -> List[str]:
     digitLogs = []
@@ -14736,6 +15426,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/description/
+# Question: 1644. Lowest Common Ancestor of a Binary Tree II
 class Solution:
   def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
     def getLCA(root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
@@ -14756,6 +15447,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/description/
+# Question: 1644. Lowest Common Ancestor of a Binary Tree II
 class Solution:
   def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
     seenP = False
@@ -14784,6 +15476,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/koko-eating-bananas/description/
+# Question: 875. Koko Eating Bananas
 class Solution:
   def minEatingSpeed(self, piles: List[int], h: int) -> int:
     # Returns true if Koko can eat all piles with speed m.
@@ -14794,6 +15487,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/description/
+# Question: 1663. Smallest String With A Given Numeric Value
 class Solution:
   def getSmallestString(self, n: int, k: int) -> str:
     ans = []
@@ -14808,6 +15502,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/substring-xor-queries/description/
+# Question: 2564. Substring XOR Queries
 class Solution:
   def substringXorQueries(self, s: str, queries: List[List[int]]) -> List[List[int]]:
     kMaxBit = 30
@@ -14831,6 +15526,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/split-linked-list-in-parts/description/
+# Question: 725. Split Linked List in Parts
 class Solution:
   def splitListToParts(self, root: ListNode, k: int) -> List[ListNode]:
     ans = [[] for _ in range(k)]
@@ -14858,6 +15554,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/
+# Question: 103. Binary Tree Zigzag Level Order Traversal
 class Solution:
   def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
     if not root:
@@ -14891,6 +15588,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/
+# Question: 103. Binary Tree Zigzag Level Order Traversal
 class Solution:
   def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
     if not root:
@@ -14918,6 +15616,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-nodes-with-value-one/description/
+# Question: 2445. Number of Nodes With Value One
 class Solution:
   def numberOfNodes(self, n: int, queries: List[int]) -> int:
     # flipped[i] := True if we should flip all the values in the subtree rooted
@@ -14937,6 +15636,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/distant-barcodes/description/
+# Question: 1054. Distant Barcodes
 class Solution:
   def rearrangeBarcodes(self, barcodes: List[int]) -> List[int]:
     ans = [0] * len(barcodes)
@@ -14959,6 +15659,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/knight-probability-in-chessboard/description/
+# Question: 688. Knight Probability in Chessboard
 class Solution:
   def knightProbability(self, n: int, k: int, row: int, column: int) -> float:
     dirs = ((1, 2), (2, 1), (2, -1), (1, -2),
@@ -14982,6 +15683,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/validate-binary-search-tree/description/
+# Question: 98. Validate Binary Search Tree
 class Solution:
   def isValidBST(self, root: Optional[TreeNode]) -> bool:
     def isValidBST(root: Optional[TreeNode],
@@ -15000,6 +15702,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/validate-binary-search-tree/description/
+# Question: 98. Validate Binary Search Tree
 class Solution:
   def isValidBST(self, root: Optional[TreeNode]) -> bool:
     stack = []
@@ -15019,6 +15722,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/description/
+# Question: 2875. Minimum Size Subarray in Infinite Array
 class Solution:
   def minSizeSubarray(self, nums: List[int], target: int) -> int:
     summ = sum(nums)
@@ -15044,6 +15748,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/fruit-into-baskets/description/
+# Question: 904. Fruit Into Baskets
 class Solution:
   def totalFruit(self, fruits: List[int]) -> int:
     ans = 0
@@ -15063,6 +15768,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partition-labels/description/
+# Question: 763. Partition Labels
 class Solution:
   def partitionLabels(self, s: str) -> List[int]:
     ans = []
@@ -15081,6 +15787,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-font-to-fit-a-sentence-in-a-screen/description/
+# Question: 1618. Maximum Font to Fit a Sentence in a Screen
 # """
 # This is FontInfo's API interface.
 # You should not implement it, or speculate about its implementation
@@ -15115,6 +15822,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/range-product-queries-of-powers/description/
+# Question: 2438. Range Product Queries of Powers
 class Solution:
   def productQueries(self, n: int, queries: List[List[int]]) -> List[int]:
     kMod = 1_000_000_007
@@ -15133,6 +15841,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-in-a-matrix/description/
+# Question: 2679. Sum in a Matrix
 class Solution:
   def matrixSum(self, nums: List[List[int]]) -> int:
     for row in nums:
@@ -15142,6 +15851,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/max-area-of-island/description/
+# Question: 695. Max Area of Island
 class Solution:
   def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
     def dfs(i: int, j: int) -> int:
@@ -15158,6 +15868,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-swap/description/
+# Question: 670. Maximum Swap
 class Solution:
   def maximumSwap(self, num: int) -> int:
     s = list(str(num))
@@ -15175,6 +15886,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description/
+# Question: 3043. Find the Length of the Longest Common Prefix
 class TrieNode:
   def __init__(self):
     self.children: Dict[str, TrieNode] = {}
@@ -15212,6 +15924,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/kth-smallest-subarray-sum/description/
+# Question: 1918. Kth Smallest Subarray Sum
 class Solution:
   def kthSmallestSubarraySum(self, nums: List[int], k: int) -> int:
     def numSubarrayLessThan(m: int) -> int:
@@ -15231,6 +15944,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/description/
+# Question: 1887. Reduction Operations to Make the Array Elements Equal
 class Solution:
   def reductionOperations(self, nums: List[int]) -> int:
     ans = 0
@@ -15245,12 +15959,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/mice-and-cheese/description/
+# Question: 2611. Mice and Cheese
 class Solution:
   def miceAndCheese(self, reward1: List[int], reward2: List[int], k: int) -> int:
     return sum(reward2) + sum(heapq.nlargest(k, (a - b for a, b in zip(reward1, reward2))))
 
 
 # Link: https://leetcode.com/problems/palindrome-permutation-ii/description/
+# Question: 267. Palindrome Permutation II
 class Solution:
   def generatePalindromes(self, s: str) -> List[str]:
     count = collections.Counter(s)
@@ -15296,6 +16012,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/campus-bikes/description/
+# Question: 1057. Campus Bikes
 class Solution:
   def assignBikes(self, workers: List[List[int]], bikes: List[List[int]]) -> List[int]:
     ans = [-1] * len(workers)
@@ -15320,6 +16037,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/description/
+# Question: 1577. Number of Ways Where Square of Number Is Equal to Product of Two Numbers
 class Solution:
   def numTriplets(self, nums1: List[int], nums2: List[int]) -> int:
     def countTriplets(A: List[int], B: List[int]):
@@ -15343,6 +16061,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/
+# Question: 395. Longest Substring with At Least K Repeating Characters
 class Solution:
   def longestSubstring(self, s: str, k: int) -> int:
     def longestSubstringWithNUniqueLetters(n: int) -> int:
@@ -15377,6 +16096,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-zero-request-servers/description/
+# Question: 2747. Count Zero Request Servers
 class IndexedQuery:
   def __init__(self, queryIndex: int, query: int):
     self.queryIndex = queryIndex
@@ -15418,6 +16138,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-ideal-subsequence/description/
+# Question: 2370. Longest Ideal Subsequence
 class Solution:
   def longestIdealString(self, s: str, k: int) -> int:
     # dp[i] := the longest subsequence that ends in ('a' + i)
@@ -15439,12 +16160,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-unique-binary-string/description/
+# Question: 1980. Find Unique Binary String
 class Solution:
   def findDifferentBinaryString(self, nums: List[str]) -> str:
     return ''.join('1' if num[i] == '0' else '0' for i, num in enumerate(nums))
 
 
 # Link: https://leetcode.com/problems/find-unique-binary-string/description/
+# Question: 1980. Find Unique Binary String
 class Solution:
   def findDifferentBinaryString(self, nums: List[str]) -> str:
     bitSize = len(nums[0])
@@ -15457,6 +16180,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-subarray-ranges/description/
+# Question: 2104. Sum of Subarray Ranges
 class Solution:
   def subArrayRanges(self, nums: List[int]) -> int:
     n = len(nums)
@@ -15484,6 +16208,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-number/description/
+# Question: 179. Largest Number
 class LargerStrKey(str):
   def __lt__(x: str, y: str) -> bool:
     return x + y > y + x
@@ -15495,6 +16220,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-uncommon-subsequence-ii/description/
+# Question: 522. Longest Uncommon Subsequence II
 class Solution:
   def findLUSlength(self, strs: List[str]) -> int:
     def isSubsequence(a: str, b: str) -> bool:
@@ -15531,6 +16257,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/description/
+# Question: 2863. Maximum Length of Semi-Decreasing Subarrays
 class Solution:
   def maxSubarrayLength(self, nums: List[int]) -> int:
     ans = 0
@@ -15550,6 +16277,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/description/
+# Question: 2966. Divide Array Into Arrays With Max Difference
 class Solution:
   def divideArray(self, nums: List[int], k: int) -> List[List[int]]:
     ans = []
@@ -15565,6 +16293,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-value-after-insertion/description/
+# Question: 1881. Maximum Value after Insertion
 class Solution:
   def maxValue(self, n: str, x: int) -> str:
     isNegative = n[0] == '-'
@@ -15577,6 +16306,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-move-is-legal/description/
+# Question: 1958. Check if Move is Legal
 class Solution:
   def checkMove(self, board: List[List[str]], rMove: int, cMove: int, color: str) -> bool:
     dirs = ((-1, -1), (-1, 0), (-1, 1), (0, -1),
@@ -15604,6 +16334,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-leaves-of-binary-tree/description/
+# Question: 366. Find Leaves of Binary Tree
 class Solution:
   def findLeaves(self, root: Optional[TreeNode]) -> List[List[int]]:
     ans = []
@@ -15628,6 +16359,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/keys-and-rooms/description/
+# Question: 841. Keys and Rooms
 class Solution:
   def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:
     seen = [False] * len(rooms)
@@ -15643,6 +16375,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/task-scheduler/description/
+# Question: 621. Task Scheduler
 class Solution:
   def leastInterval(self, tasks: List[str], n: int) -> int:
     count = collections.Counter(tasks)
@@ -15660,6 +16393,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-ways-to-build-sturdy-brick-wall/description/
+# Question: 2184. Number of Ways to Build Sturdy Brick Wall
 class Solution:
   def buildWall(self, height: int, width: int, bricks: List[int]) -> int:
     kMod = 1_000_000_007
@@ -15698,6 +16432,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/description/
+# Question: 2135. Count Words Obtained After Adding a Letter
 class Solution:
   def wordCount(self, startWords: List[str], targetWords: List[str]) -> int:
     def getMask(s: str) -> int:
@@ -15721,6 +16456,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/decoded-string-at-index/description/
+# Question: 880. Decoded String at Index
 class Solution:
   def decodeAtIndex(self, s: str, k: int) -> str:
     size = 0
@@ -15742,6 +16478,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/expressive-words/description/
+# Question: 809. Expressive Words
 class Solution:
   def expressiveWords(self, s: str, words: List[str]) -> int:
     def isStretchy(word: str) -> bool:
@@ -15765,6 +16502,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/subarray-product-less-than-k/description/
+# Question: 713. Subarray Product Less Than K
 class Solution:
   def numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
     if k <= 1:
@@ -15785,6 +16523,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-nice-pairs-in-an-array/description/
+# Question: 1814. Count Nice Pairs in an Array
 class Solution:
   def countNicePairs(self, nums: List[int]) -> int:
     freqs = collections.Counter(num - int(str(num)[::-1]) for num in nums)
@@ -15792,6 +16531,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-path-cost-in-a-grid/description/
+# Question: 2304. Minimum Path Cost in a Grid
 class Solution:
   def minPathCost(self, grid: List[List[int]], moveCost: List[List[int]]) -> int:
     m = len(grid)
@@ -15810,6 +16550,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lexicographical-numbers/description/
+# Question: 386. Lexicographical Numbers
 class Solution:
   def lexicalOrder(self, n: int) -> List[int]:
     ans = []
@@ -15828,6 +16569,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips-ii/description/
+# Question: 2174. Remove All Ones With Row and Column Flips II
 class Solution:
   def removeOnes(self, grid: List[List[int]]) -> int:
     m = len(grid)
@@ -15863,6 +16605,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips-ii/description/
+# Question: 2174. Remove All Ones With Row and Column Flips II
 class Solution:
   def removeOnes(self, grid: List[List[int]]) -> int:
     m = len(grid)
@@ -15900,6 +16643,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/employee-importance/description/
+# Question: 690. Employee Importance
 class Solution:
   def getImportance(self, employees: List['Employee'], id: int) -> int:
     idToEmployee = {employee.id: employee for employee in employees}
@@ -15914,6 +16658,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-moves-to-make-array-complementary/description/
+# Question: 1674. Minimum Moves to Make Array Complementary
 class Solution:
   def minMoves(self, nums: List[int], limit: int) -> int:
     n = len(nums)
@@ -15939,12 +16684,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/elimination-game/description/
+# Question: 390. Elimination Game
 class Solution:
   def lastRemaining(self, n: int) -> int:
     return 1 if n == 1 else 2 * (1 + n // 2 - self.lastRemaining(n // 2))
 
 
 # Link: https://leetcode.com/problems/binary-tree-right-side-view/description/
+# Question: 199. Binary Tree Right Side View
 class Solution:
   def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
     ans = []
@@ -15963,6 +16710,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-tree-right-side-view/description/
+# Question: 199. Binary Tree Right Side View
 class Solution:
   def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
     if not root:
@@ -15986,6 +16734,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/next-greater-element-iii/description/
+# Question: 556. Next Greater Element III
 class Solution:
   def nextGreaterElement(self, n: int) -> int:
     def nextPermutation(s: List[chr]) -> str:
@@ -16016,6 +16765,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/description/
+# Question: 2909. Minimum Sum of Mountain Triplets II
 class Solution:
   # Same as 2908. Minimum Sum of Mountain Triplets I
   def minimumSum(self, nums: List[int]) -> int:
@@ -16031,6 +16781,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-distances/description/
+# Question: 2615. Sum of Distances
 class Solution:
   def distance(self, nums: List[int]) -> List[int]:
     ans = [0] * len(nums)
@@ -16055,6 +16806,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-average-difference/description/
+# Question: 2256. Minimum Average Difference
 class Solution:
   def minimumAverageDifference(self, nums: List[int]) -> int:
     n = len(nums)
@@ -16077,6 +16829,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sorting-three-groups/description/
+# Question: 2826. Sorting Three Groups
 class Solution:
   def minimumOperations(self, nums: List[int]) -> int:
     # dp[i] := the longest non-decreasing subsequence so far with numbers in [1..i]
@@ -16091,6 +16844,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/boundary-of-binary-tree/description/
+# Question: 545. Boundary of Binary Tree
 class Solution:
   def boundaryOfBinaryTree(self, root: Optional[TreeNode]) -> List[int]:
     if not root:
@@ -16125,6 +16879,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/description/
+# Question: 331. Verify Preorder Serialization of a Binary Tree
 class Solution:
   def isValidSerialization(self, preorder: str) -> bool:
     degree = 1  # out-degree (children) - in-degree (parent)
@@ -16140,6 +16895,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-people-that-can-be-caught-in-tag/description/
+# Question: 1989. Maximum Number of People That Can Be Caught in Tag
 class Solution:
   def catchMaximumAmountofPeople(self, team: List[int], dist: int) -> int:
     ans = 0
@@ -16163,6 +16919,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-distance-in-arrays/description/
+# Question: 624. Maximum Distance in Arrays
 class Solution:
   def maxDistance(self, arrays: List[List[int]]) -> int:
     min1, index_min1 = min((A[0], i) for i, A in enumerate(arrays))
@@ -16178,6 +16935,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-distance-in-arrays/description/
+# Question: 624. Maximum Distance in Arrays
 class Solution:
   def maxDistance(self, arrays: List[List[int]]) -> int:
     ans = 0
@@ -16193,6 +16951,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/description/
+# Question: 2244. Minimum Rounds to Complete All Tasks
 class Solution:
   def minimumRounds(self, tasks: List[int]) -> int:
     freqs = collections.Counter(tasks).values()
@@ -16200,6 +16959,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/search-a-2d-matrix-ii/description/
+# Question: 240. Search a 2D Matrix II
 class Solution:
   def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
     r = 0
@@ -16217,6 +16977,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-square-submatrices-with-all-ones/description/
+# Question: 1277. Count Square Submatrices with All Ones
 class Solution:
   def countSquares(self, matrix: List[List[int]]) -> int:
     for i in range(len(matrix)):
@@ -16228,6 +16989,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/build-an-array-with-stack-operations/description/
+# Question: 1441. Build an Array With Stack Operations
 class Solution:
   def buildArray(self, target: List[int], n: int) -> List[str]:
     ans = []
@@ -16248,6 +17010,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/path-sum-iii/description/
+# Question: 437. Path Sum III
 class Solution:
   def pathSum(self, root: TreeNode, summ: int) -> int:
     if not root:
@@ -16266,6 +17029,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/
+# Question: 116. Populating Next Right Pointers in Each Node
 class Solution:
   def connect(self, root: 'Node') -> 'Node':
     node = root  # the node that is above the current needling
@@ -16286,6 +17050,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/
+# Question: 116. Populating Next Right Pointers in Each Node
 class Solution:
   def connect(self, root: 'Optional[Node]') -> 'Optional[Node]':
     if not root:
@@ -16304,6 +17069,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/next-closest-time/description/
+# Question: 681. Next Closest Time
 class Solution:
   def nextClosestTime(self, time: str) -> str:
     ans = list(time)
@@ -16330,6 +17096,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-arithmetic-subsequence/description/
+# Question: 1027. Longest Arithmetic Subsequence
 class Solution:
   def longestArithSeqLength(self, nums: List[int]) -> int:
     n = len(nums)
@@ -16348,6 +17115,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/description/
+# Question: 1080. Insufficient Nodes in Root to Leaf Paths
 class Solution:
   def sufficientSubset(self, root: Optional[TreeNode], limit: int) -> Optional[TreeNode]:
     if not root:
@@ -16360,6 +17128,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/description/
+# Question: 2556. Disconnect Path in a Binary Matrix by at Most One Flip
 class Solution:
   def isPossibleToCutPath(self, grid: List[List[int]]) -> bool:
     # Returns True is there's a path from (0, 0) to (m - 1, n - 1).
@@ -16384,6 +17153,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/beautiful-towers-ii/description/
+# Question: 2866. Beautiful Towers II
 class Solution:
   # Same as 2865. Beautiful Towers I
   def maximumSumOfHeights(self, maxHeights: List[int]) -> int:
@@ -16416,6 +17186,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/swap-adjacent-in-lr-string/description/
+# Question: 777. Swap Adjacent in LR String
 class Solution:
   def canTransform(self, start: str, end: str) -> bool:
     if start.replace('X', '') != end.replace('X', ''):
@@ -16446,6 +17217,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/
+# Question: 314. Binary Tree Vertical Order Traversal
 class Solution:
   def verticalOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
     if not root:
@@ -16480,6 +17252,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/valid-triangle-number/description/
+# Question: 611. Valid Triangle Number
 class Solution:
   def triangleNumber(self, nums: List[int]) -> int:
     ans = 0
@@ -16500,6 +17273,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/3sum-smaller/description/
+# Question: 259. 3Sum Smaller
 class Solution:
   def threeSumSmaller(self, nums: List[int], target: int) -> int:
     if len(nums) < 3:
@@ -16527,6 +17301,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-k-closest-elements/description/
+# Question: 658. Find K Closest Elements
 class Solution:
   def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
     l = 0
@@ -16543,6 +17318,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/all-paths-from-source-to-target/description/
+# Question: 797. All Paths From Source to Target
 class Solution:
   def allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
     ans = []
@@ -16560,6 +17336,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/nested-list-weight-sum-ii/description/
+# Question: 364. Nested List Weight Sum II
 class Solution:
   def depthSumInverse(self, nestedList: List[NestedInteger]) -> int:
     ans = 0
@@ -16580,6 +17357,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/stone-game-ix/description/
+# Question: 2029. Stone Game IX
 class Solution:
   def stoneGameIX(self, stones: List[int]) -> bool:
     count = collections.Counter(stone % 3 for stone in stones)
@@ -16589,6 +17367,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/valid-sudoku/description/
+# Question: 36. Valid Sudoku
 class Solution:
   def isValidSudoku(self, board: List[List[str]]) -> bool:
     seen = set()
@@ -16610,6 +17389,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/description/
+# Question: 1950. Maximum of Minimum Values in All Subarrays
 class Solution:
   # Similar to 1950. Maximum of Minimum Values in All Subarrays
   def findMaximums(self, nums: List[int]) -> List[int]:
@@ -16646,6 +17426,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/description/
+# Question: 2245. Maximum Trailing Zeros in a Cornered Path
 class Solution:
   def maxTrailingZeros(self, grid: List[List[int]]) -> int:
     m = len(grid)
@@ -16705,6 +17486,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shifting-letters/description/
+# Question: 848. Shifting Letters
 class Solution:
   def shiftingLetters(self, s: str, shifts: List[int]) -> str:
     ans = []
@@ -16719,6 +17501,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/separate-black-and-white-balls/description/
+# Question: 2938. Separate Black and White Balls
 class Solution:
   def minimumSteps(self, s: str) -> int:
     ans = 0
@@ -16734,6 +17517,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/movement-of-robots/description/
+# Question: 2731. Movement of Robots
 class Solution:
   def sumDistance(self, nums: List[int], s: str, d: int) -> int:
     kMod = 1_000_000_007
@@ -16750,6 +17534,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimize-xor/description/
+# Question: 2429. Minimize XOR
 class Solution:
   def minimizeXor(self, num1: int, num2: int) -> int:
     kMaxBit = 30
@@ -16780,6 +17565,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/ones-and-zeroes/description/
+# Question: 474. Ones and Zeroes
 class Solution:
   def findMaxForm(self, strs: List[str], m: int, n: int) -> int:
     # dp[i][j] := the maximum size of the subset given i 0s and j 1s are
@@ -16797,6 +17583,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/
+# Question: 105. Construct Binary Tree from Preorder and Inorder Traversal
 class Solution:
   def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
     inToIndex = {num: i for i, num in enumerate(inorder)}
@@ -16820,6 +17607,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/insert-delete-getrandom-o1/description/
+# Question: 380. Insert Delete GetRandom O(1)
 class RandomizedSet:
   def __init__(self):
     self.vals = []
@@ -16849,6 +17637,7 @@ class RandomizedSet:
 
 
 # Link: https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/description/
+# Question: 1685. Sum of Absolute Differences in a Sorted Array
 class Solution:
   def getSumAbsoluteDifferences(self, nums: List[int]) -> List[int]:
     prefix = list(itertools.accumulate(nums))
@@ -16858,6 +17647,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/generalized-abbreviation/description/
+# Question: 320. Generalized Abbreviation
 class Solution:
   def generateAbbreviations(self, word: str) -> List[str]:
     ans = []
@@ -16883,6 +17673,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-i/description/
+# Question: 3015. Count the Number of Houses at a Certain Distance I
 class Solution:
   def countOfPairs(self, n: int, x: int, y: int) -> List[int]:
     if x > y:
@@ -16978,6 +17769,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shortest-path-to-get-food/description/
+# Question: 1730. Shortest Path to Get Food
 class Solution:
   def getFood(self, grid: List[List[str]]) -> int:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -17012,6 +17804,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-removable-characters/description/
+# Question: 1898. Maximum Number of Removable Characters
 class Solution:
   def maximumRemovals(self, s: str, p: str, removable: List[int]) -> int:
     l = 0
@@ -17044,12 +17837,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/description/
+# Question: 1689. Partitioning Into Minimum Number Of Deci-Binary Numbers
 class Solution:
   def minPartitions(self, n: str) -> int:
     return int(max(n))
 
 
 # Link: https://leetcode.com/problems/design-authentication-manager/description/
+# Question: 1797. Design Authentication Manager
 class AuthenticationManager:
   def __init__(self, timeToLive: int):
     self.timeToLive = timeToLive
@@ -17077,6 +17872,7 @@ class AuthenticationManager:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/description/
+# Question: 2658. Maximum Number of Fish in a Grid
 class Solution:
   def findMaxFish(self, grid: List[List[int]]) -> int:
     def dfs(i: int, j: int) -> int:
@@ -17096,6 +17892,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/closest-prime-numbers-in-range/description/
+# Question: 2523. Closest Prime Numbers in Range
 class Solution:
   def closestPrimes(self, left: int, right: int) -> List[int]:
     isPrime = self._sieveEratosthenes(right + 1)
@@ -17129,6 +17926,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/split-two-strings-to-make-palindrome/description/
+# Question: 1616. Split Two Strings to Make Palindrome
 class Solution:
   def checkPalindromeFormation(self, a: str, b: str) -> bool:
     return self._check(a, b) or self._check(b, a)
@@ -17154,6 +17952,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/split-a-circular-linked-list/description/
+# Question: 2674. Split a Circular Linked List
 class Solution:
   def splitCircularLinkedList(self, list: Optional[ListNode]) -> List[Optional[ListNode]]:
     slow = list
@@ -17178,6 +17977,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/valid-square/description/
+# Question: 593. Valid Square
 class Solution:
   def validSquare(self, p1: List[int], p2: List[int], p3: List[int], p4: List[int]) -> bool:
     def dist(p1: List[int], p2: List[int]) -> int:
@@ -17190,6 +17990,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/jump-game-vii/description/
+# Question: 1871. Jump Game VII
 class Solution:
   def canReach(self, s: str, minJump: int, maxJump: int) -> bool:
     count = 0
@@ -17205,6 +18006,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
+# Question: 153. Find Minimum in Rotated Sorted Array
 class Solution:
   def findMin(self, nums: List[int]) -> int:
     l = 0
@@ -17221,6 +18023,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/description/
+# Question: 1926. Nearest Exit from Entrance in Maze
 class Solution:
   def nearestExit(self, maze: List[List[str]], entrance: List[int]) -> int:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -17250,6 +18053,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/subsets-ii/description/
+# Question: 90. Subsets II
 class Solution:
   def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
     ans = []
@@ -17270,6 +18074,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/description/
+# Question: 1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts
 class Solution:
   def maxArea(self, h: int, w: int, horizontalCuts: List[int], verticalCuts: List[int]) -> int:
     kMod = 1_000_000_007
@@ -17282,6 +18087,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-average-subtree/description/
+# Question: 1120. Maximum Average Subtree
 class T:
   def __init__(self, summ: int, count: int, maxAverage: float):
     self.summ = summ
@@ -17307,6 +18113,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/description/
+# Question: 2870. Minimum Number of Operations to Make Array Empty
 class Solution:
   def minOperations(self, nums: List[int]) -> int:
     count = collections.Counter(nums)
@@ -17316,6 +18123,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/jump-game/description/
+# Question: 55. Jump Game
 class Solution:
   def canJump(self, nums: List[int]) -> bool:
     i = 0
@@ -17329,6 +18137,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/put-boxes-into-the-warehouse-i/description/
+# Question: 1564. Put Boxes Into the Warehouse I
 class Solution:
   def maxBoxesInWarehouse(self, boxes: List[int], warehouse: List[int]) -> int:
     realWarehouse = [warehouse[0]]
@@ -17346,6 +18155,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/put-boxes-into-the-warehouse-i/description/
+# Question: 1564. Put Boxes Into the Warehouse I
 class Solution:
   def maxBoxesInWarehouse(self, boxes: List[int], warehouse: List[int]) -> int:
     i = 0  # warehouse's index
@@ -17358,6 +18168,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/description/
+# Question: 2901. Longest Unequal Adjacent Groups Subsequence II
 class Solution:
   def getWordsInLongestSubsequence(self, n: int, words: List[str], groups: List[int]) -> List[str]:
     ans = []
@@ -17388,6 +18199,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/asteroid-collision/description/
+# Question: 735. Asteroid Collision
 class Solution:
   def asteroidCollision(self, asteroids: List[int]) -> List[int]:
     stack = []
@@ -17410,6 +18222,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-kth-factor-of-n/description/
+# Question: 1492. The kth Factor of n
 class Solution:
   def kthFactor(self, n: int, k: int) -> int:
     # If i is a divisor of n, then n // i is also a divisor of n. So, we can
@@ -17436,6 +18249,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/description/
+# Question: 2771. Longest Non-decreasing Subarray From Two Arrays
 class Solution:
   def maxNonDecreasingLength(self, nums1: List[int], nums2: List[int]) -> int:
     ans = 1
@@ -17455,6 +18269,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/description/
+# Question: 2672. Number of Adjacent Elements With the Same Color
 class Solution:
   def colorTheArray(self, n: int, queries: List[List[int]]) -> List[int]:
     ans = []
@@ -17479,18 +18294,21 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-xor-beauty-of-array/description/
+# Question: 2527. Find Xor-Beauty of Array
 class Solution:
   def xorBeauty(self, nums: List[int]) -> int:
     return functools.reduce(operator.xor, nums)
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-coins-you-can-get/description/
+# Question: 1561. Maximum Number of Coins You Can Get
 class Solution:
   def maxCoins(self, piles: List[int]) -> int:
     return sum(sorted(piles)[len(piles) // 3::2])
 
 
 # Link: https://leetcode.com/problems/number-of-ways-to-split-array/description/
+# Question: 2270. Number of Ways to Split Array
 class Solution:
   def waysToSplitArray(self, nums: List[int]) -> int:
     ans = 0
@@ -17507,6 +18325,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-the-number-of-square-free-subsets/description/
+# Question: 2572. Count the Number of Square-Free Subsets
 class Solution:
   def squareFreeSubsets(self, nums: List[int]) -> int:
     kMod = 1_000_000_007
@@ -17546,6 +18365,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-nice-subarray/description/
+# Question: 2401. Longest Nice Subarray
 class Solution:
   def longestNiceSubarray(self, nums: List[int]) -> int:
     ans = 0
@@ -17563,6 +18383,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/video-stitching/description/
+# Question: 1024. Video Stitching
 class Solution:
   def videoStitching(self, clips: List[List[int]], time: int) -> int:
     ans = 0
@@ -17585,6 +18406,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-penalty-for-a-shop/description/
+# Question: 2483. Minimum Penalty for a Shop
 class Solution:
   def bestClosingTime(self, customers: str) -> int:
     # Instead of computing the minimum penalty, we can compute the maximum profit.
@@ -17602,6 +18424,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-product-after-k-increments/description/
+# Question: 2233. Maximum Product After K Increments
 class Solution:
   def maximumProduct(self, nums: List[int], k: int) -> int:
     kMod = 1_000_000_007
@@ -17621,6 +18444,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-index-of-a-valid-split/description/
+# Question: 2780. Minimum Index of a Valid Split
 class Solution:
   def minimumIndex(self, nums: List[int]) -> int:
     count1 = collections.Counter()
@@ -17636,6 +18460,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/widest-pair-of-indices-with-equal-range-sum/description/
+# Question: 1983. Widest Pair of Indices With Equal Range Sum
 class Solution:
   def widestPairOfIndices(self, nums1: List[int], nums2: List[int]) -> int:
     ans = 0
@@ -17650,6 +18475,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/mini-parser/description/
+# Question: 385. Mini Parser
 class Solution:
   def deserialize(self, s: str) -> NestedInteger:
     if s[0] != '[':
@@ -17679,6 +18505,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/most-profitable-path-in-a-tree/description/
+# Question: 2467. Most Profitable Path in a Tree
 class Solution:
   def mostProfitablePath(self, edges: List[List[int]], bob: int, amount: List[int]) -> int:
     n = len(amount)
@@ -17730,6 +18557,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-celebrity/description/
+# Question: 277. Find the Celebrity
 # The knows API is already defined for you.
 # Returns a bool, whether a knows b
 # Def knows(a: int, b: int) -> bool:
@@ -17755,6 +18583,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/different-ways-to-add-parentheses/description/
+# Question: 241. Different Ways to Add Parentheses
 class Solution:
   @functools.lru_cache(None)
   def diffWaysToCompute(self, expression: str) -> List[int]:
@@ -17770,6 +18599,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/description/
+# Question: 1868. Product of Two Run-Length Encoded Arrays
 class Solution:
   def findRLEArray(self, encoded1: List[List[int]],
                    encoded2: List[List[int]]) -> List[List[int]]:
@@ -17795,6 +18625,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/is-graph-bipartite/description/
+# Question: 785. Is Graph Bipartite?
 from enum import Enum
 
 
@@ -17829,6 +18660,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/is-graph-bipartite/description/
+# Question: 785. Is Graph Bipartite?
 from enum import Enum
 
 
@@ -17858,6 +18690,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/destroy-sequential-targets/description/
+# Question: 2453. Destroy Sequential Targets
 class Solution:
   def destroyTargets(self, nums: List[int], space: int) -> int:
     count = collections.Counter([num % space for num in nums])
@@ -17866,6 +18699,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/description/
+# Question: 2232. Minimize Result by Adding Parentheses to Expression
 class Solution:
   def minimizeResult(self, expression: str) -> str:
     plusIndex = expression.index('+')
@@ -17892,6 +18726,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-ways-to-build-good-strings/description/
+# Question: 2466. Count Ways To Build Good Strings
 class Solution:
   def countGoodStrings(self, low: int, high: int, zero: int, one: int) -> int:
     kMod = 1_000_000_007
@@ -17911,6 +18746,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/pour-water/description/
+# Question: 755. Pour Water
 class Solution:
   def pourWater(self, heights: List[int], volume: int, k: int) -> List[int]:
     i = k
@@ -17929,6 +18765,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/analyze-user-website-visit-pattern/description/
+# Question: 1152. Analyze User Website Visit Pattern
 class Solution:
   def mostVisitedPattern(self, username: List[str], timestamp: List[int], website: List[str]) -> List[str]:
     userToSites = collections.defaultdict(list)
@@ -17947,6 +18784,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/description/
+# Question: 1604. Alert Using Same Key-Card Three or More Times in a One Hour Period
 class Solution:
   def alertNames(self, keyName: List[str], keyTime: List[str]) -> List[str]:
     nameToMinutes = collections.defaultdict(list)
@@ -17973,6 +18811,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/wiggle-sort/description/
+# Question: 280. Wiggle Sort
 class Solution:
   def wiggleSort(self, nums: List[int]) -> None:
     # 1. If i is even, then nums[i] <= nums[i - 1].
@@ -17984,6 +18823,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/solve-the-equation/description/
+# Question: 640. Solve the Equation
 class Solution:
   def solveEquation(self, equation: str) -> str:
     def calculate(s: str) -> tuple:
@@ -18021,6 +18861,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/single-number-ii/description/
+# Question: 137. Single Number II
 class Solution:
   def singleNumber(self, nums: List[int]) -> int:
     ones = 0
@@ -18034,6 +18875,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/single-number-ii/description/
+# Question: 137. Single Number II
 class Solution:
   def singleNumber(self, nums: List[int]) -> int:
     ones = 0
@@ -18047,6 +18889,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/description/
+# Question: 2046. Sort Linked List Already Sorted Using Absolute Values
 class Solution:
   def sortLinkedList(self, head: Optional[ListNode]) -> Optional[ListNode]:
     prev = head
@@ -18066,6 +18909,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/collecting-chocolates/description/
+# Question: 2735. Collecting Chocolates
 class Solution:
   def minCost(self, nums: List[int], x: int) -> int:
     n = len(nums)
@@ -18082,6 +18926,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/description/
+# Question: 1404. Number of Steps to Reduce a Number in Binary Representation to One
 class Solution:
   def numSteps(self, s: str) -> int:
     ans = 0
@@ -18103,6 +18948,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/description/
+# Question: 1353. Maximum Number of Events That Can Be Attended
 class Solution:
   def maxEvents(self, events: List[List[int]]) -> int:
     ans = 0
@@ -18133,6 +18979,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/apply-operations-to-make-all-array-elements-equal-to-zero/description/
+# Question: 2772. Apply Operations to Make All Array Elements Equal to Zero
 class Solution:
   def checkArray(self, nums: List[int], k: int) -> bool:
     if k == 1:
@@ -18155,6 +19002,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-sum-circular-subarray/description/
+# Question: 918. Maximum Sum Circular Subarray
 class Solution:
   def maxSubarraySumCircular(self, nums: List[int]) -> int:
     totalSum = 0
@@ -18174,6 +19022,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-i/description/
+# Question: 2907. Maximum Profitable Triplets With Increasing Prices I
 class FenwickTree:
   def __init__(self, n: int):
     self.vals = [0] * (n + 1)
@@ -18217,6 +19066,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/description/
+# Question: 2616. Minimize the Maximum Difference of Pairs
 class Solution:
   def minimizeMax(self, nums: List[int], p: int) -> int:
     nums.sort()
@@ -18243,6 +19093,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-beautiful-substrings-i/description/
+# Question: 2947. Count Beautiful Substrings I
 class Solution:
   def beautifulSubstrings(self, s: str, k: int) -> int:
     kVowels = 'aeiou'
@@ -18271,6 +19122,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-nodes-equal-to-sum-of-descendants/description/
+# Question: 1973. Count Nodes Equal to Sum of Descendants
 from dataclasses import dataclass
 
 
@@ -18295,6 +19147,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-speed-to-arrive-on-time/description/
+# Question: 1870. Minimum Speed to Arrive on Time
 class Solution:
   def minSpeedOnTime(self, dist: List[int], hour: float) -> int:
     ans = -1
@@ -18319,6 +19172,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/palindromic-substrings/description/
+# Question: 647. Palindromic Substrings
 class Solution:
   def countSubstrings(self, s: str) -> int:
     def extendPalindromes(l: int, r: int) -> int:
@@ -18341,6 +19195,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/description/
+# Question: 2507. Smallest Value After Replacing With Sum of Prime Factors
 class Solution:
   def smallestValue(self, n: int) -> int:
     def getPrimeSum(n: int) -> int:
@@ -18359,6 +19214,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/closest-fair-integer/description/
+# Question: 2417. Closest Fair Integer
 class Solution:
   def closestFair(self, n: int) -> int:
     digitsCount = len(str(n))
@@ -18385,6 +19241,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-magic-square/description/
+# Question: 1895. Largest Magic Square
 class Solution:
   def largestMagicSquare(self, grid: List[List[int]]) -> int:
     m = len(grid)
@@ -18434,6 +19291,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shortest-distance-to-target-color/description/
+# Question: 1182. Shortest Distance to Target Color
 class Solution:
   def shortestDistanceColor(self, colors: List[int], queries: List[List[int]]) -> List[int]:
     kNumColor = 3
@@ -18466,6 +19324,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/seat-reservation-manager/description/
+# Question: 1845. Seat Reservation Manager
 class SeatManager:
   def __init__(self, n: int):
     self.minHeap = [i + 1 for i in range(n)]
@@ -18478,6 +19337,7 @@ class SeatManager:
 
 
 # Link: https://leetcode.com/problems/node-with-highest-edge-score/description/
+# Question: 2374. Node With Highest Edge Score
 class Solution:
   def edgeScore(self, edges: List[int]) -> int:
     scores = [0] * len(edges)
@@ -18487,6 +19347,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/k-th-smallest-prime-fraction/description/
+# Question: 786. K-th Smallest Prime Fraction
 class Solution:
   def kthSmallestPrimeFraction(self, arr: List[int], k: int) -> List[int]:
     n = len(arr)
@@ -18519,6 +19380,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/decremental-string-concatenation/description/
+# Question: 2746. Decremental String Concatenation
 class Solution:
   def minimizeConcatenatedLength(self, words: List[str]) -> int:
     @functools.lru_cache(None)
@@ -18542,6 +19404,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-searchable-numbers-in-an-unsorted-array/description/
+# Question: 1966. Binary Searchable Numbers in an Unsorted Array
 class Solution:
   def binarySearchableNumbers(self, nums: List[int]) -> int:
     n = len(nums)
@@ -18564,6 +19427,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
+# Question: 81. Search in Rotated Sorted Array II
 class Solution:
   def search(self, nums: List[int], target: int) -> bool:
     l = 0
@@ -18591,6 +19455,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reachable-nodes-with-restrictions/description/
+# Question: 2368. Reachable Nodes With Restrictions
 class Solution:
   def reachableNodes(self, n: int, edges: List[List[int]], restricted: List[int]) -> int:
     tree = [[] for _ in range(n)]
@@ -18610,6 +19475,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/valid-tic-tac-toe-state/description/
+# Question: 794. Valid Tic-Tac-Toe State
 class Solution:
   def validTicTacToe(self, board: List[str]) -> bool:
     def isWin(c: str) -> bool:
@@ -18630,6 +19496,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/01-matrix/description/
+# Question: 542. 01 Matrix
 class Solution:
   def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -18660,6 +19527,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/01-matrix/description/
+# Question: 542. 01 Matrix
 class Solution:
   def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -18691,6 +19559,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/
+# Question: 2265. Count Nodes Equal to Average of Subtree
 class Solution:
   def averageOfSubtree(self, root: Optional[TreeNode]) -> int:
     ans = 0
@@ -18712,6 +19581,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-processing-time/description/
+# Question: 2895. Minimum Processing Time
 class Solution:
   def minProcessingTime(self, processorTime: List[int], tasks: List[int]) -> int:
     return max(time + task
@@ -18719,6 +19589,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-lattice-points-inside-a-circle/description/
+# Question: 2249. Count Lattice Points Inside a Circle
 class Solution:
   def countLatticePoints(self, circles: List[List[int]]) -> int:
     return sum(any((xc - x)**2 + (yc - y)**2 <= r**2 for xc, yc, r in circles)
@@ -18727,6 +19598,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-lattice-points-inside-a-circle/description/
+# Question: 2249. Count Lattice Points Inside a Circle
 class Solution:
   def countLatticePoints(self, circles: List[List[int]]) -> int:
     points = set()
@@ -18744,6 +19616,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/3sum-closest/description/
+# Question: 16. 3Sum Closest
 class Solution:
   def threeSumClosest(self, nums: List[int], target: int) -> int:
     ans = nums[0] + nums[1] + nums[2]
@@ -18772,6 +19645,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/description/
+# Question: 1297. Maximum Number of Occurrences of a Substring
 class Solution:
   def maxFreq(self, s: str, maxLetters: int, minSize: int, maxSize: int) -> int:
     # Greedily consider strings with `minSize`, so ignore `maxSize`.
@@ -18799,6 +19673,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-the-matrix-diagonally/description/
+# Question: 1329. Sort the Matrix Diagonally
 class Solution:
   def diagonalSort(self, mat: List[List[int]]) -> List[List[int]]:
     m = len(mat)
@@ -18821,6 +19696,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/split-bst/description/
+# Question: 776. Split BST
 class Solution:
   def splitBST(self, root: Optional[TreeNode], target: int) -> List[Optional[TreeNode]]:
     if not root:
@@ -18836,6 +19712,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/
+# Question: 714. Best Time to Buy and Sell Stock with Transaction Fee
 class Solution:
   def maxProfit(self, prices: List[int], fee: int) -> int:
     sell = 0
@@ -18849,12 +19726,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-it-is-possible-to-split-array/description/
+# Question: 2811. Check if it is Possible to Split Array
 class Solution:
   def canSplitArray(self, nums: List[int], m: int) -> bool:
     return len(nums) < 3 or any(a + b >= m for a, b in itertools.pairwise(nums))
 
 
 # Link: https://leetcode.com/problems/number-of-provinces/description/
+# Question: 547. Friend Circles
 class UnionFind:
   def __init__(self, n: int):
     self.count = n
@@ -18895,6 +19774,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/search-in-rotated-sorted-array/description/
+# Question: 33. Search in Rotated Sorted Array
 class Solution:
   def search(self, nums: List[int], target: int) -> int:
     l = 0
@@ -18919,6 +19799,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/strobogrammatic-number-ii/description/
+# Question: 247. Strobogrammatic Number II
 class Solution:
   def findStrobogrammatic(self, n: int) -> List[str]:
     def helper(n: int, k: int) -> List[str]:
@@ -18943,6 +19824,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partition-array-into-disjoint-intervals/description/
+# Question: 915. Partition Array into Disjoint Intervals
 class Solution:
   def partitionDisjoint(self, nums: List[int]) -> int:
     n = len(nums)
@@ -18959,12 +19841,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-k-th-lucky-number/description/
+# Question: 2802. Find The K-th Lucky Number
 class Solution:
   def kthLuckyNumber(self, k: int) -> str:
     return bin(k + 1)[3:].replace('0', '4').replace('1', '7')
 
 
 # Link: https://leetcode.com/problems/convert-bst-to-greater-tree/description/
+# Question: 538. Convert BST to Greater Tree
 class Solution:
   def convertBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
     prefix = 0
@@ -18984,6 +19868,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-most-competitive-subsequence/description/
+# Question: 1673. Find the Most Competitive Subsequence
 class Solution:
   def mostCompetitive(self, nums: List[int], k: int) -> List[int]:
     ans = []
@@ -19000,6 +19885,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/description/
+# Question: 325. Maximum Size Subarray Sum Equals k
 class Solution:
   def maxSubArrayLen(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -19018,6 +19904,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/description/
+# Question: 1676. Lowest Common Ancestor of a Binary Tree IV
 class Solution:
   def lowestCommonAncestor(self, root: 'TreeNode', nodes: 'List[TreeNode]') -> 'TreeNode':
     nodes = set(nodes)
@@ -19037,6 +19924,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-beauty-of-all-substrings/description/
+# Question: 1781. Sum of Beauty of All Substrings
 class Solution:
   def beautySum(self, s: str) -> int:
     ans = 0
@@ -19051,6 +19939,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-substring-with-maximum-cost/description/
+# Question: 2606. Find the Substring With Maximum Cost
 class Solution:
   def maximumCostSubstring(self, s: str, chars: str, vals: List[int]) -> int:
     ans = 0
@@ -19068,6 +19957,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/description/
+# Question: 2152. Minimum Number of Lines to Cover Points
 class Solution:
   def minimumLines(self, points: List[List[int]]) -> int:
     n = len(points)
@@ -19114,6 +20004,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/3sum-with-multiplicity/description/
+# Question: 923. 3Sum With Multiplicity
 class Solution:
   def threeSumMulti(self, arr: List[int], target: int) -> int:
     kMod = 1_000_000_007
@@ -19136,6 +20027,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/description/
+# Question: 2086. Minimum Number of Buckets Required to Collect Rainwater from Houses
 class Solution:
   def minimumBuckets(self, street: str) -> int:
     A = list(street)
@@ -19157,6 +20049,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/most-frequent-prime/description/
+# Question: 3044. Most Frequent Prime
 class Solution:
   def mostFrequentPrime(self, mat: List[List[int]]) -> int:
     dirs = ((1, 0), (1, -1), (0, -1), (-1, -1),
@@ -19187,6 +20080,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/validate-stack-sequences/description/
+# Question: 946. Validate Stack Sequences
 class Solution:
   def validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
     stack = []
@@ -19202,6 +20096,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-black-blocks/description/
+# Question: 2768. Number of Black Blocks
 class Solution:
   def countBlackBlocks(self, m: int, n: int, coordinates: List[List[int]]) -> List[int]:
     ans = [0] * 5
@@ -19225,6 +20120,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-minimum-possible-sum-of-a-beautiful-array/description/
+# Question: 2834. Find the Minimum Possible Sum of a Beautiful Array
 class Solution:
   # Same as 2829. Determine the Minimum Sum of a k-avoiding Array
   def minimumPossibleSum(self, n: int, target: int) -> int:
@@ -19246,6 +20142,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/spiral-matrix-iii/description/
+# Question: 885. Spiral Matrix III
 class Solution:
   def spiralMatrixIII(self, rows: int, cols: int, rStart: int, cStart: int) -> List[List[int]]:
     dx = [1, 0, -1, 0]
@@ -19265,6 +20162,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-a-file-sharing-system/description/
+# Question: 1500. Design a File Sharing System
 from sortedcontainers import SortedSet
 
 
@@ -19302,6 +20200,7 @@ class FileSharing:
 
 
 # Link: https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/description/
+# Question: 1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
 class Solution:
   def numOfSubarrays(self, arr: List[int], k: int, threshold: int) -> int:
     ans = 0
@@ -19318,6 +20217,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/description/
+# Question: 2274. Maximum Consecutive Floors Without Special Floors
 class Solution:
   def maxConsecutive(self, bottom: int, top: int, special: List[int]) -> int:
     ans = 0
@@ -19331,6 +20231,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/create-binary-tree-from-descriptions/description/
+# Question: 2196. Create Binary Tree From Descriptions
 class Solution:
   def createBinaryTree(self, descriptions: List[List[int]]) -> Optional[TreeNode]:
     children = set()
@@ -19350,6 +20251,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/description/
+# Question: 2023. Number of Pairs of Strings With Concatenation Equal to Target
 class Solution:
   def numOfPairs(self, nums: List[str], target: str) -> int:
     ans = 0
@@ -19367,6 +20269,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-turbulent-subarray/description/
+# Question: 978. Longest Turbulent Subarray
 class Solution:
   def maxTurbulenceSize(self, arr: List[int]) -> int:
     ans = 1
@@ -19389,6 +20292,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/swap-nodes-in-pairs/description/
+# Question: 24. Swap Nodes in Pairs
 class Solution:
   def swapPairs(self, head: ListNode) -> ListNode:
     def getLength(head: ListNode) -> int:
@@ -19415,6 +20319,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/generate-parentheses/description/
+# Question: 22. Generate Parentheses
 class Solution:
   def generateParenthesis(self, n):
     ans = []
@@ -19432,6 +20337,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-word-in-dictionary/description/
+# Question: 720. Longest Word in Dictionary
 class Solution:
   def longestWord(self, words: List[str]) -> str:
     root = {}
@@ -19459,6 +20365,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/k-divisible-elements-subarrays/description/
+# Question: 2261. K Divisible Elements Subarrays
 class TrieNode:
   def __init__(self):
     self.children: Dict[int, TrieNode] = {}
@@ -19486,6 +20393,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/description/
+# Question: 1589. Maximum Sum Obtained of Any Permutation
 class Solution:
   def maxSumRangeQuery(self, nums: List[int], requests: List[List[int]]) -> int:
     kMod = 1_000_000_007
@@ -19509,6 +20417,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/coin-change-ii/description/
+# Question: 518. Coin Change 2
 class Solution:
   def change(self, amount: int, coins: List[int]) -> int:
     dp = [1] + [0] * amount
@@ -19521,6 +20430,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/implement-trie-prefix-tree/description/
+# Question: 208. Implement Trie (Prefix Tree)
 class TrieNode:
   def __init__(self):
     self.children: Dict[str, TrieNode] = {}
@@ -19554,6 +20464,7 @@ class Trie:
 
 
 # Link: https://leetcode.com/problems/maximum-binary-tree-ii/description/
+# Question: 998. Maximum Binary Tree II
 class Solution:
   def insertIntoMaxTree(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
     if root.val < val:
@@ -19567,6 +20478,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-binary-tree-ii/description/
+# Question: 998. Maximum Binary Tree II
 class Solution:
   def insertIntoMaxTree(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
     if not root:
@@ -19578,6 +20490,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/description/
+# Question: 1253. Reconstruct a 2-Row Binary Matrix
 class Solution:
   def reconstructMatrix(self, upper: int, lower: int, colsum: List[int]) -> List[List[int]]:
     if upper + lower != sum(colsum):
@@ -19607,6 +20520,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/description/
+# Question: 1423. Maximum Points You Can Obtain from Cards
 class Solution:
   def maxScore(self, cardPoints: List[int], k: int) -> int:
     n = len(cardPoints)
@@ -19623,6 +20537,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/one-edit-distance/description/
+# Question: 161. One Edit Distance
 class Solution:
   def isOneEditDistance(self, s: str, t: str) -> bool:
     m = len(s)
@@ -19640,6 +20555,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations/description/
+# Question: 1959. Minimum Total Space Wasted With K Resizing Operations
 class Solution:
   def minSpaceWastedKResizing(self, nums: List[int], k: int) -> int:
     kMax = 200_000_000
@@ -19670,6 +20586,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-wonderful-substrings/description/
+# Question: 1915. Number of Wonderful Substrings
 class Solution:
   def wonderfulSubstrings(self, word: str) -> int:
     ans = 0
@@ -19689,6 +20606,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/avoid-flood-in-the-city/description/
+# Question: 1488. Avoid Flood in The City
 from sortedcontainers import SortedSet
 
 
@@ -19724,6 +20642,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/meeting-rooms-ii/description/
+# Question: 253. Meeting Rooms II
 class Solution:
   def minMeetingRooms(self, intervals: List[List[int]]) -> int:
     n = len(intervals)
@@ -19749,6 +20668,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/meeting-rooms-ii/description/
+# Question: 253. Meeting Rooms II
 class Solution:
   def minMeetingRooms(self, intervals: List[List[int]]) -> int:
     minHeap = []  # Store the end times of each room.
@@ -19763,6 +20683,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-adjacent-swaps-to-make-a-valid-array/description/
+# Question: 2340. Minimum Adjacent Swaps to Make a Valid Array
 class Solution:
   def minimumSwaps(self, nums: List[int]) -> int:
     minIndex = self._getLeftmostMinIndex(nums)
@@ -19790,6 +20711,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/operations-on-tree/description/
+# Question: 1993. Operations on Tree
 class Node:
   def __init__(self):
     self.children: List[int] = []
@@ -19844,6 +20766,7 @@ class LockingTree:
 
 
 # Link: https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/description/
+# Question: 2406. Divide Intervals Into Minimum Number of Groups
 class Solution:
   # Similar to 253. Meeting Rooms II
   def minGroups(self, intervals: List[List[int]]) -> int:
@@ -19859,6 +20782,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/description/
+# Question: 2170. Minimum Operations to Make the Array Alternating
 class T:
   def __init__(self):
     self.count = collections.Counter()
@@ -19891,6 +20815,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-single-divisor-triplets/description/
+# Question: 2198. Number of Single Divisor Triplets
 class Solution:
   def singleDivisorTriplet(self, nums: List[int]) -> int:
     ans = 0
@@ -19922,6 +20847,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/vowels-of-all-substrings/description/
+# Question: 2063. Vowels of All Substrings
 class Solution:
   def countVowels(self, word: str) -> int:
     # dp[i] := the sum of the number of vowels of word[0..i), ...,
@@ -19937,6 +20863,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/vowels-of-all-substrings/description/
+# Question: 2063. Vowels of All Substrings
 class Solution:
   def countVowels(self, word: str) -> int:
     return sum((i + 1) * (len(word) - i)
@@ -19945,6 +20872,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/description/
+# Question: 2414. Length of the Longest Alphabetical Continuous Substring
 class Solution:
   def longestContinuousSubstring(self, s: str) -> int:
     ans = 1
@@ -19961,6 +20889,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal/description/
+# Question: 2998. Minimum Number of Operations to Make X and Y Equal
 class Solution:
   def minimumOperationsToMakeEqual(self, x, y):
     if x <= y:
@@ -19988,6 +20917,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/description/
+# Question: 889. Construct Binary Tree from Preorder and Postorder Traversal
 class Solution:
   def constructFromPrePost(self, pre: List[int], post: List[int]) -> Optional[TreeNode]:
     postToIndex = {num: i for i, num in enumerate(post)}
@@ -20014,6 +20944,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/description/
+# Question: 2505. Bitwise OR of All Subsequence Sums
 class Solution:
   def subsequenceSumOr(self, nums: List[int]) -> int:
     ans = 0
@@ -20027,6 +20958,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/best-sightseeing-pair/description/
+# Question: 1014. Best Sightseeing Pair
 class Solution:
   def maxScoreSightseeingPair(self, values: List[int]) -> int:
     ans = 0
@@ -20040,6 +20972,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/description/
+# Question: 2580. Count Ways to Group Overlapping Ranges
 class Solution:
   def countWays(self, ranges: List[List[int]]) -> int:
     kMod = 1_000_000_007
@@ -20055,6 +20988,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-ways-to-select-buildings/description/
+# Question: 2222. Number of Ways to Select Buildings
 class Solution:
   def numberOfWays(self, s: str) -> int:
     ans = 0
@@ -20078,6 +21012,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/interleaving-string/description/
+# Question: 97. Interleaving String
 class Solution:
   def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
     m = len(s1)
@@ -20105,6 +21040,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/interleaving-string/description/
+# Question: 97. Interleaving String
 class Solution:
   def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
     m = len(s1)
@@ -20130,6 +21066,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/description/
+# Question: 2825. Make String a Subsequence Using Cyclic Increments
 class Solution:
   def canMakeSubsequence(self, str1: str, str2: str) -> bool:
     i = 0  # str2's index
@@ -20144,6 +21081,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/description/
+# Question: 1541. Minimum Insertions to Balance a Parentheses String
 class Solution:
   def minInsertions(self, s: str) -> int:
     neededRight = 0   # Increment by 2 for each '('.
@@ -20168,6 +21106,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/description/
+# Question: 1722. Minimize Hamming Distance After Swap Operations
 class UnionFind:
   def __init__(self, n: int):
     self.id = list(range(n))
@@ -20219,6 +21158,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-score-after-applying-operations-on-a-tree/description/
+# Question: 2925. Maximum Score After Applying Operations on a Tree
 class Solution:
   def maximumScoreAfterOperations(self, edges: List[List[int]], values: List[int]) -> int:
     tree = [[] for _ in values]
@@ -20239,6 +21179,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/description/
+# Question: 1981. Minimize the Difference Between Target and Chosen Elements
 class Solution:
   def minimizeTheDifference(self, mat: List[List[int]], target: int) -> int:
     minSum = sum(min(row) for row in mat)
@@ -20255,6 +21196,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/super-pow/description/
+# Question: 372. Super Pow
 class Solution:
   def superPow(self, a: int, b: List[int]) -> int:
     kMod = 1337
@@ -20267,6 +21209,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/description/
+# Question: 2271. Maximum White Tiles Covered by a Carpet
 class Solution:
   def maximumWhiteTiles(self, tiles: List[List[int]], carpetLen: int) -> int:
     if any(tile[1] - tile[0] + 1 >= carpetLen for tile in tiles):
@@ -20292,6 +21235,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/complex-number-multiplication/description/
+# Question: 537. Complex Number Multiplication
 class Solution:
   def complexNumberMultiply(self, a: str, b: str) -> str:
     def getRealAndImag(s: str) -> tuple:
@@ -20304,6 +21248,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-beauty-in-the-array/description/
+# Question: 2012. Sum of Beauty in the Array
 class Solution:
   def sumOfBeauties(self, nums: List[int]) -> int:
     n = len(nums)
@@ -20326,6 +21271,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/global-and-local-inversions/description/
+# Question: 775. Global and Local Inversions
 class Solution:
   def isIdealPermutation(self, nums: List[int]) -> bool:
     for i, num in enumerate(nums):
@@ -20335,6 +21281,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/global-and-local-inversions/description/
+# Question: 775. Global and Local Inversions
 class Solution:
   def isIdealPermutation(self, nums: List[int]) -> bool:
     maxi = -1  # the number that is most likely > nums[i + 2]
@@ -20348,6 +21295,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-to-reach-city-with-discounts/description/
+# Question: 2093. Minimum Cost to Reach City With Discounts
 class Solution:
   def minimumCost(self, n: int, highways: List[List[int]], discounts: int) -> int:
     graph = [[] for _ in range(n)]
@@ -20374,6 +21322,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/meeting-scheduler/description/
+# Question: 1229. Meeting Scheduler
 class Solution:
   def minAvailableDuration(self, slots1: List[List[int]], slots2: List[List[int]], duration: int) -> List[int]:
     slots1.sort()
@@ -20396,6 +21345,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-good-meals/description/
+# Question: 1711. Count Good Meals
 class Solution:
   def countPairs(self, deliciousness: List[int]) -> int:
     kMod = 10**9 + 7
@@ -20414,6 +21364,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-strength-of-a-group/description/
+# Question: 2708. Maximum Strength of a Group
 class Solution:
   def maxStrength(self, nums: List[int]) -> int:
     posProd = 1
@@ -20448,6 +21399,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/
+# Question: 2962. Count Subarrays Where Max Element Appears at Least K Times
 class Solution:
   def countSubarrays(self, nums: List[int], k: int) -> int:
     maxNum = max(nums)
@@ -20472,6 +21424,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-time-difference/description/
+# Question: 539. Minimum Time Difference
 class Solution:
   def findMinDifference(self, timePoints: List[str]) -> int:
     ans = 24 * 60
@@ -20485,6 +21438,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements/description/
+# Question: 1969. Minimum Non-Zero Product of the Array Elements
 class Solution:
   def minNonZeroProduct(self, p: int) -> int:
     kMod = 1_000_000_007
@@ -20495,6 +21449,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-boomerangs/description/
+# Question: 447. Number of Boomerangs
 class Solution:
   def numberOfBoomerangs(self, points: List[List[int]]) -> int:
     ans = 0
@@ -20509,6 +21464,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/bold-words-in-string/description/
+# Question: 758. Bold Words in String
 class Solution:
   def boldWords(self, words: List[str], s: str) -> str:
     n = len(s)
@@ -20541,6 +21497,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/bold-words-in-string/description/
+# Question: 758. Bold Words in String
 class TrieNode:
   def __init__(self):
     self.children: Dict[str, TrieNode] = {}
@@ -20598,6 +21555,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/description/
+# Question: 1372. Longest ZigZag Path in a Binary Tree
 class T:
   def __init__(self, leftMax: int, rightMax: int, subtreeMax: int):
     self.leftMax = leftMax
@@ -20622,6 +21580,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/description/
+# Question: 1100. Find K-Length Substrings With No Repeated Characters
 class Solution:
   def numKLenSubstrNoRepeats(self, s: str, k: int) -> int:
     ans = 0
@@ -20643,6 +21602,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-the-jumbled-numbers/description/
+# Question: 2191. Sort the Jumbled Numbers
 class Solution:
   def sortJumbled(self, mapping: List[int], nums: List[int]) -> List[int]:
     def getMapped(num: int) -> int:
@@ -20655,6 +21615,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/make-costs-of-paths-equal-in-a-binary-tree/description/
+# Question: 2673. Make Costs of Paths Equal in a Binary Tree
 class Solution:
   def minIncrements(self, n: int, cost: List[int]) -> int:
     ans = 0
@@ -20671,6 +21632,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/loud-and-rich/description/
+# Question: 851. Loud and Rich
 class Solution:
   def loudAndRich(self, richer: List[List[int]], quiet: List[int]) -> List[int]:
     graph = [[] for _ in range(len(quiet))]
@@ -20693,6 +21655,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/description/
+# Question: 3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K
 class Solution:
   def findMaximumNumber(self, k: int, x: int) -> int:
     def getSumPrices(num: int) -> int:
@@ -20713,6 +21676,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/word-break/description/
+# Question: 139. Word Break
 class Solution:
   def wordBreak(self, s: str, wordDict: List[str]) -> bool:
     wordSet = set(wordDict)
@@ -20727,6 +21691,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/word-break/description/
+# Question: 139. Word Break
 class Solution:
   def wordBreak(self, s: str, wordDict: List[str]) -> bool:
     n = len(s)
@@ -20749,6 +21714,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/word-break/description/
+# Question: 139. Word Break
 class Solution:
   def wordBreak(self, s: str, wordDict: List[str]) -> bool:
     wordSet = set(wordDict)
@@ -20764,6 +21730,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/word-break/description/
+# Question: 139. Word Break
 class Solution:
   def wordBreak(self, s: str, wordDict: List[str]) -> bool:
     n = len(s)
@@ -20783,6 +21750,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-integer-divisible-by-k/description/
+# Question: 1015. Smallest Integer Divisible by K
 class Solution:
   def smallestRepunitDivByK(self, k: int) -> int:
     if k % 10 not in {1, 3, 7, 9}:
@@ -20803,6 +21771,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/equal-row-and-column-pairs/description/
+# Question: 2352. Equal Row and Column Pairs
 class Solution:
   def equalPairs(self, grid: List[List[int]]) -> int:
     n = len(grid)
@@ -20822,6 +21791,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/ugly-number-ii/description/
+# Question: 264. Ugly Number II
 class Solution:
   def nthUglyNumber(self, n: int) -> int:
     nums = [1]
@@ -20846,6 +21816,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/integer-break/description/
+# Question: 343. Integer Break
 class Solution:
   def integerBreak(self, n: int) -> int:
     # If an optimal product contains a factor f >= 4, then we can replace it
@@ -20869,6 +21840,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/soup-servings/description/
+# Question: 808. Soup Servings
 class Solution:
   def soupServings(self, n: int) -> float:
     @functools.lru_cache(None)
@@ -20888,6 +21860,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/description/
+# Question: 1744. Can You Eat Your Favorite Candy on Your Favorite Day?
 class Solution:
   def canEat(self, candiesCount: List[int], queries: List[List[int]]) -> List[bool]:
     prefix = [0] + list(itertools.accumulate(candiesCount))
@@ -20895,6 +21868,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-groups-to-create-a-valid-assignment/description/
+# Question: 2910. Minimum Number of Groups to Create a Valid Assignment
 class Solution:
   def minGroupsForValidAssignment(self, nums: List[int]) -> int:
     count = collections.Counter(nums)
@@ -20927,6 +21901,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sliding-subarray-beauty/description/
+# Question: 2653. Sliding Subarray Beauty
 class Solution:
   def getSubarrayBeauty(self, nums: List[int], k: int, x: int) -> List[int]:
     ans = []
@@ -20952,6 +21927,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-people-to-teach/description/
+# Question: 1733. Minimum Number of People to Teach
 class Solution:
   def minimumTeachings(self, n: int, languages: List[List[int]], friendships: List[List[int]]) -> int:
     languageSets = [set(languages) for languages in languages]
@@ -20974,6 +21950,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partition-string-into-minimum-beautiful-substrings/description/
+# Question: 2767. Partition String Into Minimum Beautiful Substrings
 class Solution:
   def minimumBeautifulSubstrings(self, s: str) -> int:
     n = len(s)
@@ -20998,6 +21975,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-falling-path-sum/description/
+# Question: 931. Minimum Falling Path Sum
 class Solution:
   def minFallingPathSum(self, A: List[List[int]]) -> int:
     n = len(A)
@@ -21013,6 +21991,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/online-election/description/
+# Question: 911. Online Election
 class TopVotedCandidate:
   def __init__(self, persons: List[int], times: List[int]):
     self.times = times
@@ -21032,6 +22011,7 @@ class TopVotedCandidate:
 
 
 # Link: https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/
+# Question: 2461. Maximum Sum of Distinct Subarrays With Length K
 class Solution:
   def maximumSubarraySum(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -21056,6 +22036,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/description/
+# Question: 1432. Max Difference You Can Get From Changing an Integer
 class Solution:
   def maxDiff(self, num: int) -> int:
     s = str(num)
@@ -21074,6 +22055,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/h-index-ii/description/
+# Question: 275. H-Index II
 class Solution:
   def hIndex(self, citations: List[int]) -> int:
     n = len(citations)
@@ -21082,6 +22064,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description/
+# Question: 2115. Find All Possible Recipes from Given Supplies
 class Solution:
   def findAllRecipes(self, recipes: List[str], ingredients: List[List[str]], supplies: List[str]) -> List[str]:
     ans = []
@@ -21114,6 +22097,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/2-keys-keyboard/description/
+# Question: 650. 2 Keys Keyboard
 class Solution:
   def minSteps(self, n: int) -> int:
     if n <= 1:
@@ -21133,6 +22117,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-pattern-in-infinite-stream-i/description/
+# Question: 3023. Find Pattern in Infinite Stream I
 # Definition for an infinite stream.
 # class InfiniteStream:
 #   def next(self) -> int:
@@ -21180,6 +22165,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description/
+# Question: 1155. Number of Dice Rolls With Target Sum
 class Solution:
   def numRollsToTarget(self, n: int, k: int, target: int) -> int:
     kMod = 1_000_000_007
@@ -21197,6 +22183,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/first-unique-number/description/
+# Question: 1429. First Unique Number
 class FirstUnique:
   def __init__(self, nums: List[int]):
     self.seen = set()
@@ -21218,6 +22205,7 @@ class FirstUnique:
 
 
 # Link: https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
+# Question: 230. Kth Smallest Element in a BST
 class Solution:
   def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
     def countNodes(root: Optional[TreeNode]) -> int:
@@ -21235,6 +22223,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
+# Question: 230. Kth Smallest Element in a BST
 class Solution:
   def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
     rank = 0
@@ -21258,6 +22247,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
+# Question: 230. Kth Smallest Element in a BST
 class Solution:
   def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
     stack = []
@@ -21277,6 +22267,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/repeated-string-match/description/
+# Question: 686. Repeated String Match
 class Solution:
   def repeatedStringMatch(self, a: str, b: str) -> int:
     n = math.ceil(len(b) / len(a))
@@ -21289,6 +22280,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-width-ramp/description/
+# Question: 962. Maximum Width Ramp
 class Solution:
   def maxWidthRamp(self, nums: List[int]) -> int:
     ans = 0
@@ -21306,6 +22298,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-good-subarray-sum/description/
+# Question: 3026. Maximum Good Subarray Sum
 class Solution:
   def maximumSubarraySum(self, nums: List[int], k: int) -> int:
     ans = -math.inf
@@ -21325,6 +22318,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/put-boxes-into-the-warehouse-ii/description/
+# Question: 1580. Put Boxes Into the Warehouse II
 class Solution:
   def maxBoxesInWarehouse(self, boxes: List[int], warehouse: List[int]) -> int:
     l = 0
@@ -21342,6 +22336,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/description/
+# Question: 1247. Minimum Swaps to Make Strings Equal
 class Solution:
   def minimumSwap(self, s1: str, s2: str) -> int:
     # ('xx', 'yy') = (2 'xy's) . 1 swap
@@ -21364,6 +22359,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-adjacent-almost-equal-characters/description/
+# Question: 2957. Remove Adjacent Almost-Equal Characters
 class Solution:
   def removeAlmostEqualCharacters(self, word: str) -> int:
     ans = 0
@@ -21378,6 +22374,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/description/
+# Question: 1233. Remove Sub-Folders from the Filesystem
 class Solution:
   def removeSubfolders(self, folder: List[str]) -> List[str]:
     ans = []
@@ -21395,6 +22392,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-integers-by-the-power-value/description/
+# Question: 1387. Sort Integers by The Power Value
 class Solution:
   def getKth(self, lo: int, hi: int, k: int) -> int:
     return sorted([(self._getPow(i), i) for i in range(lo, hi + 1)])[k - 1][1]
@@ -21408,6 +22406,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/description/
+# Question: 2975. Maximum Square Area by Removing Fences From a Field
 class Solution:
   def maximizeSquareArea(self, m: int, n: int, hFences: List[int], vFences: List[int]) -> int:
     hFences = sorted(hFences + [1, m])
@@ -21425,6 +22424,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/continuous-subarrays/description/
+# Question: 2762. Continuous Subarrays
 class Solution:
   def continuousSubarrays(self, nums: List[int]) -> int:
     ans = 1  # [nums[0]]
@@ -21459,6 +22459,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/description/
+# Question: 255. Verify Preorder Sequence in Binary Search Tree
 class Solution:
   def verifyPreorder(self, preorder: List[int]) -> List[int]:
     low = -math.inf
@@ -21475,6 +22476,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/description/
+# Question: 255. Verify Preorder Sequence in Binary Search Tree
 class Solution:
   def verifyPreorder(self, preorder: List[int]) -> bool:
     i = 0
@@ -21496,6 +22498,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/description/
+# Question: 255. Verify Preorder Sequence in Binary Search Tree
 class Solution:
   def verifyPreorder(self, preorder: List[int]) -> bool:
     low = -math.inf
@@ -21514,6 +22517,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-bottom-left-tree-value/description/
+# Question: 513. Find Bottom Left Tree Value
 class Solution:
   def findBottomLeftValue(self, root: Optional[TreeNode]) -> int:
     q = collections.deque([root])
@@ -21529,6 +22533,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-bottom-left-tree-value/description/
+# Question: 513. Find Bottom Left Tree Value
 class Solution:
   def findBottomLeftValue(self, root: Optional[TreeNode]) -> int:
     ans = 0
@@ -21551,6 +22556,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/description/
+# Question: 1743. Restore the Array From Adjacent Pairs
 class Solution:
   def restoreArray(self, adjacentPairs: List[List[int]]) -> List[int]:
     ans = []
@@ -21579,6 +22585,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/description/
+# Question: 2250. Count Number of Rectangles Containing Each Point
 class Solution:
   def countRectangles(self, rectangles: List[List[int]], points: List[List[int]]) -> List[int]:
     ans = []
@@ -21601,6 +22608,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/score-after-flipping-matrix/description/
+# Question: 861. Score After Flipping Matrix
 class Solution:
   def matrixScore(self, grid: List[List[int]]) -> int:
     # Flip the rows with a leading 0.
@@ -21632,6 +22640,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/score-after-flipping-matrix/description/
+# Question: 861. Score After Flipping Matrix
 class Solution:
   def matrixScore(self, grid: List[List[int]]) -> int:
     m = len(grid)
@@ -21647,6 +22656,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/combination-sum-ii/description/
+# Question: 40. Combination Sum II
 class Solution:
   def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
     ans = []
@@ -21671,6 +22681,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/construct-product-matrix/description/
+# Question: 2906. Construct Product Matrix
 class Solution:
   def constructProductMatrix(self, grid: List[List[int]]) -> List[List[int]]:
     kMod = 12345
@@ -21693,6 +22704,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/
+# Question: 1498. Number of Subsequences That Satisfy the Given Sum Condition
 class Solution:
   def numSubseq(self, nums: List[int], target: int) -> int:
     kMod = 1_000_000_007
@@ -21714,6 +22726,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/description/
+# Question: 2415. Reverse Odd Levels of Binary Tree
 class Solution:
   def reverseOddLevels(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
     def dfs(left: Optional[TreeNode], right: Optional[TreeNode], isOddLevel: bool) -> None:
@@ -21729,6 +22742,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/description/
+# Question: 1081. Smallest Subsequence of Distinct Characters
 class Solution:
   def smallestSubsequence(self, text: str) -> str:
     ans = []
@@ -21749,6 +22763,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/nth-digit/description/
+# Question: 400. Nth Digit
 class Solution:
   def findNthDigit(self, n: int) -> int:
     def getDigit(num: int, pos: int, digitSize: int):
@@ -21775,6 +22790,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/description/
+# Question: 1698. Number of Distinct Substrings in a String
 class Solution:
   def countDistinct(self, s: str) -> int:
     kBase = 26
@@ -21807,6 +22823,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/total-cost-to-hire-k-workers/description/
+# Question: 2462. Total Cost to Hire K Workers
 class Solution:
   def totalCost(self, costs: List[int], k: int, candidates: int) -> int:
     ans = 0
@@ -21836,6 +22853,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-i/description/
+# Question: 3029. Minimum Time to Revert Word to Initial State I
 class Solution:
   # Same as 3029. Minimum Time to Revert Word to Initial State I
   def minimumTimeToInitialState(self, word: str, k: int) -> int:
@@ -21872,6 +22890,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/print-foobar-alternately/description/
+# Question: 1115. Print FooBar Alternately
 from threading import Semaphore
 
 
@@ -21895,6 +22914,7 @@ class FooBar:
 
 
 # Link: https://leetcode.com/problems/subarray-sum-equals-k/description/
+# Question: 560. Subarray Sum Equals K
 class Solution:
   def subarraySum(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -21910,6 +22930,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-factorization/description/
+# Question: 625. Minimum Factorization
 class Solution:
   def smallestFactorization(self, num: int) -> int:
     if num == 1:
@@ -21928,6 +22949,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximize-the-profit-as-the-salesman/description/
+# Question: 2830. Maximize the Profit as the Salesman
 class Solution:
   def maximizeTheProfit(self, n: int, offers: List[List[int]]) -> int:
     # dp[i] := the maximum amount of gold of selling the first i houses
@@ -21947,6 +22969,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-string-chain/description/
+# Question: 1048. Longest String Chain
 class Solution:
   def longestStrChain(self, words: List[str]) -> int:
     wordsSet = set(words)
@@ -21965,6 +22988,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-string-chain/description/
+# Question: 1048. Longest String Chain
 class Solution:
   def longestStrChain(self, words: List[str]) -> int:
     dp = {}
@@ -21977,6 +23001,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/bitwise-xor-of-all-pairings/description/
+# Question: 2425. Bitwise XOR of All Pairings
 class Solution:
   def xorAllNums(self, nums1: List[int], nums2: List[int]) -> int:
     xors1 = functools.reduce(operator.xor, nums1)
@@ -21987,6 +23012,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/description/
+# Question: 2491. Divide Players Into Teams of Equal Skill
 class Solution:
   def dividePlayers(self, skill: List[int]) -> int:
     n = len(skill)
@@ -22004,6 +23030,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-rows-covered-by-columns/description/
+# Question: 2397. Maximum Rows Covered by Columns
 class Solution:
   def maximumRows(self, matrix: List[List[int]], numSelect: int) -> int:
     ans = 0
@@ -22039,6 +23066,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/merge-nodes-in-between-zeros/description/
+# Question: 2181. Merge Nodes in Between Zeros
 class Solution:
   def mergeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
     if not head:
@@ -22054,6 +23082,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/merge-nodes-in-between-zeros/description/
+# Question: 2181. Merge Nodes in Between Zeros
 class Solution:
   def mergeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
     curr = head.next
@@ -22073,6 +23102,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/description/
+# Question: 2031. Count Subarrays With More Ones Than Zeros
 class FenwichTree:
   def __init__(self, n: int):
     self.n = n
@@ -22111,6 +23141,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/jump-game-viii/description/
+# Question: 2297. Jump Game IX
 class Solution:
   def minCost(self, nums: List[int], costs: List[int]) -> int:
     # dp[i] := the minimum cost to jump to i
@@ -22132,6 +23163,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/
+# Question: 373. Find K Pairs with Smallest Sums
 class Solution:
   def kSmallestPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
     minHeap = []
@@ -22150,6 +23182,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/description/
+# Question: 1712. Ways to Split Array Into Three Subarrays
 class Solution:
   def waysToSplit(self, nums: List[int]) -> int:
     kMod = 1_000_000_007
@@ -22177,6 +23210,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/description/
+# Question: 1712. Ways to Split Array Into Three Subarrays
 class Solution:
   def waysToSplit(self, nums: List[int]) -> int:
     kMod = 1_000_000_007
@@ -22227,6 +23261,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rank-teams-by-votes/description/
+# Question: 1366. Rank Teams by Votes
 class Team:
   def __init__(self, name: str, teamSize: int):
     self.name = name
@@ -22247,6 +23282,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/paint-fence/description/
+# Question: 276. Paint Fence
 class Solution:
   def numWays(self, n: int, k: int) -> int:
     if n == 0:
@@ -22269,6 +23305,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/delete-node-in-a-linked-list/description/
+# Question: 237. Delete Node in a Linked List
 class Solution:
   def deleteNode(self, node):
     node.val = node.next.val
@@ -22276,6 +23313,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/unique-paths-ii/description/
+# Question: 63. Unique Paths II
 class Solution:
   def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
     m = len(obstacleGrid)
@@ -22294,6 +23332,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/unique-paths-ii/description/
+# Question: 63. Unique Paths II
 class Solution:
   def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
     m = len(obstacleGrid)
@@ -22311,6 +23350,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/description/
+# Question: 2038. Remove Colored Pieces if Both Neighbors are the Same Color
 class Solution:
   def winnerOfGame(self, colors: str) -> bool:
     countAAA = 0
@@ -22326,6 +23366,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/
+# Question: 2095. Delete the Middle Node of a Linked List
 class Solution:
   def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
     dummy = ListNode(0, head)
@@ -22342,6 +23383,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/description/
+# Question: 2061. Number of Spaces Cleaning Robot Cleaned
 class Solution:
   def numberOfCleanRooms(self, room: List[List[int]]) -> int:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -22373,6 +23415,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/description/
+# Question: 3067. Count Pairs of Connectable Servers in a Weighted Tree Network
 class Solution:
   def countPairsOfConnectableServers(self, edges: List[List[int]], signalSpeed: int) -> List[int]:
     n = len(edges) + 1
@@ -22401,6 +23444,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-of-absolute-value-expression/description/
+# Question: 1131. Maximum of Absolute Value Expression
 class Solution:
   def maxAbsValExpr(self, arr1: List[int], arr2: List[int]) -> int:
     n = len(arr1)
@@ -22412,6 +23456,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/description/
+# Question: 2434. Using a Robot to Print the Lexicographically Smallest String
 class Solution:
   def robotWithString(self, s: str) -> str:
     ans = []
@@ -22435,6 +23480,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/description/
+# Question: 1904. The Number of Full Rounds You Have Played
 class Solution:
   def numberOfRounds(self, loginTime: str, logoutTime: str) -> int:
     start = self._getMinutes(loginTime)
@@ -22450,6 +23496,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/description/
+# Question: 2904. Shortest and Lexicographically Smallest Beautiful String
 class Solution:
   # Same as 76. Minimum Window Substring
   def shortestBeautifulSubstring(self, s: str, k: int) -> str:
@@ -22475,6 +23522,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/house-robber-iii/description/
+# Question: 337. House Robber III
 class Solution:
   def rob(self, root: Optional[TreeNode]) -> int:
     def robOrNot(root: Optional[TreeNode]) -> tuple:
@@ -22491,6 +23539,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-ways-to-build-house-of-cards/description/
+# Question: 2189. Number of Ways to Build House of Cards
 class Solution:
   def houseOfCards(self, n: int) -> int:
     # dp[i] := the number of valid result for i cards
@@ -22505,6 +23554,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/push-dominoes/description/
+# Question: 838. Push Dominoes
 class Solution:
   def pushDominoes(self, dominoes: str) -> str:
     ans = list(dominoes)
@@ -22539,6 +23589,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/removing-minimum-number-of-magic-beans/description/
+# Question: 2171. Removing Minimum Number of Magic Beans
 class Solution:
   def minimumRemoval(self, beans: List[int]) -> int:
     n = len(beans)
@@ -22548,6 +23599,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-snake-game/description/
+# Question: 353. Design Snake Game
 class SnakeGame:
   def __init__(self, width: int, height: int, food: List[List[int]]):
     """
@@ -22623,6 +23675,7 @@ class SnakeGame:
 
 
 # Link: https://leetcode.com/problems/total-hamming-distance/description/
+# Question: 477. Total Hamming Distance
 class Solution:
   def totalHammingDistance(self, nums: List[int]) -> int:
     kMaxBit = 30
@@ -22637,12 +23690,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/circular-permutation-in-binary-representation/description/
+# Question: 1238. Circular Permutation in Binary Representation
 class Solution:
   def circularPermutation(self, n: int, start: int) -> List[int]:
     return [start ^ i ^ i >> 1 for i in range(1 << n)]
 
 
 # Link: https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/description/
+# Question: 873. Length of Longest Fibonacci Subsequence
 class Solution:
   def lenLongestFibSubseq(self, arr: List[int]) -> int:
     n = len(arr)
@@ -22662,6 +23717,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-collisions-on-a-road/description/
+# Question: 2211. Count Collisions on a Road
 class Solution:
   def countCollisions(self, directions: str) -> int:
     l = 0
@@ -22677,6 +23733,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/removing-minimum-and-maximum-from-array/description/
+# Question: 2091. Removing Minimum and Maximum From Array
 class Solution:
   def minimumDeletions(self, nums: List[int]) -> int:
     n = len(nums)
@@ -22688,6 +23745,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/string-compression/description/
+# Question: 443. String Compression
 class Solution:
   def compress(self, chars: List[str]) -> int:
     ans = 0
@@ -22710,6 +23768,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/description/
+# Question: 2385. Amount of Time for Binary Tree to Be Infected
 class Solution:
   def amountOfTime(self, root: Optional[TreeNode], start: int) -> int:
     ans = -1
@@ -22749,6 +23808,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-score-from-removing-substrings/description/
+# Question: 1717. Maximum Score From Removing Substrings
 class Solution:
   def maximumGain(self, s: str, x: int, y: int) -> int:
     # The assumption that gain('ab') > gain('ba') while removing 'ba' first is
@@ -22786,6 +23846,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/description/
+# Question: 2516. Take K of Each Character From Left and Right
 class Solution:
   def takeCharacters(self, s: str, k: int) -> int:
     n = len(s)
@@ -22806,6 +23867,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-frogs-croaking/description/
+# Question: 1419. Minimum Number of Frogs Croaking
 class Solution:
   def minNumberOfFrogs(self, croakOfFrogs: str) -> int:
     kCroak = 'croak'
@@ -22827,6 +23889,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/interval-list-intersections/description/
+# Question: 986. Interval List Intersections
 class Solution:
   def intervalIntersection(self, firstList: List[List[int]], secondList: List[List[int]]) -> List[List[int]]:
     ans = []
@@ -22849,6 +23912,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-a-number-container-system/description/
+# Question: 2349. Design a Number Container System
 from sortedcontainers import SortedSet
 
 
@@ -22873,6 +23937,7 @@ class NumberContainers:
 
 
 # Link: https://leetcode.com/problems/map-of-highest-peak/description/
+# Question: 1765. Map of Highest Peak
 class Solution:
   def highestPeak(self, isWater: List[List[int]]) -> List[List[int]]:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -22903,6 +23968,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/make-k-subarray-sums-equal/description/
+# Question: 2607. Make K-Subarray Sums Equal
 class Solution:
   def makeSubKSumEqual(self, arr: List[int], k: int) -> int:
     # If the sum of each subarray of length k is equal, then `arr` must have a
@@ -22928,6 +23994,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/is-array-a-preorder-of-some-binary-tree/description/
+# Question: 2764. Is Array a Preorder of Some ‌Binary Tree
 class Solution:
   def isPreorder(self, nodes: List[List[int]]) -> bool:
     stack = []  # Stores `id`s.
@@ -22946,6 +24013,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-xor-product/description/
+# Question: 2939. Maximum Xor Product
 class Solution:
   def maximumXorProduct(self, a: int, b: int, n: int) -> int:
     kMod = 1_000_000_007
@@ -22958,6 +24026,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/frequency-of-the-most-frequent-element/description/
+# Question: 1838. Frequency of the Most Frequent Element
 class Solution:
   def maxFrequency(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -22977,6 +24046,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/description/
+# Question: 1347. Minimum Number of Steps to Make Two Strings Anagram
 class Solution:
   def minSteps(self, s: str, t: str) -> int:
     count = collections.Counter(s)
@@ -22985,6 +24055,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/edit-distance/description/
+# Question: 72. Edit Distance
 class Solution:
   def minDistance(self, word1: str, word2: str) -> int:
     m = len(word1)
@@ -23010,6 +24081,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/compare-version-numbers/description/
+# Question: 165. Compare Version Numbers
 class Solution:
   def compareVersion(self, version1: str, version2: str) -> int:
     levels1 = version1.split('.')
@@ -23028,6 +24100,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/walking-robot-simulation-ii/description/
+# Question: 2069. Walking Robot Simulation II
 class Robot:
   def __init__(self, width: int, height: int):
     self.isOrigin = True
@@ -23050,6 +24123,7 @@ class Robot:
 
 
 # Link: https://leetcode.com/problems/last-stone-weight-ii/description/
+# Question: 1049. Last Stone Weight II
 class Solution:
   def lastStoneWeightII(self, stones: List[int]) -> int:
     summ = sum(stones)
@@ -23067,6 +24141,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/description/
+# Question: 3064. Guess the Number Using Bitwise Questions I
 # Definition of commonSetBits API.
 # def commonSetBits(num: int) -> int:
 
@@ -23077,6 +24152,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-average-pass-ratio/description/
+# Question: 1792. Maximum Average Pass Ratio
 class Solution:
   def maxAverageRatio(self, classes: List[List[int]], extraStudents: int) -> float:
     def extraPassRatio(pas: int, total: int) -> float:
@@ -23095,6 +24171,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/description/
+# Question: 2967. Minimum Cost to Make Array Equalindromic
 class Solution:
   def minimumCost(self, nums: List[int]) -> int:
     nums.sort()
@@ -23120,6 +24197,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/description/
+# Question: 2779. Maximum Beauty of an Array After Applying Operation
 class Solution:
   def maximumBeauty(self, nums: List[int], k: int) -> int:
     # l and r track the maximum window instead of the valid window.
@@ -23134,6 +24212,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/description/
+# Question: 2779. Maximum Beauty of an Array After Applying Operation
 class Solution:
   def maximumBeauty(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -23150,6 +24229,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/copy-list-with-random-pointer/description/
+# Question: 138. Copy List with Random Pointer
 class Solution:
   def copyRandomList(self, head: 'Node') -> 'Node':
     if not head:
@@ -23167,6 +24247,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/jump-game-vi/description/
+# Question: 1696. Jump Game VI
 class Solution:
   def maxResult(self, nums: List[int], k: int) -> int:
     # Stores dp[i] within the bounds.
@@ -23189,6 +24270,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-coins-for-fruits/description/
+# Question: 2944. Minimum Number of Coins for Fruits
 class Solution:
   def minimumCoins(self, prices: List[int]) -> int:
     n = len(prices)
@@ -23205,6 +24287,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-coins-for-fruits/description/
+# Question: 2944. Minimum Number of Coins for Fruits
 class Solution:
   def minimumCoins(self, prices: List[int]) -> int:
     n = len(prices)
@@ -23223,6 +24306,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-coins-for-fruits/description/
+# Question: 2944. Minimum Number of Coins for Fruits
 class Solution:
   def minimumCoins(self, prices: List[int]) -> int:
     n = len(prices)
@@ -23243,6 +24327,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-to-separate-sentence-into-rows/description/
+# Question: 2052. Minimum Cost to Separate Sentence Into Rows
 class Solution:
   def minimumCost(self, sentence: str, k: int) -> int:
     if len(sentence) <= k:
@@ -23274,6 +24359,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/description/
+# Question: 1828. Queries on Number of Points Inside a Circle
 class Solution:
   def countPoints(self, points: List[List[int]], queries: List[List[int]]) -> List[int]:
     ans = []
@@ -23289,6 +24375,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/range-sum-query-2d-immutable/description/
+# Question: 304. Range Sum Query 2D - Immutable
 class NumMatrix:
   def __init__(self, matrix: List[List[int]]):
     if not matrix:
@@ -23311,6 +24398,7 @@ class NumMatrix:
 
 
 # Link: https://leetcode.com/problems/repeated-dna-sequences/description/
+# Question: 187. Repeated DNA Sequences
 class Solution:
   def findRepeatedDnaSequences(self, s: str) -> List[str]:
     ans = set()
@@ -23326,6 +24414,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/grumpy-bookstore-owner/description/
+# Question: 1052. Grumpy Bookstore Owner
 class Solution:
   def maxSatisfied(self, customers: List[int], grumpy: List[int], X: int) -> int:
     satisfied = sum(c for i, c in enumerate(customers) if grumpy[i] == 0)
@@ -23343,6 +24432,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/evaluate-division/description/
+# Question: 399. Evaluate Division
 class Solution:
   def calcEquation(self, equations: List[List[str]], values: List[float], queries: List[List[str]]) -> List[float]:
     ans = []
@@ -23380,6 +24470,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/campus-bikes-ii/description/
+# Question: 1066. Campus Bikes II
 class Solution:
   def assignBikes(self, workers: List[List[int]], bikes: List[List[int]]) -> int:
     def dist(p1: List[int], p2: List[int]) -> int:
@@ -23401,6 +24492,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-memory-allocator/description/
+# Question: 2502. Design Memory Allocator
 class Allocator:
   def __init__(self, n: int):
     self.memory = [0] * n
@@ -23427,6 +24519,7 @@ class Allocator:
 
 
 # Link: https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/
+# Question: 1976. Number of Ways to Arrive at Destination
 class Solution:
   def countPaths(self, n: int, roads: List[List[int]]) -> int:
     graph = [[] for _ in range(n)]
@@ -23463,6 +24556,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/description/
+# Question: 1557. Minimum Number of Vertices to Reach All Nodes
 class Solution:
   def findSmallestSetOfVertices(self, n: int, edges: List[List[int]]) -> List[int]:
     inDegrees = [0] * n
@@ -23474,6 +24568,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-to-connect-sticks/description/
+# Question: 1167. Minimum Cost to Connect Sticks
 class Solution:
   def connectSticks(self, sticks: List[int]) -> int:
     ans = 0
@@ -23489,6 +24584,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/game-of-life/description/
+# Question: 289. Game of Life
 class Solution:
   def gameOfLife(self, board: List[List[int]]) -> None:
     m = len(board)
@@ -23515,6 +24611,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/next-greater-element-ii/description/
+# Question: 503. Next Greater Element II
 class Solution:
   def nextGreaterElements(self, nums: List[int]) -> List[int]:
     n = len(nums)
@@ -23532,6 +24629,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/even-odd-tree/description/
+# Question: 1609. Even Odd Tree
 class Solution:
   def isEvenOddTree(self, root: Optional[TreeNode]) -> bool:
     q = collections.deque([root])
@@ -23556,6 +24654,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/clone-graph/description/
+# Question: 133. Clone Graph
 class Solution:
   def cloneGraph(self, node: 'Node') -> 'Node':
     if not node:
@@ -23576,6 +24675,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/clone-graph/description/
+# Question: 133. Clone Graph
 class Solution:
   def cloneGraph(self, node: 'Node') -> 'Node':
     if not node:
@@ -23595,6 +24695,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/decode-the-slanted-ciphertext/description/
+# Question: 2075. Decode the Slanted Ciphertext
 class Solution:
   def decodeCiphertext(self, encodedText: str, rows: int) -> str:
     n = len(encodedText)
@@ -23619,6 +24720,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/decode-the-slanted-ciphertext/description/
+# Question: 2075. Decode the Slanted Ciphertext
 class Solution:
   def decodeCiphertext(self, encodedText: str, rows: int) -> str:
     n = len(encodedText)
@@ -23634,6 +24736,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/flip-equivalent-binary-trees/description/
+# Question: 951. Flip Equivalent Binary Trees
 class Solution:
   def flipEquiv(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
     if not root1:
@@ -23648,6 +24751,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/max-consecutive-ones-ii/description/
+# Question: 487. Max Consecutive Ones II
 class Solution:
   def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
     ans = 0
@@ -23667,6 +24771,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/max-consecutive-ones-ii/description/
+# Question: 487. Max Consecutive Ones II
 class Solution:
   def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
     ans = 0
@@ -23683,6 +24788,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/max-consecutive-ones-ii/description/
+# Question: 487. Max Consecutive Ones II
 class Solution:
   def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
     maxZeros = 1
@@ -23701,6 +24807,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-derangement-of-an-array/description/
+# Question: 634. Find the Derangement of An Array
 class Solution:
   def findDerangement(self, n: int) -> int:
     kMod = 1_000_000_007
@@ -23713,6 +24820,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-derangement-of-an-array/description/
+# Question: 634. Find the Derangement of An Array
 class Solution:
   def findDerangement(self, n: int) -> int:
     kMod = 1_000_000_007
@@ -23729,6 +24837,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-submatrix-with-rearrangements/description/
+# Question: 1727. Largest Submatrix With Rearrangements
 class Solution:
   def largestSubmatrix(self, matrix: List[List[int]]) -> int:
     ans = 0
@@ -23750,6 +24859,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description/
+# Question: 581. Shortest Unsorted Continuous Subarray
 class Solution:
   def findUnsortedSubarray(self, nums: List[int]) -> int:
     mini = math.inf
@@ -23782,6 +24892,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-ice-cream-bars/description/
+# Question: 1833. Maximum Ice Cream Bars
 class Solution:
   def maxIceCream(self, costs: List[int], coins: int) -> int:
     for i, cost in enumerate(sorted(costs)):
@@ -23794,6 +24905,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-knight-tour-configuration/description/
+# Question: 2596. Check Knight Tour Configuration
 class Solution:
   def checkValidGrid(self, grid: List[List[int]]) -> bool:
     dirs = ((1, 2), (2, 1), (2, -1), (1, -2),
@@ -23827,6 +24939,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-people-that-can-be-seen-in-a-grid/description/
+# Question: 2282. Number of People That Can Be Seen in a Grid
 class Solution:
   def seePeople(self, heights: List[List[int]]) -> List[List[int]]:
     m = len(heights)
@@ -23862,6 +24975,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/description/
+# Question: 2915. Length of the Longest Subsequence That Sums to Target
 class Solution:
   def lengthOfLongestSubsequence(self, nums: List[int], target: int) -> int:
     # dp[i] := the maximum length of any subsequence of numbers so far that
@@ -23877,6 +24991,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/description/
+# Question: 2915. Length of the Longest Subsequence That Sums to Target
 class Solution:
   def lengthOfLongestSubsequence(self, nums: List[int], target: int) -> int:
     n = len(nums)
@@ -23901,6 +25016,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/
+# Question: 117. Populating Next Right Pointers in Each Node II
 class Solution:
   def connect(self, root: 'Node') -> 'Node':
     node = root  # the node that is above the current needling
@@ -23923,6 +25039,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/knight-dialer/description/
+# Question: 935. Knight Dialer
 class Solution:
   def knightDialer(self, n: int) -> int:
     dirs = ((1, 2), (2, 1), (2, -1), (1, -2),
@@ -23953,6 +25070,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/description/
+# Question: 1545. Find Kth Bit in Nth Binary String
 class Solution:
   def findKthBit(self, n: int, k: int) -> str:
     if n == 1:
@@ -23966,6 +25084,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/toss-strange-coins/description/
+# Question: 1230. Toss Strange Coins
 class Solution:
   def probabilityOfHeads(self, prob: List[float], target: int) -> float:
     # dp[j] := the probability of tossing the coins so far with j heads
@@ -23979,6 +25098,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/toss-strange-coins/description/
+# Question: 1230. Toss Strange Coins
 class Solution:
   def probabilityOfHeads(self, prob: List[float], target: int) -> float:
     # dp[i][j] := the probability of tossing the first i coins with j heads
@@ -23994,6 +25114,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/output-contest-matches/description/
+# Question: 544. Output Contest Matches
 class Solution:
   def findContestMatch(self, n: int) -> str:
     def generateMatches(matches: List[str]) -> str:
@@ -24012,6 +25133,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/output-contest-matches/description/
+# Question: 544. Output Contest Matches
 class Solution:
   def findContestMatch(self, n: int) -> str:
     matches = [str(i + 1) for i in range(n)]
@@ -24025,6 +25147,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/
+# Question: 1493. Longest Subarray of 1's After Deleting One Element
 class Solution:
   def longestSubarray(self, nums: List[int]) -> int:
     ans = 0
@@ -24044,6 +25167,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/
+# Question: 1493. Longest Subarray of 1's After Deleting One Element
 class Solution:
   def longestSubarray(self, nums: List[int]) -> int:
     l = 0
@@ -24061,6 +25185,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/merge-intervals/description/
+# Question: 56. Merge Intervals
 class Solution:
   def merge(self, intervals: List[List[int]]) -> List[List[int]]:
     ans = []
@@ -24075,6 +25200,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-and-replace-in-string/description/
+# Question: 833. Find And Replace in String
 class Solution:
   def findReplaceString(self, s: str, indexes: List[int],
                         sources: List[str], targets: List[str]) -> str:
@@ -24085,6 +25211,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/house-robber/description/
+# Question: 198. House Robber
 class Solution:
   def rob(self, nums: List[int]) -> int:
     prev1 = 0  # dp[i - 1]
@@ -24099,6 +25226,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/house-robber/description/
+# Question: 198. House Robber
 class Solution:
   def rob(self, nums: List[int]) -> int:
     if not nums:
@@ -24118,6 +25246,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/description/
+# Question: 1318. Minimum Flips to Make a OR b Equal to c
 class Solution:
   def minFlips(self, a: int, b: int, c: int) -> int:
     kMaxBit = 30
@@ -24133,6 +25262,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/snakes-and-ladders/description/
+# Question: 909. Snakes and Ladders
 class Solution:
   def snakesAndLadders(self, board: List[List[int]]) -> int:
     n = len(board)
@@ -24162,6 +25292,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-subarray-sum-after-one-operation/description/
+# Question: 1746. Maximum Subarray Sum After One Operation
 class Solution:
   def maxSumAfterOperation(self, nums: List[int]) -> int:
     ans = -math.inf
@@ -24177,6 +25308,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/description/
+# Question: 1968. Array With Elements Not Equal to Average of Neighbors
 class Solution:
   def rearrangeArray(self, nums: List[int]) -> List[int]:
     nums.sort()
@@ -24186,6 +25318,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reverse-integer/description/
+# Question: 7. Reverse Integer
 class Solution:
   def reverse(self, x: int) -> int:
     ans = 0
@@ -24200,6 +25333,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximal-square/description/
+# Question: 221. Maximal Square
 class Solution:
   def maximalSquare(self, matrix: List[List[str]]) -> int:
     m = len(matrix)
@@ -24220,6 +25354,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximal-square/description/
+# Question: 221. Maximal Square
 class Solution:
   def maximalSquare(self, matrix: List[List[chr]]) -> int:
     m = len(matrix)
@@ -24242,6 +25377,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-distinct-islands/description/
+# Question: 694. Number of Distinct Islands
 class Solution:
   def numDistinctIslands(self, grid: List[List[int]]) -> int:
     seen = set()
@@ -24272,6 +25408,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/description/
+# Question: 562. Longest Line of Consecutive One in Matrix
 class Solution:
   def longestLine(self, mat: List[List[int]]) -> int:
     m = len(mat)
@@ -24296,6 +25433,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/description/
+# Question: 1237. Find Positive Integer Solution for a Given Equation
 class Solution:
   def findSolution(self, customfunction: 'CustomFunction', z: int) -> List[List[int]]:
     ans = []
@@ -24317,6 +25455,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/description/
+# Question: 2571. Minimum Operations to Reduce an Integer to 0
 class Solution:
   def minOperations(self, n: int) -> int:
     # The strategy is that when the end of n is
@@ -24349,6 +25488,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-sub-islands/description/
+# Question: 1905. Count Sub Islands
 class Solution:
   def countSubIslands(self, grid1: List[List[int]], grid2: List[List[int]]) -> int:
     m = len(grid2)
@@ -24376,6 +25516,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/description/
+# Question: 2557. Maximum Number of Integers to Choose From a Range II
 class Solution:
   def maxCount(self, banned: List[int], n: int, maxSum: int) -> int:
     bannedSet = set(banned)
@@ -24397,6 +25538,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/description/
+# Question: 2447. Number of Subarrays With GCD Equal to K
 class Solution:
   def subarrayGCD(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -24418,6 +25560,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/product-of-array-except-self/description/
+# Question: 238. Product of Array Except Self
 class Solution:
   def productExceptSelf(self, nums: List[int]) -> List[int]:
     n = len(nums)
@@ -24436,6 +25579,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/product-of-array-except-self/description/
+# Question: 238. Product of Array Except Self
 class Solution:
   def productExceptSelf(self, nums: List[int]) -> List[int]:
     n = len(nums)
@@ -24452,6 +25596,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/description/
+# Question: 1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number
 class Solution:
   def getMinSwaps(self, num: str, k: int) -> int:
     def nextPermutation(nums: List[int]):
@@ -24505,6 +25650,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/make-the-prefix-sum-non-negative/description/
+# Question: 2599. Make the Prefix Sum Non-negative
 class Solution:
   def makePrefSumNonNegative(self, nums: List[int]) -> int:
     ans = 0
@@ -24523,6 +25669,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/squirrel-simulation/description/
+# Question: 573. Squirrel Simulation
 class Solution:
   def minDistance(self, height: int, width: int, tree: List[int], squirrel: List[int], nuts: List[List[int]]) -> int:
     def dist(a: List[int], b: List[int]) -> int:
@@ -24534,6 +25681,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-closed-islands/description/
+# Question: 1254. Number of Closed Islands
 class Solution:
   def closedIsland(self, grid: List[List[int]]) -> int:
     m = len(grid)
@@ -24571,6 +25719,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/coloring-a-border/description/
+# Question: 1034. Coloring A Border
 class Solution:
   def colorBorder(self, grid: List[List[int]], r0: int, c0: int, color: int) -> List[List[int]]:
     def dfs(i: int, j: int, originalColor: int) -> None:
@@ -24601,6 +25750,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-index-of-the-large-integer/description/
+# Question: 1533. Find the Index of the Large Integer
 # """
 # This is ArrayReader's API interface.
 # You should not implement it, or speculate about its implementation
@@ -24635,6 +25785,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-index-of-the-large-integer/description/
+# Question: 1533. Find the Index of the Large Integer
 # """
 # This is ArrayReader's API interface.
 # You should not implement it, or speculate about its implementation
@@ -24678,6 +25829,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-profit-from-trading-stocks/description/
+# Question: 2291. Maximum Profit From Trading Stocks
 class Solution:
   def maximumProfit(self, present: List[int], future: List[int], budget: int) -> int:
     n = len(present)
@@ -24692,6 +25844,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-profit-from-trading-stocks/description/
+# Question: 2291. Maximum Profit From Trading Stocks
 class Solution:
   def maximumProfit(self, present: List[int], future: List[int], budget: int) -> int:
     n = len(present)
@@ -24710,6 +25863,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/ambiguous-coordinates/description/
+# Question: 816. Ambiguous Coordinates
 class Solution:
   def ambiguousCoordinates(self, s: str) -> List[str]:
     def splits(s: str) -> List[str]:
@@ -24733,6 +25887,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/merge-triplets-to-form-target-triplet/description/
+# Question: 1899. Merge Triplets to Form Target Triplet
 class Solution:
   def mergeTriplets(self, triplets: List[List[int]], target: List[int]) -> bool:
     merged = [0] * len(target)
@@ -24746,6 +25901,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/moving-stones-until-consecutive/description/
+# Question: 1033. Moving Stones Until Consecutive
 class Solution:
   def numMovesStones(self, a: int, b: int, c: int) -> List[int]:
     nums = sorted([a, b, c])
@@ -24757,6 +25913,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/subsequence-of-size-k-with-the-largest-even-sum/description/
+# Question: 2098. Subsequence of Size K With the Largest Even Sum
 class Solution:
   def largestEvenSum(self, nums: List[int], k: int) -> int:
     nums.sort()
@@ -24791,6 +25948,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-distinct-binary-strings-after-applying-operations/description/
+# Question: 2450. Number of Distinct Binary Strings After Applying Operations
 class Solution:
   def countDistinctStrings(self, s: str, k: int) -> int:
     # Since the content of `s` doesn't matter, for each i in [0, n - k], we can
@@ -24799,6 +25957,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-ways-to-split-a-string/description/
+# Question: 1573. Number of Ways to Split a String
 class Solution:
   def numWays(self, s: str) -> int:
     kMod = 1_000_000_007
@@ -24831,6 +25990,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/most-expensive-item-that-can-not-be-bought/description/
+# Question: 2979. Most Expensive Item That Can Not Be Bought
 class Solution:
   def mostExpensiveItem(self, primeOne: int, primeTwo: int) -> int:
     # https://en.wikipedia.org/wiki/Coin_problem
@@ -24838,6 +25998,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/utf-8-validation/description/
+# Question: 393. UTF-8 Validation
 class Solution:
   def validUtf8(self, data: List[int]) -> bool:
     followedBytes = 0
@@ -24863,6 +26024,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-repeating-substring/description/
+# Question: 1062. Longest Repeating Substring
 class Solution:
   def longestRepeatingSubstring(self, s: str) -> int:
     n = len(s)
@@ -24880,6 +26042,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-add-and-search-words-data-structure/description/
+# Question: 211. Add and Search Word - Data structure design
 class TrieNode:
   def __init__(self):
     self.children: Dict[str, TrieNode] = {}
@@ -24909,6 +26072,7 @@ class WordDictionary:
 
 
 # Link: https://leetcode.com/problems/maximum-subarray-min-product/description/
+# Question: 1856. Maximum Subarray Min-Product
 class Solution:
   def maxSumMinProduct(self, nums: List[int]) -> int:
     ans = 0
@@ -24926,6 +26090,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/brace-expansion/description/
+# Question: 1087. Brace Expansion
 class Solution:
   def expand(self, s: str) -> List[str]:
     ans = []
@@ -24950,6 +26115,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/spiral-matrix/description/
+# Question: 54. Spiral Matrix
 class Solution:
   def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
     if not matrix:
@@ -24990,6 +26156,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/description/
+# Question: 421. Maximum XOR of Two Numbers in an Array
 class Solution:
   def findMaximumXOR(self, nums: List[int]) -> int:
     maxNum = max(nums)
@@ -25021,6 +26188,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/description/
+# Question: 421. Maximum XOR of Two Numbers in an Array
 class TrieNode:
   def __init__(self):
     self.children: List[Optional[TrieNode]] = [None] * 2
@@ -25072,6 +26240,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/unique-paths/description/
+# Question: 62. Unique Paths
 class Solution:
   def uniquePaths(self, m: int, n: int) -> int:
     dp = [1] * n
@@ -25084,6 +26253,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/unique-paths/description/
+# Question: 62. Unique Paths
 class Solution:
   def uniquePaths(self, m: int, n: int) -> int:
     # dp[i][j] := the number of unique paths from (0, 0) to (i, j)
@@ -25097,6 +26267,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/plates-between-candles/description/
+# Question: 2055. Plates Between Candles
 class Solution:
   def platesBetweenCandles(self, s: str, queries: List[List[int]]) -> List[int]:
     n = len(s)
@@ -25134,6 +26305,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/plates-between-candles/description/
+# Question: 2055. Plates Between Candles
 class Solution:
   def platesBetweenCandles(self, s: str, queries: List[List[int]]) -> List[int]:
     ans = []
@@ -25153,6 +26325,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
+# Question: 19. Remove Nth Node From End of List
 class Solution:
   def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
     slow = head
@@ -25172,6 +26345,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-time-for-given-digits/description/
+# Question: 949. Largest Time for Given Digits
 class Solution:
   def largestTimeFromDigits(self, arr: List[int]) -> str:
     for time in itertools.permutations(sorted(arr, reverse=True)):
@@ -25181,6 +26355,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/description/
+# Question: 1653. Minimum Deletions to Make String Balanced
 class Solution:
   # Same as 926. Flip String to Monotone Increasing
   def minimumDeletions(self, s: str) -> int:
@@ -25199,6 +26374,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/
+# Question: 114. Flatten Binary Tree to Linked List
 class Solution:
   def flatten(self, root: Optional[TreeNode]) -> None:
     if not root:
@@ -25221,6 +26397,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/
+# Question: 114. Flatten Binary Tree to Linked List
 class Solution:
   def flatten(self, root: Optional[TreeNode]) -> None:
     if not root:
@@ -25241,6 +26418,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/
+# Question: 114. Flatten Binary Tree to Linked List
 class Solution:
   def flatten(self, root: Optional[TreeNode]) -> None:
     if not root:
@@ -25260,6 +26438,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rle-iterator/description/
+# Question: 900. RLE Iterator
 class RLEIterator:
   def __init__(self, encoding: List[int]):
     self.encoding = encoding
@@ -25278,6 +26457,7 @@ class RLEIterator:
 
 
 # Link: https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/description/
+# Question: 2369. Check if There is a Valid Partition For The Array
 class Solution:
   def validPartition(self, nums: List[int]) -> bool:
     n = len(nums)
@@ -25295,6 +26475,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lru-cache/description/
+# Question: 146. LRU Cache
 class Node:
   def __init__(self, key: int, value: int):
     self.key = key
@@ -25349,6 +26530,7 @@ class LRUCache:
 
 
 # Link: https://leetcode.com/problems/first-completely-painted-row-or-column/description/
+# Question: 2661. First Completely Painted Row or Column
 class Solution:
   def firstCompleteIndex(self, arr: List[int], mat: List[List[int]]) -> int:
     m = len(mat)
@@ -25377,6 +26559,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/description/
+# Question: 462. Minimum Moves to Equal Array Elements II
 import statistics
 
 
@@ -25387,6 +26570,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/description/
+# Question: 1954. Minimum Garden Perimeter to Collect Enough Apples
 class Solution:
   def minimumPerimeter(self, neededApples: int) -> int:
     def numApples(k: int) -> int:
@@ -25418,6 +26602,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-vowels-in-a-string/description/
+# Question: 2785. Sort Vowels in a String
 class Solution:
   def sortVowels(self, s: str) -> str:
     kVowels = 'aeiouAEIOU'
@@ -25436,6 +26621,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-subarrays-having-even-product/description/
+# Question: 2495. Number of Subarrays Having Even Product
 class Solution:
   def evenProduct(self, nums: List[int]) -> int:
     ans = 0
@@ -25454,6 +26640,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-1-bordered-square/description/
+# Question: 1139. Largest 1-Bordered Square
 class Solution:
   def largest1BorderedSquare(self, grid: List[List[int]]) -> int:
     m = len(grid)
@@ -25483,6 +26670,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-a-stack-with-increment-operation/description/
+# Question: 1381. Design a Stack With Increment Operation
 class CustomStack:
   def __init__(self, maxSize: int):
     self.maxSize = maxSize
@@ -25511,6 +26699,7 @@ class CustomStack:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/description/
+# Question: 1482. Minimum Number of Days to Make m Bouquets
 class Solution:
   def minDays(self, bloomDay: List[int], m: int, k: int) -> int:
     if len(bloomDay) < m * k:
@@ -25549,6 +26738,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-numbers-with-unique-digits/description/
+# Question: 357. Count Numbers with Unique Digits
 class Solution:
   def countNumbersWithUniqueDigits(self, n: int) -> int:
     if n == 0:
@@ -25568,6 +26758,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/unique-binary-search-trees-ii/description/
+# Question: 95. Unique Binary Search Trees II
 class Solution:
   def generateTrees(self, n: int) -> List[TreeNode]:
     if n == 0:
@@ -25592,6 +26783,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/linked-list-random-node/description/
+# Question: 382. Linked List Random Node
 # Definition for singly-linked list.
 # class ListNode:
 #   def __init__(self, val=0, next=None):
@@ -25617,6 +26809,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/permutations-ii/description/
+# Question: 47. Permutations II
 class Solution:
   def permuteUnique(self, nums: List[int]) -> List[List[int]]:
     ans = []
@@ -25644,6 +26837,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/leftmost-column-with-at-least-a-one/description/
+# Question: 1428. Leftmost Column with at Least a One
 # """
 # This is BinaryMatrix's API interface.
 # You should not implement it, or speculate about its implementation
@@ -25671,6 +26865,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/leftmost-column-with-at-least-a-one/description/
+# Question: 1428. Leftmost Column with at Least a One
 # """
 # This is BinaryMatrix's API interface.
 # You should not implement it, or speculate about its implementation
@@ -25697,12 +26892,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/encode-number/description/
+# Question: 1256. Encode Number
 class Solution:
   def encode(self, num: int) -> str:
     return bin(num + 1)[3:]
 
 
 # Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/
+# Question: 80. Remove Duplicates from Sorted Array II
 class Solution:
   def removeDuplicates(self, nums: List[int]) -> int:
     i = 0
@@ -25716,6 +26913,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/add-two-numbers/description/
+# Question: 2. Add Two Numbers
 class Solution:
   def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
     dummy = ListNode(0)
@@ -25737,6 +26935,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/xor-queries-of-a-subarray/description/
+# Question: 1310. XOR Queries of a Subarray
 class Solution:
   def xorQueries(self, arr: List[int], queries: List[List[int]]) -> List[int]:
     ans = []
@@ -25752,6 +26951,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/removing-stars-from-a-string/description/
+# Question: 2390. Removing Stars From a String
 class Solution:
   def removeStars(self, s: str) -> str:
     ans = []
@@ -25764,6 +26964,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reconstruct-original-digits-from-english/description/
+# Question: 423. Reconstruct Original Digits from English
 class Solution:
   def originalDigits(self, s: str) -> str:
     count = [0] * 10
@@ -25800,6 +27001,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/
+# Question: 106. Construct Binary Tree from Inorder and Postorder Traversal
 class Solution:
   def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
     inToIndex = {num: i for i, num in enumerate(inorder)}
@@ -25823,6 +27025,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/words-within-two-edits-of-dictionary/description/
+# Question: 2452. Words Within Two Edits of Dictionary
 class Solution:
   def twoEditWords(self, queries: List[str], dictionary: List[str]) -> List[str]:
     return [query for query in queries
@@ -25831,6 +27034,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/distinct-numbers-in-each-subarray/description/
+# Question: 1852. Distinct Numbers in Each Subarray
 class Solution:
   def distinctNumbers(self, nums: List[int], k: int) -> List[int]:
     ans = []
@@ -25852,6 +27056,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/
+# Question: 921. Minimum Add to Make Parentheses Valid
 class Solution:
   def minAddToMakeValid(self, s: str) -> int:
     l = 0
@@ -25870,6 +27075,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/
+# Question: 515. Find Largest Value in Each Tree Row
 class Solution:
   def largestValues(self, root: Optional[TreeNode]) -> List[int]:
     if not root:
@@ -25893,6 +27099,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/
+# Question: 515. Find Largest Value in Each Tree Row
 class Solution:
   def largestValues(self, root: Optional[TreeNode]) -> List[int]:
     ans = []
@@ -25913,6 +27120,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/k-concatenation-maximum-sum/description/
+# Question: 1191. K-Concatenation Maximum Sum
 class Solution:
   def kConcatenationMaxSum(self, arr: List[int], k: int) -> int:
     kMod = 1_000_000_007
@@ -25936,6 +27144,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/description/
+# Question: 1481. Least Number of Unique Integers after K Removals
 class Solution:
   def findLeastNumOfUniqueInts(self, arr: List[int], k: int) -> int:
     minHeap = list(collections.Counter(arr).values())
@@ -25949,6 +27158,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/description/
+# Question: 1283. Find the Smallest Divisor Given a Threshold
 class Solution:
   def smallestDivisor(self, nums: List[int], threshold: int) -> int:
     l = 1
@@ -25965,6 +27175,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/apply-operations-to-make-string-empty/description/
+# Question: 3039. Apply Operations to Make String Empty
 class Solution:
   def lastNonEmptyString(self, s: str) -> str:
     ans = []
@@ -25980,6 +27191,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-matrix-after-queries/description/
+# Question: 2718. Sum of Matrix After Queries
 class Solution:
   def matrixSumQueries(self, n: int, queries: List[List[int]]) -> int:
     ans = 0
@@ -25999,6 +27211,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/description/
+# Question: 1849. Splitting a String Into Descending Consecutive Values
 class Solution:
   def splitString(self, s: str) -> bool:
     def isValid(s: str, start: int, prev: int, segment: int) -> bool:
@@ -26019,12 +27232,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/game-of-nim/description/
+# Question: 1908. Game of Nim
 class Solution:
   def nimGame(self, piles: List[int]) -> bool:
     return functools.reduce(operator.xor, piles) > 0
 
 
 # Link: https://leetcode.com/problems/time-based-key-value-store/description/
+# Question: 981. Time Based Key-Value Store
 class TimeMap:
   def __init__(self):
     self.values = collections.defaultdict(list)
@@ -26042,6 +27257,7 @@ class TimeMap:
 
 
 # Link: https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/description/
+# Question: 2816. Double a Number Represented as a Linked List
 class Solution:
   def doubleIt(self, head: Optional[ListNode]) -> Optional[ListNode]:
     if head.val >= 5:
@@ -26060,6 +27276,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/description/
+# Question: 2816. Double a Number Represented as a Linked List
 class Solution:
   def doubleIt(self, head: Optional[ListNode]) -> Optional[ListNode]:
     def getCarry(node: Optional[ListNode]) -> Optional[ListNode]:
@@ -26075,6 +27292,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/frog-jump-ii/description/
+# Question: 2498. Frog Jump II
 class Solution:
   def maxJump(self, stones: List[int]) -> int:
     # Let's denote the forwarding path as F and the backwarding path as B.
@@ -26087,6 +27305,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/network-delay-time/description/
+# Question: 743. Network Delay Time
 class Solution:
   def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
     graph = [[] for _ in range(n)]
@@ -26114,6 +27333,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/convert-to-base-2/description/
+# Question: 1017. Convert to Base -2
 class Solution:
   def baseNeg2(self, n: int) -> str:
     ans = []
@@ -26126,6 +27346,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-well-performing-interval/description/
+# Question: 1124. Longest Well-Performing Interval
 class Solution:
   def longestWPI(self, hours: List[int]) -> int:
     ans = 0
@@ -26146,6 +27367,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/prime-subtraction-operation/description/
+# Question: 2601. Prime Subtraction Operation
 class Solution:
   def primeSubOperation(self, nums: List[int]) -> bool:
     kMax = 1000
@@ -26175,6 +27397,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-the-number-of-fair-pairs/description/
+# Question: 2563. Count the Number of Fair Pairs
 class Solution:
   def countFairPairs(self, nums: List[int], lower: int, upper: int) -> int:
     # nums[i] + nums[j] == nums[j] + nums[i], so the condition that i < j
@@ -26196,6 +27419,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-number-of-nice-subarrays/description/
+# Question: 1248. Count Number of Nice Subarrays
 class Solution:
   def numberOfSubarrays(self, nums: List[int], k: int) -> int:
     def numberOfSubarraysAtMost(k: int) -> int:
@@ -26221,6 +27445,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-longest-equal-subarray/description/
+# Question: 2831. Find the Longest Equal Subarray
 class Solution:
   def longestEqualSubarray(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -26239,6 +27464,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-longest-equal-subarray/description/
+# Question: 2831. Find the Longest Equal Subarray
 class Solution:
   def longestEqualSubarray(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -26256,6 +27482,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sparse-matrix-multiplication/description/
+# Question: 311. Sparse Matrix Multiplication
 class Solution:
   def multiply(self, mat1: List[List[int]], mat2: List[List[int]]) -> List[List[int]]:
     m = len(mat1)
@@ -26272,6 +27499,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sparse-matrix-multiplication/description/
+# Question: 311. Sparse Matrix Multiplication
 class Solution:
   def multiply(self, mat1: List[List[int]], mat2: List[List[int]]) -> List[List[int]]:
     m = len(mat1)
@@ -26295,6 +27523,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-uploaded-prefix/description/
+# Question: 2424. Longest Uploaded Prefix
 class LUPrefix:
   def __init__(self, n: int):
     self.seen = set()
@@ -26310,6 +27539,7 @@ class LUPrefix:
 
 
 # Link: https://leetcode.com/problems/flatten-nested-list-iterator/description/
+# Question: 341. Flatten Nested List Iterator
 class NestedIterator:
   def __init__(self, nestedList: List[NestedInteger]):
     self.stack: List[NestedInteger] = []
@@ -26332,6 +27562,7 @@ class NestedIterator:
 
 
 # Link: https://leetcode.com/problems/flatten-nested-list-iterator/description/
+# Question: 341. Flatten Nested List Iterator
 class NestedIterator:
   def __init__(self, nestedList: List[NestedInteger]):
     self.q = collections.deque()
@@ -26352,6 +27583,7 @@ class NestedIterator:
 
 
 # Link: https://leetcode.com/problems/search-suggestions-system/description/
+# Question: 1268. Search Suggestions System
 class TrieNode:
   def __init__(self):
     self.children: Dict[str, TrieNode] = {}
@@ -26402,6 +27634,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reverse-words-in-a-string-ii/description/
+# Question: 186. Reverse Words in a String II
 class Solution:
   def reverseWords(self, s: List[str]) -> None:
     def reverse(l: int, r: int) -> None:
@@ -26426,6 +27659,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/decode-xored-permutation/description/
+# Question: 1734. Decode XORed Permutation
 class Solution:
   def decode(self, encoded: List[int]) -> List[int]:
     # Our goal is to find the value of a1, which will allow us to decode a2, a3,
@@ -26458,6 +27692,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-cost-to-buy-apples/description/
+# Question: 2473. Minimum Cost to Buy Apples
 class Solution:
   def minCost(self, n: int, roads: List[List[int]], appleCost: List[int], k: int) -> List[int]:
     graph = [[] for _ in range(n)]
@@ -26489,6 +27724,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/max-consecutive-ones-iii/description/
+# Question: 1004. Max Consecutive Ones III
 class Solution:
   def longestOnes(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -26507,6 +27743,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-value-of-the-rearranged-number/description/
+# Question: 2165. Smallest Value of the Rearranged Number
 class Solution:
   def smallestNumber(self, num: int) -> int:
     s = sorted(str(abs(num)), reverse=num < 0)
@@ -26516,12 +27753,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reverse-words-in-a-string/description/
+# Question: 151. Reverse Words in a String
 class Solution:
   def reverseWords(self, s: str) -> str:
     return ' '.join(reversed(s.split()))
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work/description/
+# Question: 1953. Maximum Number of Weeks for Which You Can Work
 class Solution:
   def numberOfWeeks(self, milestones: List[int]) -> int:
     # The best strategy is to pick 'max, nonMax, max, nonMax, ...'.
@@ -26531,6 +27770,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/possible-bipartition/description/
+# Question: 886. Possible Bipartition
 from enum import Enum
 
 
@@ -26566,6 +27806,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partition-equal-subset-sum/description/
+# Question: 416. Partition Equal Subset Sum
 class Solution:
   def canPartition(self, nums: List[int]) -> bool:
     summ = sum(nums)
@@ -26591,6 +27832,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partition-equal-subset-sum/description/
+# Question: 416. Partition Equal Subset Sum
 class Solution:
   def canPartition(self, nums: List[int]) -> bool:
     summ = sum(nums)
@@ -26611,6 +27853,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sequential-digits/description/
+# Question: 1291. Sequential Digits
 class Solution:
   def sequentialDigits(self, low: int, high: int) -> List[int]:
     ans = []
@@ -26630,6 +27873,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/description/
+# Question: 1985. Find the Kth Largest Integer in the Array
 class Solution:
   # Similar to 215. Kth Largest Element in an Array
   def kthLargestNumber(self, nums: List[str], k: int) -> str:
@@ -26644,6 +27888,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/satisfiability-of-equality-equations/description/
+# Question: 990. Satisfiability of Equality Equations
 class UnionFind:
   def __init__(self, n: int):
     self.id = list(range(n))
@@ -26671,6 +27916,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/description/
+# Question: 1760. Minimum Limit of Balls in a Bag
 class Solution:
   def minimumSize(self, nums: List[int], maxOperations: int) -> int:
     # Returns the number of operations required to make m penalty.
@@ -26681,6 +27927,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-candies-allocated-to-k-children/description/
+# Question: 2226. Maximum Candies Allocated to K Children
 class Solution:
   def maximumCandies(self, candies: List[int], k: int) -> int:
     l = 1
@@ -26700,6 +27947,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-tastiness-of-candy-basket/description/
+# Question: 2517. Maximum Tastiness of Candy Basket
 class Solution:
   def maximumTastiness(self, price: List[int], k: int) -> int:
     price.sort()
@@ -26720,6 +27968,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/replace-elements-in-an-array/description/
+# Question: 2295. Replace Elements in an Array
 class Solution:
   def arrayChange(self, nums: List[int], operations: List[List[int]]) -> List[int]:
     numToIndex = {num: i for i, num in enumerate(nums)}
@@ -26734,6 +27983,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/top-k-frequent-elements/description/
+# Question: 347. Top K Frequent Elements
 class Solution:
   def topKFrequent(self, nums: List[int], k: int) -> List[int]:
     ans = []
@@ -26749,6 +27999,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-absolute-file-path/description/
+# Question: 388. Longest Absolute File Path
 class Solution:
   def lengthLongestPath(self, input: str) -> int:
     ans = 0
@@ -26768,6 +28019,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-consecutive-sequence/description/
+# Question: 128. Longest Consecutive Sequence
 class Solution:
   def longestConsecutive(self, nums: List[int]) -> int:
     ans = 0
@@ -26787,6 +28039,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/prison-cells-after-n-days/description/
+# Question: 957. Prison Cells After N Days
 class Solution:
   def prisonAfterNDays(self, cells: List[int], n: int) -> List[int]:
     nextDayCells = [0] * len(cells)
@@ -26807,6 +28060,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/string-to-integer-atoi/description/
+# Question: 8. String to Integer (atoi)
 class Solution:
   def myAtoi(self, s: str) -> int:
     s = s.strip()
@@ -26832,6 +28086,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-hit-counter/description/
+# Question: 362. Design Hit Counter
 class HitCounter:
   def __init__(self):
     self.timestamps = [0] * 300
@@ -26850,6 +28105,7 @@ class HitCounter:
 
 
 # Link: https://leetcode.com/problems/non-decreasing-array/description/
+# Question: 665. Non-decreasing Array
 class Solution:
   def checkPossibility(self, nums: List[int]) -> bool:
     j = None
@@ -26865,6 +28121,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shortest-word-distance-ii/description/
+# Question: 244. Shortest Word Distance II
 class WordDistance:
   def __init__(self, wordsDict: List[str]):
     self.wordToIndices = collections.defaultdict(list)
@@ -26889,6 +28146,7 @@ class WordDistance:
 
 
 # Link: https://leetcode.com/problems/new-21-game/description/
+# Question: 837. New 21 Game
 class Solution:
   def new21Game(self, n: int, k: int, maxPts: int) -> float:
     # When the game ends, the point is in [k..k - 1 maxPts].
@@ -26916,6 +28174,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/short-encoding-of-words/description/
+# Question: 820. Short Encoding of Words
 class TrieNode:
   def __init__(self):
     self.children: Dict[str, TrieNode] = {}
@@ -26942,6 +28201,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/description/
+# Question: 2554. Maximum Number of Integers to Choose From a Range I
 class Solution:
   def maxCount(self, banned: List[int], n: int, maxSum: int) -> int:
     ans = 0
@@ -26957,6 +28217,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/steps-to-make-array-non-decreasing/description/
+# Question: 2289. Steps to Make Array Non-decreasing
 class Solution:
   def totalSteps(self, nums: List[int]) -> int:
     # dp[i] := the number of steps to remove nums[i]
@@ -26975,6 +28236,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-maze/description/
+# Question: 490. The Maze
 class Solution:
   def hasPath(self, maze: List[List[int]], start: List[int], destination: List[int]) -> bool:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -27009,6 +28271,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-maze/description/
+# Question: 490. The Maze
 class Solution:
   def hasPath(self, maze: List[List[int]], start: List[int], destination: List[int]) -> bool:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -27039,6 +28302,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-repeating-character-replacement/description/
+# Question: 424. Longest Repeating Character Replacement
 class Solution:
   def characterReplacement(self, s: str, k: int) -> int:
     ans = 0
@@ -27058,6 +28322,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-repeating-character-replacement/description/
+# Question: 424. Longest Repeating Character Replacement
 class Solution:
   def characterReplacement(self, s: str, k: int) -> int:
     maxCount = 0
@@ -27076,6 +28341,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/zigzag-conversion/description/
+# Question: 6. Zigzag Conversion
 class Solution:
   def convert(self, s: str, numRows: int) -> str:
     rows = [''] * numRows
@@ -27092,6 +28358,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/description/
+# Question: 2002. Maximum Product of the Length of Two Palindromic Subsequences
 class Solution:
   def maxProduct(self, s: str) -> int:
     ans = 0
@@ -27123,6 +28390,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/replace-the-substring-for-balanced-string/description/
+# Question: 1234. Replace the Substring for Balanced String
 class Solution:
   def balancedString(self, s: str) -> int:
     ans = len(s)
@@ -27140,6 +28408,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-strictly-increasing-subarrays/description/
+# Question: 2393. Count Strictly Increasing Subarrays
 class Solution:
   def countSubarrays(self, nums: List[int]) -> int:
     ans = 0
@@ -27154,6 +28423,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-same-end-substrings/description/
+# Question: 2955. Number of Same-End Substrings
 class Solution:
   def sameEndSubstringCount(self, s: str, queries: List[List[int]]) -> List[int]:
     count = collections.Counter()
@@ -27182,6 +28452,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-nodes-from-linked-list/description/
+# Question: 2487. Remove Nodes From Linked List
 class Solution:
   def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
     if not head:
@@ -27191,6 +28462,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/description/
+# Question: 2730. Find the Longest Semi-Repetitive Substring
 class Solution:
   def longestSemiRepetitiveSubstring(self, s: str) -> int:
     ans = 1
@@ -27208,6 +28480,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/simplify-path/description/
+# Question: 71. Simplify Path
 class Solution:
   def simplifyPath(self, path: str) -> str:
     stack = []
@@ -27225,6 +28498,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/description/
+# Question: 1839. Longest Substring Of All Vowels in Order
 class Solution:
   def longestBeautifulSubstring(self, word: str) -> int:
     ans = 0
@@ -27247,6 +28521,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/description/
+# Question: 2150. Find All Lonely Numbers in the Array
 class Solution:
   def findLonely(self, nums: List[int]) -> List[int]:
     count = collections.Counter(nums)
@@ -27257,6 +28532,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-palindromic-substring/description/
+# Question: 5. Longest Palindromic Substring
 class Solution:
   def longestPalindrome(self, s: str) -> str:
     # '@' and '$' signs serve as sentinels appended to each end to avoid bounds
@@ -27290,6 +28566,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-palindromic-substring/description/
+# Question: 5. Longest Palindromic Substring
 class Solution:
   def longestPalindrome(self, s: str) -> str:
     if not s:
@@ -27323,6 +28600,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/next-greater-node-in-linked-list/description/
+# Question: 1019. Next Greater Node In Linked List
 class Solution:
   def nextLargerNodes(self, head: ListNode) -> List[int]:
     ans = []
@@ -27343,6 +28621,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/max-number-of-k-sum-pairs/description/
+# Question: 1679. Max Number of K-Sum Pairs
 class Solution:
   def maxOperations(self, nums: List[int], k: int) -> int:
     count = collections.Counter(nums)
@@ -27351,12 +28630,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/factorial-trailing-zeroes/description/
+# Question: 172. Factorial Trailing Zeroes
 class Solution:
   def trailingZeroes(self, n: int) -> int:
     return 0 if n == 0 else n // 5 + self.trailingZeroes(n // 5)
 
 
 # Link: https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/
+# Question: 1721. Swapping Nodes in a Linked List
 class Solution:
   def swapNodes(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
     p = None  # Points the k-th node from the beginning.
@@ -27377,6 +28658,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/description/
+# Question: 2598. Smallest Missing Non-negative Integer After Operations
 class Solution:
   def findSmallestInteger(self, nums: List[int], value: int) -> int:
     count = collections.Counter([num % value for num in nums])
@@ -27390,6 +28672,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/buildings-with-an-ocean-view/description/
+# Question: 1762. Buildings With an Ocean View
 class Solution:
   def findBuildings(self, heights: List[int]) -> List[int]:
     stack = []
@@ -27403,6 +28686,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/merge-in-between-linked-lists/description/
+# Question: 1669. Merge In Between Linked Lists
 class Solution:
   def mergeInBetween(self, list1: ListNode, a: int, b: int, list2: ListNode) -> ListNode:
     nodeBeforeA = list1
@@ -27425,6 +28709,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-merge-of-two-strings/description/
+# Question: 1754. Largest Merge Of Two Strings
 class Solution:
   def largestMerge(self, word1: str, word2: str) -> str:
     if not word1:
@@ -27437,6 +28722,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/description/
+# Question: 2550. Count Collisions of Monkeys on a Polygon
 class Solution:
   def monkeyMove(self, n: int) -> int:
     kMod = 1_000_000_007
@@ -27445,6 +28731,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/description/
+# Question: 1461. Check If a String Contains All Binary Codes of Size K
 class Solution:
   def hasAllCodes(self, s: str, k: int) -> bool:
     n = 1 << k
@@ -27466,6 +28753,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/range-sum-query-mutable/description/
+# Question: 307. Range Sum Query - Mutable
 class FenwickTree:
   def __init__(self, n: int):
     self.sums = [0] * (n + 1)
@@ -27503,6 +28791,7 @@ class NumArray:
 
 
 # Link: https://leetcode.com/problems/remove-covered-intervals/description/
+# Question: 1288. Remove Covered Intervals
 class Solution:
   def removeCoveredIntervals(self, intervals: List[List[int]]) -> int:
     ans = 0
@@ -27520,6 +28809,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/flip-game-ii/description/
+# Question: 294. Flip Game II
 class Solution:
   @functools.lru_cache(None)
   def canWin(self, currentState: str) -> bool:
@@ -27532,6 +28822,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/line-reflection/description/
+# Question: 356. Line Reflection
 class Solution:
   def isReflected(self, points: List[List[int]]) -> bool:
     minX = math.inf
@@ -27552,6 +28843,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/android-unlock-patterns/description/
+# Question: 351. Android Unlock Patterns
 class Solution:
   def numberOfPatterns(self, m: int, n: int) -> int:
     seen = set()
@@ -27587,6 +28879,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/description/
+# Question: 2323. Find Minimum Time to Finish All Jobs II
 class Solution:
   def minimumTime(self, jobs: List[int], workers: List[int]) -> int:
     ans = 0
@@ -27601,6 +28894,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-increasing-subsequence/description/
+# Question: 300. Longest Increasing Subsequence
 class Solution:
   def lengthOfLIS(self, nums: List[int]) -> int:
     # tails[i] := the minimum tails of all the increasing subsequences having
@@ -27618,6 +28912,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-increasing-subsequence/description/
+# Question: 300. Longest Increasing Subsequence
 class Solution:
   def lengthOfLIS(self, nums: List[int]) -> int:
     if not nums:
@@ -27635,6 +28930,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/peeking-iterator/description/
+# Question: 284. Peeking Iterator
 class PeekingIterator:
   def __init__(self, iterator: Iterator):
     self.iterator = iterator
@@ -27656,6 +28952,7 @@ class PeekingIterator:
 
 
 # Link: https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/description/
+# Question: 1101. The Earliest Moment When Everyone Become Friends
 class UnionFind:
   def __init__(self, n: int):
     self.count = n
@@ -27701,6 +28998,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-halve-array-sum/description/
+# Question: 2208. Minimum Operations to Halve Array Sum
 class Solution:
   def halveArray(self, nums: List[int]) -> int:
     halfSum = sum(nums) / 2
@@ -27720,6 +29018,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/description/
+# Question: 2476. Closest Nodes Queries in a Binary Search Tree
 class Solution:
   def closestNodes(self, root: Optional[TreeNode], queries: List[int]) -> List[List[int]]:
     sortedVals = []
@@ -27746,6 +29045,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/description/
+# Question: 2033. Minimum Operations to Make a Uni-Value Grid
 class Solution:
   def minOperations(self, grid: List[List[int]], x: int) -> int:
     A = sorted([a for row in grid for a in row])
@@ -27761,6 +29061,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/guess-the-majority-in-a-hidden-array/description/
+# Question: 1538. Guess the Majority in a Hidden Array
 # """
 # This is the ArrayReader's API interface.
 # You should not implement it, or speculate about its implementation
@@ -27812,6 +29113,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-palindromic-number/description/
+# Question: 2384. Largest Palindromic Number
 class Solution:
   def largestPalindromic(self, num: str) -> str:
     count = collections.Counter(num)
@@ -27827,6 +29129,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/course-schedule/description/
+# Question: 207. Course Schedule
 from enum import Enum
 
 
@@ -27861,6 +29164,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-price-to-fill-a-bag/description/
+# Question: 2548. Maximum Price to Fill a Bag
 class Solution:
   def maxPrice(self, items: List[List[int]], capacity: int) -> float:
     ans = 0
@@ -27877,6 +29181,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/elements-in-array-after-removing-and-replacing-elements/description/
+# Question: 2113. Elements in Array After Removing and Replacing Elements
 class Solution:
   def elementInNums(self, nums: List[int], queries: List[List[int]]) -> List[int]:
     n = len(nums)
@@ -27892,6 +29197,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/groups-of-special-equivalent-strings/description/
+# Question: 893. Groups of Special-Equivalent Strings
 class Solution:
   def numSpecialEquivGroups(self, words: List[str]) -> int:
     return len({''.join(sorted(word[::2])) + ''.join(sorted(word[1::2]))
@@ -27899,6 +29205,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-univalue-subtrees/description/
+# Question: 250. Count Univalue Subtrees
 class Solution:
   def countUnivalSubtrees(self, root: Optional[TreeNode]) -> int:
     ans = 0
@@ -27919,6 +29226,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-square-numbers/description/
+# Question: 633. Sum of Square Numbers
 class Solution:
   def judgeSquareSum(self, c: int) -> bool:
     l = 0
@@ -27937,6 +29245,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/bag-of-tokens/description/
+# Question: 948. Bag of Tokens
 class Solution:
   def bagOfTokensScore(self, tokens: List[int], power: int) -> int:
     ans = 0
@@ -27958,6 +29267,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/zigzag-iterator/description/
+# Question: 281. Zigzag Iterator
 class ZigzagIterator:
   def __init__(self, v1: List[int], v2: List[int]):
     def vals():
@@ -27977,6 +29287,7 @@ class ZigzagIterator:
 
 
 # Link: https://leetcode.com/problems/inorder-successor-in-bst/description/
+# Question: 285. Inorder Successor in BST
 class Solution:
   def inorderSuccessor(self, root: Optional[TreeNode], p: Optional[TreeNode]) -> Optional[TreeNode]:
     if not root:
@@ -27987,6 +29298,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/increasing-triplet-subsequence/description/
+# Question: 334. Increasing Triplet Subsequence
 class Solution:
   def increasingTriplet(self, nums: List[int]) -> bool:
     first = math.inf
@@ -28004,6 +29316,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/construct-string-from-binary-tree/description/
+# Question: 606. Construct String from Binary Tree
 class Solution:
   def tree2str(self, t: Optional[TreeNode]) -> str:
     def dfs(root: Optional[TreeNode]) -> str:
@@ -28018,6 +29331,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-colors/description/
+# Question: 75. Sort Colors
 class Solution:
   def sortColors(self, nums: List[int]) -> None:
     l = 0  # The next 0 should be placed in l.
@@ -28039,6 +29353,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-colors/description/
+# Question: 75. Sort Colors
 class Solution:
   def sortColors(self, nums: List[int]) -> None:
     zero = -1
@@ -28064,6 +29379,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/reorder-list/description/
+# Question: 143. Reorder List
 class Solution:
   def reorderList(self, head: ListNode) -> None:
     def findMid(head: ListNode):
@@ -28107,6 +29423,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/
+# Question: 452. Minimum Number of Arrows to Burst Balloons
 class Solution:
   def findMinArrowShots(self, points: List[List[int]]) -> int:
     ans = 0
@@ -28121,6 +29438,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-characters-by-frequency/description/
+# Question: 451. Sort Characters By Frequency
 class Solution:
   def frequencySort(self, s: str) -> str:
     ans = []
@@ -28137,6 +29455,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-two-expression-trees-are-equivalent/description/
+# Question: 1612. Check If Two Expression Trees are Equivalent
 class Solution:
   def checkEquivalence(self, root1: 'Node', root2: 'Node') -> bool:
     count = collections.Counter()
@@ -28155,6 +29474,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/search-a-2d-matrix/description/
+# Question: 74. Search a 2D Matrix
 class Solution:
   def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
     if not matrix:
@@ -28180,6 +29500,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/range-frequency-queries/description/
+# Question: 2080. Range Frequency Queries
 class RangeFreqQuery:
   def __init__(self, arr: List[int]):
     self.valueToIndices = collections.defaultdict(list)
@@ -28194,6 +29515,7 @@ class RangeFreqQuery:
 
 
 # Link: https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/description/
+# Question: 1621. Number of Sets of K Non-Overlapping Line Segments
 class Solution:
   def numberOfSets(self, n: int, k: int) -> int:
     kMod = 1_000_000_007
@@ -28216,6 +29538,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/rotate-list/description/
+# Question: 61. Rotate List
 class Solution:
   def rotateRight(self, head: ListNode, k: int) -> ListNode:
     if not head or not head.next or k == 0:
@@ -28238,6 +29561,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/incremental-memory-leak/description/
+# Question: 1860. Incremental Memory Leak
 class Solution:
   def memLeak(self, memory1: int, memory2: int) -> List[int]:
     i = 1
@@ -28253,6 +29577,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-xor-after-operations/description/
+# Question: 2317. Maximum XOR After Operations
 class Solution:
   def maximumXOR(self, nums: List[int]) -> int:
     # 1. nums[i] & (nums[i] ^ x) enables you to turn 1-bit to 0-bit from
@@ -28268,6 +29593,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-complete-subarrays-in-an-array/description/
+# Question: 2799. Count Complete Subarrays in an Array
 class Solution:
   def countCompleteSubarrays(self, nums: List[int]) -> int:
     ans = 0
@@ -28290,6 +29616,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/min-stack/description/
+# Question: 155. Min Stack
 class MinStack:
   def __init__(self):
     self.stack = []
@@ -28309,6 +29636,7 @@ class MinStack:
 
 
 # Link: https://leetcode.com/problems/sort-an-array/description/
+# Question: 912. Sort an Array
 class Solution:
   def sortArray(self, nums: List[int]) -> List[int]:
     def heapSort(A: List[int]) -> None:
@@ -28340,6 +29668,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-an-array/description/
+# Question: 912. Sort an Array
 class Solution:
   def sortArray(self, nums: List[int]) -> List[int]:
     def quickSort(A: List[int], l: int, r: int) -> None:
@@ -28367,6 +29696,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sort-an-array/description/
+# Question: 912. Sort an Array
 class Solution:
   def sortArray(self, nums: List[int]) -> List[int]:
     def mergeSort(A: List[int], l: int, r: int) -> None:
@@ -28413,6 +29743,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/k-closest-points-to-origin/description/
+# Question: 973. K Closest Points to Origin
 class Solution:
   def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
     def squareDist(p: List[int]) -> int:
@@ -28441,6 +29772,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/k-closest-points-to-origin/description/
+# Question: 973. K Closest Points to Origin
 class Solution:
   def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
     maxHeap = []
@@ -28454,6 +29786,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/k-closest-points-to-origin/description/
+# Question: 973. K Closest Points to Origin
 class Solution:
   def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
     def squareDist(p: List[int]) -> int:
@@ -28471,7 +29804,7 @@ class Solution:
           nextSwapped += 1
       points[nextSwapped], points[r] = points[r], points[nextSwapped]
 
-      count = nextSwapped - l + 1  the number of points <= pivot
+      count = nextSwapped - l + 1  # the number of points <= pivot
       if count == k:
         return
       if count > k:
@@ -28498,7 +29831,7 @@ class Solution:
           nextSwapped += 1
       points[nextSwapped], points[r] = points[r], points[nextSwapped]
 
-      count = nextSwapped - l + 1  the number of points <= pivot
+      count = nextSwapped - l + 1  # the number of points <= pivot
       if count == k:
         return
       if count > k:
@@ -28511,6 +29844,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-duplicate-subtrees/description/
+# Question: 652. Find Duplicate Subtrees
 class Solution:
   def findDuplicateSubtrees(self, root: Optional[TreeNode]) -> List[Optional[TreeNode]]:
     ans = []
@@ -28533,6 +29867,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/subdomain-visit-count/description/
+# Question: 811. Subdomain Visit Count
 class Solution:
   def subdomainVisits(self, cpdomains: List[str]) -> List[str]:
     ans = []
@@ -28548,6 +29883,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
+# Question: 852. Peak Index in a Mountain Array
 class Solution:
   def peakIndexInMountainArray(self, arr: List[int]) -> int:
     l = 0
@@ -28564,6 +29900,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/happy-students/description/
+# Question: 2860. Happy Students
 class Solution:
   def countWays(self, nums: List[int]) -> int:
     return sum(a < i < b
@@ -28572,6 +29909,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/shuffle-an-array/description/
+# Question: 384. Shuffle an Array
 class Solution:
   def __init__(self, nums: List[int]):
     self.nums = nums
@@ -28594,6 +29932,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/adding-spaces-to-a-string/description/
+# Question: 2109. Adding Spaces to a String
 class Solution:
   def addSpaces(self, s: str, spaces: List[int]) -> str:
     ans = []
@@ -28609,6 +29948,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partition-string-into-substrings-with-values-at-most-k/description/
+# Question: 2522. Partition String Into Substrings With Values at Most K
 class Solution:
   def minimumPartition(self, s: str, k: int) -> int:
     ans = 1
@@ -28626,6 +29966,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/path-with-minimum-effort/description/
+# Question: 1631. Path With Minimum Effort
 class Solution:
   def minimumEffortPath(self, heights: List[List[int]]) -> int:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -28658,6 +29999,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/ternary-expression-parser/description/
+# Question: 439. Ternary Expression Parser
 class Solution:
   def parseTernary(self, expression: str) -> str:
     c = expression[self.i]
@@ -28676,6 +30018,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/make-number-of-distinct-characters-equal/description/
+# Question: 2531. Make Number of Distinct Characters Equal
 class Solution:
   def isItPossible(self, word1: str, word2: str) -> bool:
     count1 = collections.Counter(word1)
@@ -28702,6 +30045,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/description/
+# Question: 2207. Maximize Number of Subsequences in a String
 class Solution:
   def maximumSubsequenceCount(self, text: str, pattern: str) -> int:
     ans = 0
@@ -28721,6 +30065,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/paths-in-maze-that-lead-to-same-room/description/
+# Question: 2077. Paths in Maze That Lead to Same Room
 class Solution:
   def numberOfPaths(self, n: int, corridors: List[List[int]]) -> int:
     ans = 0
@@ -28739,6 +30084,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/description/
+# Question: 3040. Maximum Number of Operations With the Same Score II
 class Solution:
   def maxOperations(self, nums: List[int]) -> int:
     @functools.lru_cache(None)
@@ -28764,6 +30110,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-most-recently-used-queue/description/
+# Question: 1756. Design Most Recently Used Queue
 from sortedcontainers import SortedList
 
 
@@ -28783,12 +30130,14 @@ class MRUQueue:
 
 
 # Link: https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/description/
+# Question: 2997. Minimum Number of Operations to Make Array XOR Equal to K
 class Solution:
   def minOperations(self, nums: List[int], k: int) -> int:
     return functools.reduce(operator.xor, nums, k).bit_count()
 
 
 # Link: https://leetcode.com/problems/find-original-array-from-doubled-array/description/
+# Question: 2007. Find Original Array From Doubled Array
 class Solution:
   def findOriginalArray(self, changed: List[int]) -> List[int]:
     ans = []
@@ -28805,6 +30154,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/stone-game/description/
+# Question: 877. Stone Game
 class Solution:
   def stoneGame(self, piles: List[int]) -> bool:
     n = len(piles)
@@ -28824,6 +30174,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/stone-game/description/
+# Question: 877. Stone Game
 class Solution:
   def stoneGame(self, piles: List[int]) -> bool:
     n = len(piles)
@@ -28838,6 +30189,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/circular-array-loop/description/
+# Question: 457. Circular Array Loop
 class Solution:
   def circularArrayLoop(self, nums: List[int]) -> bool:
     def advance(i: int) -> int:
@@ -28871,6 +30223,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-unguarded-cells-in-the-grid/description/
+# Question: 2257. Count Unguarded Cells in the Grid
 class Solution:
   def countUnguarded(self, m: int, n: int, guards: List[List[int]], walls: List[List[int]]) -> int:
     ans = 0
@@ -28924,6 +30277,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-operations-to-make-array-equal-ii/description/
+# Question: 2541. Minimum Operations to Make Array Equal II
 class Solution:
   def minOperations(self, nums1: List[int], nums2: List[int], k: int) -> int:
     if k == 0:
@@ -28946,6 +30300,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/description/
+# Question: 2684. Maximum Number of Moves in a Grid
 class Solution:
   def maxMoves(self, grid: List[List[int]]) -> int:
     m = len(grid)
@@ -28966,6 +30321,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
+# Question: 235. Lowest Common Ancestor of a Binary Search Tree
 class Solution:
   def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
     if root.val > max(p.val, q.val):
@@ -28976,6 +30332,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-even-numbers-after-queries/description/
+# Question: 985. Sum of Even Numbers After Queries
 class Solution:
   def sumEvenAfterQueries(self, nums: List[int], queries: List[List[int]]) -> List[int]:
     ans = []
@@ -28993,6 +30350,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/description/
+# Question: 2177. Find Three Consecutive Integers That Sum to a Given Number
 class Solution:
   def sumOfThree(self, num: int) -> List[int]:
     if num % 3:
@@ -29002,6 +30360,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/divide-two-integers/description/
+# Question: 29. Divide Two Integers
 class Solution:
   def divide(self, dividend: int, divisor: int) -> int:
     # -2^{31} / -1 = 2^31 will overflow, so return 2^31 - 1.
@@ -29024,6 +30383,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-divisibility-array-of-a-string/description/
+# Question: 2575. Find the Divisibility Array of a String
 class Solution:
   def divisibilityArray(self, word: str, m: int) -> List[int]:
     ans = []
@@ -29038,6 +30398,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/integer-to-roman/description/
+# Question: 12. Integer to Roman
 class Solution:
   def intToRoman(self, num: int) -> str:
     M = ['', 'M', 'MM', 'MMM']
@@ -29048,6 +30409,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/integer-to-roman/description/
+# Question: 12. Integer to Roman
 class Solution:
   def intToRoman(self, num: int) -> str:
     valueSymbols = [(1000, 'M'), (900, 'CM'),
@@ -29069,6 +30431,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/daily-temperatures/description/
+# Question: 739. Daily Temperatures
 class Solution:
   def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
     ans = [0] * len(temperatures)
@@ -29084,6 +30447,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/description/
+# Question: 2128. Remove All Ones With Row and Column Flips
 class Solution:
   def removeOnes(self, grid: List[List[int]]) -> bool:
     revRow = [a ^ 1 for a in grid[0]]
@@ -29091,6 +30455,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/combination-sum/description/
+# Question: 39. Combination Sum
 class Solution:
   def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
     ans = []
@@ -29113,6 +30478,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/most-beautiful-item-for-each-query/description/
+# Question: 2070. Most Beautiful Item for Each Query
 class Solution:
   def maximumBeauty(self, items: List[List[int]], queries: List[int]) -> List[int]:
     prices, beauties = zip(*sorted(items))
@@ -29125,6 +30491,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/description/
+# Question: 1282. Group the People Given the Group Size They Belong To
 class Solution:
   def groupThePeople(self, groupSizes: List[int]) -> List[List[int]]:
     ans = []
@@ -29145,6 +30512,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-substrings-that-differ-by-one-character/description/
+# Question: 1638. Count Substrings That Differ by One Character
 class Solution:
   def countSubstrings(self, s: str, t: str) -> int:
     ans = 0
@@ -29180,6 +30548,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/flip-columns-for-maximum-number-of-equal-rows/description/
+# Question: 1072. Flip Columns For Maximum Number of Equal Rows
 class Solution:
   def maxEqualRowsAfterFlips(self, matrix: List[List[int]]) -> int:
     patterns = [tuple(a ^ row[0] for a in row) for row in matrix]
@@ -29187,6 +30556,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-gap/description/
+# Question: 164. Maximum Gap
 class Bucket:
   def __init__(self, mini: int, maxi: int):
     self.mini = mini
@@ -29225,6 +30595,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximize-greatness-of-an-array/description/
+# Question: 2592. Maximize Greatness of an Array
 class Solution:
   def maximizeGreatness(self, nums: List[int]) -> int:
     ans = 0
@@ -29239,6 +30610,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/valid-parenthesis-string/description/
+# Question: 678. Valid Parenthesis String
 class Solution:
   def checkValidString(self, s: str) -> bool:
     low = 0
@@ -29263,6 +30635,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/description/
+# Question: 3070. Count Submatrices with Top-Left Element and Sum Less Than k
 class Solution:
   def countSubmatrices(self, grid: List[List[int]], k: int) -> int:
     m = len(grid)
@@ -29283,6 +30656,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/insert-into-a-binary-search-tree/description/
+# Question: 701. Insert into a Binary Search Tree
 class Solution:
   def insertIntoBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
     if not root:
@@ -29295,6 +30669,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/walls-and-gates/description/
+# Question: 286. Walls and Gates
 class Solution:
   def wallsAndGates(self, rooms: List[List[int]]) -> None:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -29322,6 +30697,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/description/
+# Question: 298. Binary Tree Longest Consecutive Sequence
 class Solution:
   def longestConsecutive(self, root: Optional[TreeNode]) -> int:
     if not root:
@@ -29342,6 +30718,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/pyramid-transition-matrix/description/
+# Question: 756. Pyramid Transition Matrix
 class Solution:
   def pyramidTransition(self, bottom: str, allowed: List[str]) -> bool:
     prefixToBlocks = collections.defaultdict(list)
@@ -29365,6 +30742,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/kill-process/description/
+# Question: 582. Kill Process
 class Solution:
   def killProcess(self, pid: List[int], ppid: List[int], kill: int) -> List[int]:
     ans = []
@@ -29385,6 +30763,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-length-of-pair-chain/description/
+# Question: 646. Maximum Length of Pair Chain
 class Solution:
   def findLongestChain(self, pairs: List[List[int]]) -> int:
     ans = 0
@@ -29399,6 +30778,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils/description/
+# Question: 2240. Number of Ways to Buy Pens and Pencils
 class Solution:
   def waysToBuyPensPencils(self, total: int, cost1: int, cost2: int) -> int:
     maxPen = total // cost1
@@ -29407,6 +30787,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/description/
+# Question: 2457. Minimum Addition to Make Integer Beautiful
 class Solution:
   def makeIntegerBeautiful(self, n: int, target: int) -> int:
     ans = 0
@@ -29424,6 +30805,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/description/
+# Question: 1750. Minimum Length of String After Deleting Similar Ends
 class Solution:
   def minimumLength(self, s: str) -> int:
     i = 0
@@ -29440,6 +30822,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-and-replace-pattern/description/
+# Question: 890. Find and Replace Pattern
 class Solution:
   def findAndReplacePattern(self, words: List[str], pattern: str) -> List[str]:
     def isIsomorphic(w: str, p: str) -> bool:
@@ -29448,6 +30831,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/simple-bank-system/description/
+# Question: 2043. Simple Bank System
 class Bank:
   def __init__(self, balance: List[int]):
     self.balance = balance
@@ -29476,6 +30860,7 @@ class Bank:
 
 
 # Link: https://leetcode.com/problems/wiggle-subsequence/description/
+# Question: 376. Wiggle Subsequence
 class Solution:
   def wiggleMaxLength(self, nums: List[int]) -> int:
     increasing = 1
@@ -29491,6 +30876,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/snapshot-array/description/
+# Question: 1146. Snapshot Array
 class SnapshotArray:
   def __init__(self, length: int):
     self.snaps = [[[0, 0]] for _ in range(length)]
@@ -29513,6 +30899,7 @@ class SnapshotArray:
 
 
 # Link: https://leetcode.com/problems/count-the-number-of-good-subsequences/description/
+# Question: 2539. Count the Number of Good Subsequences
 class Solution:
   def countGoodSubsequences(self, s: str) -> int:
     kMod = 1_000_000_007
@@ -29543,6 +30930,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/moving-stones-until-consecutive-ii/description/
+# Question: 1040. Moving Stones Until Consecutive II
 class Solution:
   def numMovesStonesII(self, stones: List[int]) -> List[int]:
     n = len(stones)
@@ -29564,6 +30952,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
+# Question: 236. Lowest Common Ancestor of a Binary Tree
 class Solution:
   def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
     if not root or root == p or root == q:
@@ -29576,6 +30965,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
+# Question: 236. Lowest Common Ancestor of a Binary Tree
 class Solution:
   def lowestCommonAncestor(self, root: Optional[TreeNode], p: Optional[TreeNode], q: Optional[TreeNode]) -> Optional[TreeNode]:
     q_ = collections.deque([root])
@@ -29605,6 +30995,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-a-todo-list/description/
+# Question: 2590. Design a Todo List
 from dataclasses import dataclass
 
 
@@ -29655,6 +31046,7 @@ class TodoList:
 
 
 # Link: https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/description/
+# Question: 1680. Concatenation of Consecutive Binary Numbers
 class Solution:
   def concatenatedBinary(self, n: int) -> int:
     kMod = 1_000_000_007
@@ -29670,6 +31062,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/description/
+# Question: 1680. Concatenation of Consecutive Binary Numbers
 class Solution:
   def concatenatedBinary(self, n: int) -> int:
     kMod = 1_000_000_007
@@ -29685,6 +31078,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/course-schedule-ii/description/
+# Question: 210. Course Schedule II
 from enum import Enum
 
 
@@ -29724,6 +31118,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/course-schedule-ii/description/
+# Question: 210. Course Schedule II
 class Solution:
   def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
     ans = []
@@ -29751,6 +31146,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/description/
+# Question: 1371. Find the Longest Substring Containing Vowels in Even Counts
 class Solution:
   def findTheLongestSubstring(self, s: str) -> int:
     kVowels = 'aeiou'
@@ -29769,6 +31165,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximal-network-rank/description/
+# Question: 1615. Maximal Network Rank
 class Solution:
   def maximalNetworkRank(self, n: int, roads: List[List[int]]) -> int:
     degrees = [0] * n
@@ -29828,6 +31225,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/optimal-division/description/
+# Question: 553. Optimal Division
 class Solution:
   def optimalDivision(self, nums: List[int]) -> str:
     ans = str(nums[0])
@@ -29845,6 +31243,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-a-food-rating-system/description/
+# Question: 2353. Design a Food Rating System
 from sortedcontainers import SortedSet
 
 
@@ -29873,6 +31272,7 @@ class FoodRatings:
 
 
 # Link: https://leetcode.com/problems/sum-game/description/
+# Question: 1927. Sum Game
 class Solution:
   def sumGame(self, num: str) -> bool:
     n = len(num)
@@ -29891,6 +31291,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/partition-array-for-maximum-sum/description/
+# Question: 1043. Partition Array for Maximum Sum
 class Solution:
   def maxSumAfterPartitioning(self, arr: List[int], k: int) -> int:
     n = len(arr)
@@ -29906,6 +31307,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/the-knights-tour/description/
+# Question: 2664. The Knight’s Tour
 class Solution:
   def tourOfKnight(self, m: int, n: int, r: int, c: int) -> List[List[int]]:
     dirs = ((1, 2), (2, 1), (2, -1), (1, -2),
@@ -29931,6 +31333,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-time-to-complete-trips/description/
+# Question: 2187. Minimum Time to Complete Trips
 class Solution:
   def minimumTime(self, time: List[int], totalTrips: int) -> int:
     l = 1
@@ -29947,6 +31350,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/matchsticks-to-square/description/
+# Question: 473. Matchsticks to Square
 class Solution:
   def makesquare(self, matchsticks: List[int]) -> bool:
     if len(matchsticks) < 4:
@@ -29976,6 +31380,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/description/
+# Question: 1300. Sum of Mutated Array Closest to Target
 class Solution:
   def findBestValue(self, arr: List[int], target: int) -> int:
     prefix = 0
@@ -29992,6 +31397,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-a-string-can-break-another-string/description/
+# Question: 1433. Check If a String Can Break Another String
 class Solution:
   def checkIfCanBreak(self, s1: str, s2: str) -> bool:
     count = collections.Counter(s1)
@@ -30005,6 +31411,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/check-if-a-string-can-break-another-string/description/
+# Question: 1433. Check If a String Can Break Another String
 class Solution:
   def checkIfCanBreak(self, s1: str, s2: str) -> bool:
     count1 = collections.Counter(s1)
@@ -30024,6 +31431,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/factor-combinations/description/
+# Question: 254. Factor Combinations
 class Solution:
   def getFactors(self, n: int) -> List[List[int]]:
     ans = []
@@ -30045,6 +31453,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/combination-sum-iv/description/
+# Question: 377. Combination Sum IV
 class Solution:
   def combinationSum4(self, nums: List[int], target: int) -> int:
     dp = [1] + [-1] * target
@@ -30062,6 +31471,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-the-closest-marked-node/description/
+# Question: 2737. Find the Closest Marked Node
 class Solution:
   def minimumDistance(self, n: int, edges: List[List[int]], s: int, marked: List[int]) -> int:
     graph = [[] for _ in range(n)]
@@ -30090,6 +31500,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/angle-between-hands-of-a-clock/description/
+# Question: 1344. Angle Between Hands of a Clock
 class Solution:
   def angleClock(self, hour: int, minutes: int) -> float:
     hourAngle = (hour % 12) * 30 + minutes * 0.5
@@ -30100,12 +31511,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/
+# Question: 2275. Largest Combination With Bitwise AND Greater Than Zero
 class Solution:
   def largestCombination(self, candidates: List[int]) -> int:
     return max(sum(c >> i & 1 for c in candidates) for i in range(24))
 
 
 # Link: https://leetcode.com/problems/count-number-of-teams/description/
+# Question: 1395. Count Number of Teams
 class Solution:
   def numTeams(self, rating: List[int]) -> int:
     ans = 0
@@ -30133,6 +31546,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/description/
+# Question: 2918. Minimum Equal Sum of Two Arrays After Replacing Zeros
 class Solution:
   def minSum(self, nums1: List[int], nums2: List[int]) -> int:
     sum1 = sum(nums1)
@@ -30147,12 +31561,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-total-number-of-colored-cells/description/
+# Question: 2579. Count Total Number of Colored Cells
 class Solution:
   def coloredCells(self, n: int) -> int:
     return n**2 + (n - 1)**2
 
 
 # Link: https://leetcode.com/problems/pacific-atlantic-water-flow/description/
+# Question: 417. Pacific Atlantic Water Flow
 class Solution:
   def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
     m = len(heights)
@@ -30187,6 +31603,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/pacific-atlantic-water-flow/description/
+# Question: 417. Pacific Atlantic Water Flow
 class Solution:
   def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
     dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
@@ -30230,6 +31647,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/
+# Question: 524. Longest Word in Dictionary through Deleting
 class Solution:
   def findLongestWord(self, s: str, d: List[str]) -> str:
     ans = ''
@@ -30247,6 +31665,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-number-of-eaten-apples/description/
+# Question: 1705. Maximum Number of Eaten Apples
 class Solution:
   def eatenApples(self, apples: List[int], days: List[int]) -> int:
     n = len(apples)
@@ -30273,6 +31692,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-area-rectangle-ii/description/
+# Question: 963. Minimum Area Rectangle II
 class Solution:
   def minAreaFreeRect(self, points: List[List[int]]) -> float:
     ans = math.inf
@@ -30302,6 +31722,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/kth-largest-element-in-an-array/description/
+# Question: 215. Kth Largest Element in an Array
 class Solution:
   def findKthLargest(self, nums: List[int], k: int) -> int:
     def quickSelect(l: int, r: int, k: int) -> int:
@@ -30327,6 +31748,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/kth-largest-element-in-an-array/description/
+# Question: 215. Kth Largest Element in an Array
 class Solution:
   def findKthLargest(self, nums: List[int], k: int) -> int:
     def quickSelect(l: int, r: int, k: int) -> int:
@@ -30350,6 +31772,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/kth-largest-element-in-an-array/description/
+# Question: 215. Kth Largest Element in an Array
 class Solution:
   def findKthLargest(self, nums: List[int], k: int) -> int:
     minHeap = []
@@ -30363,6 +31786,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-nodes-with-the-highest-score/description/
+# Question: 2049. Count Nodes With the Highest Score
 class Solution:
   def countHighestScoreNodes(self, parents: List[int]) -> int:
     tree = [[] for _ in range(len(parents))]
@@ -30397,6 +31821,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/k-radius-subarray-averages/description/
+# Question: 2090. K Radius Subarray Averages
 class Solution:
   def getAverages(self, nums: List[int], k: int) -> List[int]:
     n = len(nums)
@@ -30416,6 +31841,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-maximal-uncovered-ranges/description/
+# Question: 2655. Find Maximal Uncovered Ranges
 class Solution:
   def findMaximalUncoveredRanges(self, n: int, ranges: List[List[int]]) -> List[List[int]]:
     ans = []
@@ -30434,6 +31860,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/unique-binary-search-trees/description/
+# Question: 96. Unique Binary Search Trees
 class Solution:
   def numTrees(self, n: int) -> int:
     # dp[i] := the number of unique BST's that store values 1..i
@@ -30447,6 +31874,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-the-number-of-k-free-subsets/description/
+# Question: 2638. Count the Number of K-Free Subsets
 class Solution:
   def countTheNumOfKFreeSubsets(self, nums: List[int], k: int) -> int:
     modToSubset = collections.defaultdict(set)
@@ -30468,6 +31896,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description/
+# Question: 1151. Minimum Swaps to Group All 1's Together
 class Solution:
   def minSwaps(self, data: List[int]) -> int:
     k = data.count(1)
@@ -30485,6 +31914,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/design-linked-list/description/
+# Question: 707. Design Linked List
 class ListNode:
   def __init__(self, x):
     self.val = x
@@ -30540,6 +31970,7 @@ class MyLinkedList:
 
 
 # Link: https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
+# Question: 442. Find All Duplicates in an Array
 class Solution:
   def findDuplicates(self, nums: List[int]) -> List[int]:
     ans = []
@@ -30553,6 +31984,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/gray-code/description/
+# Question: 89. Gray Code
 class Solution:
   def grayCode(self, n: int) -> List[int]:
     ans = [0]
@@ -30565,6 +31997,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-star-sum-of-a-graph/description/
+# Question: 2497. Maximum Star Sum of a Graph
 class Solution:
   def maxStarSum(self, vals: List[int], edges: List[List[int]], k: int) -> int:
     n = len(vals)
@@ -30590,6 +32023,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/get-watched-videos-by-your-friends/description/
+# Question: 1311. Get Watched Videos by Your Friends
 class Solution:
   def watchedVideosByFriends(self, watchedVideos: List[List[str]], friends: List[List[int]],
                              id: int, level: int) -> List[str]:
@@ -30614,6 +32048,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/stepping-numbers/description/
+# Question: 1215. Stepping Numbers
 class Solution:
   def countSteppingNumbers(self, low: int, high: int) -> List[int]:
     ans = [0] if low == 0 else []
@@ -30635,6 +32070,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/stepping-numbers/description/
+# Question: 1215. Stepping Numbers
 class Solution:
   def countSteppingNumbers(self, low: int, high: int) -> List[int]:
     ans = [0] if low == 0 else []
@@ -30659,6 +32095,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/description/
+# Question: 2850. Minimum Moves to Spread Stones Over Grid
 class Solution:
   def minimumMoves(self, grid: List[List[int]]) -> int:
     if sum(row.count(0) for row in grid) == 0:
@@ -30682,6 +32119,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/description/
+# Question: 1292. Maximum Side Length of a Square with Sum Less than or Equal to Threshold
 class Solution:
   def maxSideLength(self, mat: List[List[int]], threshold: int) -> int:
     m = len(mat)
@@ -30708,6 +32146,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/minimum-score-triangulation-of-polygon/description/
+# Question: 1039. Minimum Score Triangulation of Polygon
 class Solution:
   def minScoreTriangulation(self, values: List[int]) -> int:
     n = len(values)
@@ -30724,6 +32163,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/sentence-similarity-ii/description/
+# Question: 737. Sentence Similarity II
 class Solution:
   def areSentencesSimilarTwo(self, words1: List[str], words2: List[str], pairs: List[List[str]]) -> bool:
     if len(words1) != len(words2):
@@ -30762,6 +32202,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/description/
+# Question: 1602. Find Nearest Right Node in Binary Tree
 class Solution:
   def findNearestRightNode(self, root: TreeNode, u: TreeNode) -> Optional[TreeNode]:
     ans = None
@@ -30786,6 +32227,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/count-pairs-of-equal-substrings-with-minimum-difference/description/
+# Question: 1794. Count Pairs of Equal Substrings With Minimum Difference
 class Solution:
   def countQuadruples(self, s1: str, s2: str) -> int:
     # To minimize j - a, the length of the substring should be 1. This is
@@ -30815,6 +32257,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/bulb-switcher/description/
+# Question: 319. Bulb Switcher
 class Solution:
   def bulbSwitch(self, n: int) -> int:
     # The k-th bulb can only be switched when k % i == 0.
@@ -30826,6 +32269,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/description/
+# Question: 1749. Maximum Absolute Sum of Any Subarray
 class Solution:
   def maxAbsoluteSum(self, nums):
     summ = 0
@@ -30841,6 +32285,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/description/
+# Question: 1749. Maximum Absolute Sum of Any Subarray
 class Solution:
   def maxAbsoluteSum(self, nums):
     ans = -math.inf
@@ -30856,6 +32301,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/description/
+# Question: 1261. Find Elements in a Contaminated Binary Tree
 class FindElements:
   def __init__(self, root: Optional[TreeNode]):
     self.vals = set()
@@ -30875,6 +32321,7 @@ class FindElements:
 
 
 # Link: https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/description/
+# Question: 2470. Number of Subarrays With LCM Equal to K
 class Solution:
   def subarrayLCM(self, nums: List[int], k: int) -> int:
     ans = 0
@@ -30891,12 +32338,14 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/description/
+# Question: 2546. Apply Bitwise Operations to Make Strings Equal
 class Solution:
   def makeStringsEqual(self, s: str, target: str) -> bool:
     return ('1' in s) == ('1' in target)
 
 
 # Link: https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/description/
+# Question: 2712. Minimum Cost to Make All Characters Equal
 class Solution:
   def minimumCost(self, s: str) -> int:
     n = len(s)
@@ -30911,6 +32360,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/description/
+# Question: 1010. Pairs of Songs With Total Durations Divisible by 60
 class Solution:
   def numPairsDivisibleBy60(self, time: List[int]) -> int:
     ans = 0
@@ -30925,6 +32375,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/html-entity-parser/description/
+# Question: 1410. HTML Entity Parser
 class Solution:
   def entityParser(self, text: str) -> str:
     entityToChar = {'&quot;': '"', '&apos;': '\'',
@@ -30938,6 +32389,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/house-robber-iv/description/
+# Question: 2560. House Robber IV
 class Solution:
   def minCapability(self, nums: List[int], k: int) -> int:
     def numStolenHouses(capacity: int) -> int:
@@ -30955,6 +32407,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/description/
+# Question: 2400. Number of Ways to Reach a Position After Exactly k Steps
 class Solution:
   def numberOfWays(self, startPos: int, endPos: int, k: int) -> int:
     # leftStep + rightStep = k
@@ -30985,6 +32438,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients/description/
+# Question: 1276. Number of Burgers with No Waste of Ingredients
 class Solution:
   def numOfBurgers(self, tomatoSlices: int, cheeseSlices: int) -> List[int]:
     if tomatoSlices % 2 == 1 or tomatoSlices < 2 * cheeseSlices or tomatoSlices > cheeseSlices * 4:
@@ -30996,6 +32450,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/continuous-subarray-sum/description/
+# Question: 523. Continuous Subarray Sum
 class Solution:
   def checkSubarraySum(self, nums: List[int], k: int) -> bool:
     prefix = 0
@@ -31016,6 +32471,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/number-of-equal-count-substrings/description/
+# Question: 2067. Number of Equal Count Substrings
 class Solution:
   def equalCountSubstrings(self, s: str, count: int) -> int:
     maxUnique = len(set(s))
@@ -31039,6 +32495,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/lonely-pixel-ii/description/
+# Question: 533. Lonely Pixel II
 class Solution:
   def findBlackPixel(self, picture: List[List[str]], target: int) -> int:
     m = len(picture)
@@ -31059,6 +32516,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/
+# Question: 2024. Maximize the Confusion of an Exam
 class Solution:
   def maxConsecutiveAnswers(self, answerKey: str, k: int) -> int:
     ans = 0
@@ -31078,6 +32536,7 @@ class Solution:
 
 
 # Link: https://leetcode.com/problems/successful-pairs-of-spells-and-potions/description/
+# Question: 2300. Successful Pairs of Spells and Potions
 class Solution:
   def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
     potions.sort()
